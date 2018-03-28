@@ -12,7 +12,7 @@
 "pages": [
       "importedFileName": "authentication",
       "pages": [],
-      "path": "adobeio/adobeio-documentation/master/events/auth/jwtquickstart.md",
+      "path": "adobeio/adobeio-documentation/master/events/auth/JWTAuthenticationQuickStart.md",
       "title": "JWT Quickstart"
 ]
 }
