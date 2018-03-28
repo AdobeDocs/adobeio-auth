@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Authentication",
 	"author": "Emily Walpole",
-	"view_type": "mdview",
+	"view_type": "mdbook",
 	"meta_keywords": "adobe i/o, authentication",
 	"meta_description": "default description",
 	"publish_date": "28/03/2018",
