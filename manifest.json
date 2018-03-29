@@ -10,15 +10,8 @@
 	"show_edit_github_banner": false,
 	"base_path": "https://raw.githubusercontent.com",
 	"pages": [{
-		"importedFileName": "authentication",
-		"pages": [ 
-		  {
-			"importedFileName": "JWTAuthenticationQuickStart",
-			"pages": [],
-			"path": "adobeio/adobeio-documentation/master/auth/JWTAuthenticationQuickStart.md",
-			"title": "JWT Quickstart"
-		  }
-		],
+		"importedFileName": "JWT Quickstart",
+		"pages": [ ],
 		"path": "adobeio/adobeio-documentation/master/auth/JWTAuthenticationQuickStart.md",
 		"title": "Authentication"
 	}]
