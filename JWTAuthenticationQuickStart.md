@@ -11,7 +11,7 @@ You are an organizational admin for your enterprise organization with the approp
 
 1. Create a new integration in Adobe I/O Console [https://console.adobe.io/integrations](https://console.adobe.io/integrations)
 
-![Create Integration](../img/auth_jwtqs_01.png)
+![Create Integration](../img/auth_jwtqs_01.png) 
 
 2. Subscribe to an entitled product (e.g. Campaign)
 
