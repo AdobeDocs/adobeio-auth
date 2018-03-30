@@ -11,11 +11,11 @@ You are an organizational admin for your enterprise organization with the approp
 
 1. Create a new integration in Adobe I/O Console [https://console.adobe.io/integrations](https://console.adobe.io/integrations)
 
-![Create Integration](../img/auth_jwtqs_01.png) 
+![Create integration](../img/auth_jwtqs_01.png "Create integration") 
 
 2. Subscribe to an entitled product (e.g. Campaign)
 
-![Subscribe Service](../img/auth_jwtqs_02.png)
+![Subscribe service](../img/auth_jwtqs_02.png "Subscribe service")
 
 3. Create a private key and public certificate. Make sure you store this securely.
 
@@ -23,19 +23,19 @@ You are an organizational admin for your enterprise organization with the approp
 
 4. Upload the public certificate (certificate_pub.crt) as a part of creating the integration.
 
-![Upload Public Certificate](../img/auth_jwtqs_03.png)
+![Upload public certificate](../img/auth_jwtqs_03.png "Upload public certificate")
 
 5. Your integration should now be created with the appropriate public certificate and claims.
 
-![Integration Created](../img/auth_jwtqs_04.png)
+![Integration created](../img/auth_jwtqs_04.png "Integration created")
 
 6. Go to the JWT tab and paste in you private key to generate a JWT.
 
-![JWT Tab](../img/auth_jwtqs_05.png)
+![JWT tab](../img/auth_jwtqs_05.png "JWT tab")
 
 7. Use the sample curl to get your first access token. 
 
-![Get Access Token](../img/auth_jwtqs_06.png)
+![Get Access Token](../img/auth_jwtqs_06.png "Get access token")
 
 The example curl sends a POST request to [https://ims-na1.adobelogin.com/ims/exchange/jwt](https://ims-na1.adobelogin.com/ims/exchange/jwt) with the following parameters.
 
