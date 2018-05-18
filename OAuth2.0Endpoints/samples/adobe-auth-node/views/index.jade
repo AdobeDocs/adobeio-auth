@@ -1,0 +1,13 @@
+doctype
+html
+  head
+    title Adobe Auth Example
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      h1 Adobe Auth App
+    .button-group
+      button(onclick="location.href='/login'") Log In with Adobe
+      button(onclick="location.href='/profile'") Get Profile
+    .canvas
+      p #{response}
