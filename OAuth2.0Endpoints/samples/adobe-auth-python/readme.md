@@ -1,4 +1,4 @@
-# Adobe OAuth 2.0 Example: Python
+# OAuth 2.0 Example: Python
 
 This sample app will show you how to implement Adobe OAuth 2.0 in Python using the Flask framework.
 
