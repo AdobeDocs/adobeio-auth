@@ -1,4 +1,4 @@
-# Adobe OAuth 2.0 Example: Node.js
+# OAuth 2.0 Example: Node.js
 
 This sample app will show you how to implement Adobe OAuth 2.0 using Node.js.
 
