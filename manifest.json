@@ -6,7 +6,7 @@
 	"view_type": "mdbook",
 	"meta_keywords": "adobe i/o, authentication",
 	"meta_description": "default description",
-	"publish_date": "28/03/2018",
+	"publish_date": "18/05/2018",
 	"show_edit_github_banner": false,
 	"base_path": "https://raw.githubusercontent.com",
 	"pages": [
@@ -17,9 +17,9 @@
 			"title": "JWT Quickstart"
 		},
 		{
-			"importedFileName": "OAuth 2.0",
-			"path": "adobeio/adobeio-documentation/master/auth/OAuth2.0Endpoints/oauth-scopes.md",
-			"title": "OAuth 2.0",
+			"importedFileName": "OAuth 2.0 Guide",
+			"path": "adobeio/adobeio-documentation/master/auth/OAuth2.0Endpoints/web-oauth2.0-guide.md",
+			"title": "OAuth 2.0 Guide",
 			"pages": [
 			{
 				"importedFileName": "OAuth 2.0 Scopes",
@@ -28,25 +28,17 @@
 				"title": "OAuth 2.0 Scopes"
 			},
 			{
-				"importedFileName": "OAuth 2.0 Guide",
-				"path": "adobeio/adobeio-documentation/master/auth/OAuth2.0Endpoints/web-oauth2.0-guide.md",
-				"title": "OAuth 2.0 Guide",
-				"pages": [
-				{
-					"importedFileName": "Adobe OAuth 2.0 Example: Python",
-					"pages": [ ],
-					"path": "adobeio/adobeio-documentation/master/auth/OAuth2.0Endpoints/samples/adobe-auth-python/readme.md",
-					"title": "OAuth 2.0 Example: Python"
-				},
-				{
-					"importedFileName": "Adobe OAuth 2.0 Example: Node.js",
-					"pages": [ ],
-					"path": "adobeio/adobeio-documentation/master/auth/OAuth2.0Endpoints/samples/adobe-auth-node/readme.md",
-					"title": "OAuth 2.0 Example: Node.js"
-				}
-				]
+				"importedFileName": "OAuth 2.0 Example: Python",
+				"pages": [ ],
+				"path": "adobeio/adobeio-documentation/master/auth/OAuth2.0Endpoints/samples/adobe-auth-python/readme.md",
+				"title": "OAuth 2.0 Example: Python"
+			},
+			{
+				"importedFileName": "OAuth 2.0 Example: Node.js",
+				"pages": [ ],
+				"path": "adobeio/adobeio-documentation/master/auth/OAuth2.0Endpoints/samples/adobe-auth-node/readme.md",
+				"title": "OAuth 2.0 Example: Node.js"
 			}
-			
 			]
 		}
 	]
