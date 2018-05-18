@@ -29,9 +29,22 @@
 			},
 			{
 				"importedFileName": "OAuth 2.0 Guide",
-				"pages": [ ],
 				"path": "adobeio/adobeio-documentation/master/auth/OAuth2.0Endpoints/web-oauth2.0-guide.md",
-				"title": "OAuth 2.0 Guide"
+				"title": "OAuth 2.0 Guide",
+				"pages": [
+				{
+					"importedFileName": "Adobe OAuth 2.0 Example: Python",
+					"pages": [ ],
+					"path": "adobeio/adobeio-documentation/master/auth/OAuth2.0Endpoints/samples/adobe-auth-python/readme.md",
+					"title": "OAuth 2.0 Example: Python"
+				},
+				{
+					"importedFileName": "Adobe OAuth 2.0 Example: Node.js",
+					"pages": [ ],
+					"path": "adobeio/adobeio-documentation/master/auth/OAuth2.0Endpoints/samples/adobe-auth-node/readme.md",
+					"title": "OAuth 2.0 Example: Node.js"
+				}
+				]
 			}
 			
 			]
