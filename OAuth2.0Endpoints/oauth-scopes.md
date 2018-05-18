@@ -1,4 +1,4 @@
-# OAuth Scopes
+# OAuth 2.0 Scopes
 
 OAuth scopes govern the access and privileges an Adobe user will grant authorization to a third-party application for. As an application developer, you will choose the set of scopes that a user will encounter in an authorization approval screen by specifying the scopes as part of the OAuth authorization request. 
 
