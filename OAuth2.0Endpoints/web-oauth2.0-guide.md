@@ -1,4 +1,4 @@
-# OAuth 2.0 Guide for Web
+# Adobe OAuth 2.0 Guide for Web
 
 Adobe Cloud Platform APIs use the OAuth 2.0 protocol for authentication and authorization. Using Adobe OAuth 2.0, you can generate an access token which is used to make API calls from your web server or browser-based apps.
 
@@ -27,22 +27,20 @@ By the end of this guide, you will be able to:
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
-- [Prerequisites](#prerequisites)
-  - [Register your application and enable APIs](#register-your-application-and-enable-apis)
-  - [Retrieve application credentials](#retrieve-application-credentials)
-- [Convenience libraries](#convenience-libraries)
-- [OAuth endpoints](#oauth-endpoints)
-  - [Generating authorization tokens](#generating-authorization-tokens)
-    - [Authorization code flow (`response_type = code`)](#authorization-code-flow-response_type--code)
-    - [Implicit grant flow (`response_type = token`)](#implicit-grant-flow-response_type--token)
-  - [Prompting the user for consent](#prompting-the-user-for-consent)
-  - [Handling the callback](#handling-the-callback)
-  - [Generating access tokens](#generating-access-tokens)
-  - [Exchanging a refresh token for an access token](#exchanging-a-refresh-token-for-an-access-token)
-  - [Revoking authorization for end user](#revoking-authorization-for-end-user)
-- [Complete examples for OAuth endpoints](#complete-examples-for-oauth-endpoints)
-  - [Node.js Example](#nodejs-example)
-  - [Python Example](#python-example)
+1. [Prerequisites](#prerequisites)
+    1. [Register your application and enable APIs](#register-your-application-and-enable-apis)
+    1. [Retrieve application credentials](#retrieve-application-credentials)
+1. [Convenience libraries](#convenience-libraries)
+1. [OAuth endpoints](#oauth-endpoints)
+    1. [Generating authorization tokens](#generating-authorization-tokens)
+    1. [Prompting the user for consent](#prompting-the-user-for-consent)
+    1. [Handling the callback](#handling-the-callback)
+    1. [Generating access tokens](#generating-access-tokens)
+    1. [Exchanging a refresh token for an access token](#exchanging-a-refresh-token-for-an-access-token)
+    1. [Revoking authorization for end user](#revoking-authorization-for-end-user)
+1. [Complete examples for OAuth endpoints](#complete-examples-for-oauth-endpoints)
+    1. [Node.js Example](#nodejs-example)
+    1. [Python Example](#python-example)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -62,8 +60,8 @@ Your application needs to be registered with Adobe and a specific set of Adobe A
 	- `Name`: Your application’s name. This will not be sent in your API requests.
 	- `Description`: A simple description of your application.
 	- `Platform`: Choose the platform your application runs on.
-	- `Default redirect URI`: Choose a secure URL to receive callbacks from Adobe during the authentication process. It must be hosted on a secure (HTTPS) server, even if it is a localhost instance.
-	- `Redirect URI Pattern`: This is a URI path (or comma-separated list of paths) to which Adobe will attempt to redirect when the login flow is complete. It must be within your application domain. You must escape periods `.` with a backslash `\` (e.g. `https://mysite\.com/`).
+	- `Default redirect URI`: Choose a secure URL to receive callbacks from Adobe during the authentication process. This is the redirect URL that will be used if the requested `redirect_uri` does not match the redirect URI pattern or is not provided. It must be hosted on a secure (HTTPS) server, even if it is a localhost instance. For an example, check one of the [`samples`](samples).
+	- `Redirect URI Pattern`: This is a URI path (or comma-separated list of paths) to which Adobe will attempt to redirect when the login flow is complete. To emphasize, this is a list of the **allowed** callback URL patterns, not the ones Adobe will attempt. It must be within your application domain, and all be on a secure (HTTPS) server. You must escape periods `.` with a backslash `\` (e.g. `https://mysite\.com/`).
 
 
 ### Retrieve application credentials
@@ -246,6 +244,7 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 
+Note that in addition to the `access_token` and `refresh_token`, the response also includes a JSON array of profile data that your `client_id` is authorized for and appropriate for the `scope` that you requested.
 
 ### Exchanging a refresh token for an access token
 
@@ -304,6 +303,7 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 
+Similar to above, note that in addition to the `access_token` and `refresh_token`, the response also includes a JSON array of profile data that your `client_id` is authorized for and appropriate for the `scope` that you requested.
 
 ### Revoking authorization for end user
 
