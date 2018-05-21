@@ -316,9 +316,9 @@ The following samples demonstrate basic interaction with the Adobe OAuth endpoin
 
 ### Node.js Example
 
-[Github repo](https://github.com/adobeio/adobeio-documentation/tree/master/auth/OAuth2.0Endpoints/samples/adobe-auth-node), where you can find a complete Node.js based web app example that uses Adobe OAuth.
+[Github repo](https://github.com/adobeio/adobeio-documentation/tree/master/auth/OAuth2.0Endpoints/samples/adobe-auth-node) where you can find a complete Node.js based web app example that uses Adobe OAuth.
 
 
 ### Python Example
 
-[Github repo](https://github.com/adobeio/adobeio-documentation/tree/master/auth/OAuth2.0Endpoints/samples/adobe-auth-python), where you can find a complete Python based web app example that uses Adobe OAuth.
+[Github repo](https://github.com/adobeio/adobeio-documentation/tree/master/auth/OAuth2.0Endpoints/samples/adobe-auth-python) where you can find a complete Python based web app example that uses Adobe OAuth.
