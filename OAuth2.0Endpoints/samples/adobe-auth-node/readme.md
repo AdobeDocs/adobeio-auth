@@ -30,7 +30,7 @@ After setting up the sample, you will have a Node.js app that:
 
 ## GitHub
 
-You can find a companion repo for this developer guide [on GitHub](../adobe-auth-node).
+You can find a companion repo for this developer guide [on GitHub](https://github.com/adobeio/adobeio-documentation/tree/master/auth/OAuth2.0Endpoints/samples/adobe-auth-node).
 
 Be sure to follow all instructions in the `readme`.
 
