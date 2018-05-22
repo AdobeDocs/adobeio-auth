@@ -6,9 +6,9 @@ OAuth scopes govern the access and privileges an Adobe user will grant authoriza
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
-1. [Access-Type Scopes](#access-type-scopes)
+1. [Access-Type Scopes](#accesstypescopes)
     1. [openid](#openid)
-    1. [creative_sdk](#creative_sdk)
+    1. [creative_sdk](#creativesdk)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
