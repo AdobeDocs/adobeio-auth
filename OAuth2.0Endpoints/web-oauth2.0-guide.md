@@ -28,19 +28,19 @@ By the end of this guide, you will be able to:
 ## Contents
 
 1. [Prerequisites](#prerequisites)
-    1. [Register your application and enable APIs](#register-your-application-and-enable-apis)
-    1. [Retrieve application credentials](#retrieve-application-credentials)
-1. [Convenience libraries](#convenience-libraries)
-1. [OAuth endpoints](#oauth-endpoints)
-    1. [Generating authorization tokens](#generating-authorization-tokens)
-    1. [Prompting the user for consent](#prompting-the-user-for-consent)
-    1. [Handling the callback](#handling-the-callback)
-    1. [Generating access tokens](#generating-access-tokens)
-    1. [Exchanging a refresh token for an access token](#exchanging-a-refresh-token-for-an-access-token)
-    1. [Revoking authorization for end user](#revoking-authorization-for-end-user)
-1. [Complete examples for OAuth endpoints](#complete-examples-for-oauth-endpoints)
-    1. [Node.js Example](#nodejs-example)
-    1. [Python Example](#python-example)
+    1. [Register your application and enable APIs](#registeryourapplicationandenableapis)
+    1. [Retrieve application credentials](#retrieveapplicationcredentials)
+1. [Convenience libraries](#conveniencelibraries)
+1. [OAuth endpoints](#oauthendpoints)
+    1. [Generating authorization tokens](#generatingauthorizationtokens)
+    1. [Prompting the user for consent](#promptingtheuserforconsent)
+    1. [Handling the callback](#handlingthecallback)
+    1. [Generating access tokens](#generatingaccesstokens)
+    1. [Exchanging a refresh token for an access token](#exchangingarefreshtokenforanaccesstoken)
+    1. [Revoking authorization for end user](#revokingauthorizationforenduser)
+1. [Complete examples for OAuth endpoints](#completeexamplesforoauthendpoints)
+    1. [Node.js Example](#nodejsexample)
+    1. [Python Example](#pythonexample)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
