@@ -16,14 +16,14 @@ After setting up the sample, you will have a Python app that:
 ## Contents
 
 1. [GitHub](#github)
-1. [Technology Used](#technology-used)
+1. [Technology Used](#technologyused)
 1. [Prerequisites](#prerequisites)
 1. [Configuration](#configuration)
-    1. [Create an OpenSSL cert](#create-an-openssl-cert)
-    1. [Install Python libraries](#install-python-libraries)
-    1. [Enter your Flask secret and  Adobe API credentials](#enter-your-flask-secret-and-adobe-api-credentials)
+    1. [Create an OpenSSL cert](#createanopensslcert)
+    1. [Install Python libraries](#installpythonlibraries)
+    1. [Enter your Flask secret and  Adobe API credentials](#enteryourflasksecretandadobeapicredentials)
 1. [Usage](#usage)
-1. [Other Resources](#other-resources)
+1. [Other Resources](#otherresources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
