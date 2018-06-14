@@ -1,24 +1,29 @@
 # JWT Authentication using Postman Environment Template and Collections
 
 ## What is JWT authentication? What are service account type integrations? 
-
+JSON web tokens (JWT) are 
 
 ## Why use Postman?
 
 
-## Required Setup
+## Required setup
 
+### Private/public key pair
 
-## Postman Collection
+### Service account type integration on I/O Console
+
+### Postman installation
+
+## Postman Collections
 
 
 ## Postman Environment Template
 
 
-## Using jsrsasign to Create a JWT and Request for an Access Token
+## Using [`jsrsasign`](https://github.com/kjur/jsrsasign) to create a JWT and request for an access token
 
 
-## Using the Access Token to make Authenticated Calls
+## Using the access token to make authenticated calls
 
 
 ## Thanks
