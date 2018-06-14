@@ -1,4 +1,30 @@
-# Using Postman for JWT authentication on Adobe I/O
+# JWT Authentication using Postman Environment Template and Collections
+
+## What is JWT authentication? What are service account type integrations? 
+
+
+## Why use Postman?
+
+
+## Required Setup
+
+
+## Postman Collection
+
+
+## Postman Environment Template
+
+
+## Using jsrsasign to Create a JWT and Request for an Access Token
+
+
+## Using the Access Token to make Authenticated Calls
+
+
+## Thanks
+Thanks to Klaasjan Tukker for the [original article](https://medium.com/adobetech/using-postman-for-jwt-authentication-on-adobe-i-o-7573428ffe7f). 
+
+
 
 ## Introduction
 Working in the Adobe Cloud Platform — Data Services team, I am responsible for the API First strategy and availability of our APIs to Adobe and third party developers. We are using the Adobe I/O Gateway to provide developers access to these platform APIs. For authentication for third party developers, Adobe I/O is using an JWT workflow. Frequently I am testing APIs in [Postman] (https://www.getpostman.com/) and I was looking for a way to execute the full authentication flow, including the generation of JWT request, signed with SHA-256. The [Adobe I/O Console](https://console.adobe.io/) allows you to generate a new JWT token, but I was looking to do everything inside of Postman. Merely there was not a complete recipe available to do this, so I rolled up my sleeves, Googled and Stackoverflowed my way through the web to put together the approach documented in this article. This article was originally written for the [Adobe I/O Blog, hosted on Medium](https://medium.com/adobe-io/using-postman-for-jwt-authentication-on-adobe-i-o-7573428ffe7f).
