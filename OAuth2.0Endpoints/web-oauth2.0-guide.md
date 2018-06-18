@@ -99,7 +99,7 @@ Include the following parameters:
 | scope         | The scope of the access request, expressed as a list of comma-delimited, case sensitive strings. See the [Scope Reference](oauth-scopes.md) for more information.|
 | response_type | The default `response_type` for the Authorization code flow is `code`. Use `token` for the Implicit grant flow. See below for more information. |
 | locale | Optional. The locale code for the authentication UI. Default is en_US.|
-| state | Optional. Client-defined state data that is replayed back to the client. It must not be longer than 255 characters. This parameter should be used to prevent [CSRF](https://tools.ietf.org/html/rfc6749#section-10.12) (Cross-Site Request Forgery).|
+| state | Optional. Client-defined state data that is replayed back to the client. It must not be longer than 255 characters. The value should be sent in JSON format, for example `state={“st”:some_alphanumeric_value}`. This parameter should be used to prevent [CSRF](https://tools.ietf.org/html/rfc6749#section-10.12) (Cross-Site Request Forgery).|
 
 _Note that Adobe OAuth does not support the practice of passing Base64 encoded `client_id` and `client_secret` using the HTTP BASIC authorization header._
 
