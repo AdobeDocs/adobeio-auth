@@ -47,6 +47,6 @@ The example curl sends a POST request to [https://ims-na1.adobelogin.com/ims/exc
 |---|---|
 | `client_id`     | The API key generated for your integration. Find this on the I/O Console for your integration.|
 | `client_secret` | The client secret generated for your integration. Find this on the I/O Console for your integration.|
-| `jwt_token`     | A base-64 encoded JSON Web Token that encapsulates the identity of your integration, signed with a private key that corresponds to a public key certificate attached to the integration. Generate this on the I/O Console in the JWT Tab for your integration.| 
+| `jwt_token`     | A base-64 encoded JSON Web Token that encapsulates the identity of your integration, signed with a private key that corresponds to a public key certificate attached to the integration. Generate this on the I/O Console in the JWT Tab for your integration. Note that this token has expiration time parameter `exp` set to 24 hours from when the token is generated.| 
 
 You now have your access token. Look up documentation for the specific API service you’re hitting authenticated endpoints for to find what other parameters are expected. Most of them need an x-api-key which will be the same as your client id.
