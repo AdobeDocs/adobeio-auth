@@ -1,7 +1,7 @@
 # JWT Authentication Quick Start
 
 
-API services tied to entitled Adobe products (e.g. Campaign, Target, etc.) require a JSON Web Token (JWT) in order to retrieve access tokens for usage against authenticated endpoints. This document serves as a quickstart guide for first-time users.
+API services tied to entitled Adobe products (e.g. Campaign, Target, Launch etc.) require a JSON Web Token (JWT) in order to retrieve access tokens for usage against authenticated endpoints. This document serves as a quickstart guide for first-time users.
 
 ### Things to check before you start:
 
@@ -15,7 +15,7 @@ You are an organizational admin for your enterprise organization with the approp
 
 2. Choose to access an API.
 
-3. Subscribe to an entitled product (for instance, Adobe Campaign).
+3. Subscribe to an entitled product (for instance, Launch, by Adobe).
 
 ![Subscribe service](../img/auth_jwtqs_02.png "Subscribe service")
 
@@ -23,7 +23,30 @@ You are an organizational admin for your enterprise organization with the approp
 
 5. Create a private key and public certificate. Make sure you store these securely.
 
+#### For MacOS & Linux platform
+
+Open terminal and execute below command:  
+
 `openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt`
+
+![Generate public certificate](../img/auth_jwtqs_00.png "Generate Public certificate")
+
+#### For Windows Platform
+i) Download an openssl client to generate public certificates. For e.g. [Openssl windows client](https://bintray.com/vszakats/generic/download_file?file_path=openssl-1.1.1-win64-mingw.zip)
+
+ii) Extract the folder and copy it to C:/libs/ location.
+
+iii) Open Command Line Prompt and execute below commands.
+
+`set OPENSSL_CONF=C:/libs/openssl-1.1.1-win64-mingw/openssl.cnf`
+
+`cd C:/libs/openssl-1.1.1-win64-mingw/`
+
+`openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt`
+
+![Generate public certificate windows](../img/auth_jwtqs_000.png "Generate Public certificate windows")
+
+
 
 6. Upload the public certificate (certificate_pub.crt) as a part of creating the integration.
 
@@ -37,9 +60,19 @@ You are an organizational admin for your enterprise organization with the approp
 
 ![JWT tab](../img/auth_jwtqs_05.png "JWT tab")
 
-9. Use the sample curl to get your first access token. 
+9. Copy the 'Sample CURL Command' to get your first access token. 
 
 ![Get Access Token](../img/auth_jwtqs_06.png "Get access token")
+
+10. Open Postman click Import->Paste Raw Text and paste the copied CURL command.
+
+![Postman Import](../img/auth_jwtqs_07.png "Postman Import")
+
+11. Click Send.
+
+![Postman Send](../img/auth_jwtqs_08.png "Postman Send")
+
+
 
 The example curl sends a POST request to [https://ims-na1.adobelogin.com/ims/exchange/jwt](https://ims-na1.adobelogin.com/ims/exchange/jwt) with the following parameters.
 
