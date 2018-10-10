@@ -12,12 +12,14 @@ You must be an organizational admin for your enterprise organization with the ap
 Regardless of your platform, you begin with the same steps in Adobe I/O Console:
 
 1. Create a new integration in Adobe I/O Console: [https://console.adobe.io/integrations](https://console.adobe.io/integrations)
-    ![Create integration](../img/auth_jwtqs_01.png "Create an integration") 
+
+![Create integration](../img/auth_jwtqs_01.png "Create an integration") 
 
 2. Choose to access an API.
 
 3. Subscribe to an entitled product (for instance, Launch, by Adobe).
-    ![Subscribe service](../img/auth_jwtqs_02.png "Subscribe to a product or service")
+
+![Subscribe service](../img/auth_jwtqs_02.png "Subscribe to a product or service")
 
 4. Confirm that you want to create a new integration.
 
@@ -52,21 +54,27 @@ _**Windows:**_
 Once you&rsquo;ve complete the steps for your chosen platform, continue in the Adobe I/O Console:
 
 6. Upload the public certificate (certificate_pub.crt) as a part of creating the integration.
+
     ![Upload public certificate](../img/auth_jwtqs_03.png "Upload public certificate")
 
 7. Your integration should now be created with the appropriate public certificate and claims.
+
     ![Integration created](../img/auth_jwtqs_04.png "Integration created")
 
 8. Go to the JWT tab and paste in you private key to generate a JWT.
+
     ![JWT tab](../img/auth_jwtqs_05.png "JWT tab")
 
 9. Copy the &ldquo;Sample CURL Command&rdquo; to get your first access token. 
+
     ![Get access token](../img/auth_jwtqs_06.png "Get access token")
 
 10. Open Postman, then click Import &gt; Paste Raw Text and paste the copied curl command.
+
     ![Postman import](../img/auth_jwtqs_07.png "Postman import")
 
 11. Click Send.
+
     ![Postman send](../img/auth_jwtqs_08.png "Postman send")
 
 The example curl sends a POST request to [https://ims-na1.adobelogin.com/ims/exchange/jwt](https://ims-na1.adobelogin.com/ims/exchange/jwt) with the following parameters.
