@@ -5,7 +5,7 @@ API services tied to entitled Adobe products (such as Campaign, Target, Launch, 
 
 ## Things to check before you start:
 
-You must be an organizational admin for your enterprise organization with the appropriate Adobe products entitled. (Check at https://adminconsole.adobe.com/{your_org_id}@AdobeOrg/overview)
+You must be an organizational admin for your enterprise organization with the appropriate Adobe products entitled. (Check at https://adminconsole.adobe.com/{your\_org\_id}@AdobeOrg/overview)
 
 ## Steps to get a JWT and an access token
 
