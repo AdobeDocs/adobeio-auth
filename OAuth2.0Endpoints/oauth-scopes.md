@@ -22,7 +22,7 @@ OAuth scopes govern the access and privileges an Adobe user will grant authoriza
 Scopes for Creative Cloud OAuth based APIs
 
 ### Adobe Stock
-`openid,creative_sdk`
+**Scopes**: `openid,creative_sdk`
 
 
 
@@ -30,7 +30,7 @@ Scopes for Creative Cloud OAuth based APIs
 Scopes for Experience Cloud OAuth based APIs
 
 ### Adobe Analytics
-`openid,AdobeID,read_organizations,additional_info.projectedProductContext,additional_info.job_function`
+**Scopes**: `openid,AdobeID,read_organizations,additional_info.projectedProductContext,additional_info.job_function`
 
 
 
