@@ -2,17 +2,19 @@
 
 OAuth scopes govern the access and privileges an Adobe user will grant authorization to a third-party application for. As an application developer, you will choose the set of scopes that a user will encounter in an authorization approval screen by specifying the scopes as part of the OAuth authorization request. 
 
+<!-- doctoc command: doctoc . --title "## Contents" --entryprefix 1. --gitlab --maxlevel 3
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
-- [Creative Cloud](#creative-cloud)
-  - [Adobe Stock](#adobe-stock)
-- [Experience Cloud](#experience-cloud)
-  - [Adobe Analytics](#adobe-analytics)
-- [Scope Definitions](#scope-definitions)
-  - [openid](#openid)
-  - [creative_sdk](#creative_sdk)
+1. [Creative Cloud](#creative-cloud)
+    1. [Adobe Stock](#adobe-stock)
+1. [Experience Cloud](#experience-cloud)
+    1. [Adobe Analytics](#adobe-analytics)
+1. [Scope Definitions](#scope-definitions)
+    1. [openid](#openid)
+    1. [creative_sdk](#creative_sdk)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
