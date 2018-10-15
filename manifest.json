@@ -40,6 +40,12 @@
 				"title": "OAuth 2.0 Example: Node.js"
 			}
 			]
+		},
+		{
+			"importedFileName": "OAuth 2.0 Playground",
+			"pages": [ ],
+			"path": "https://adobeioruntime.net/api/v1/web/io-solutions/adobe-oauth-playground/oauth.html",
+			"title": "OAuth 2.0 Playground"
 		}
 	]
 }
