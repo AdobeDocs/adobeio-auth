@@ -6,14 +6,36 @@ OAuth scopes govern the access and privileges an Adobe user will grant authoriza
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
-1. [Access-Type Scopes](#accesstypescopes)
-    1. [openid](#openid)
-    1. [creative_sdk](#creative_sdk)
+- [Creative Cloud](#creative-cloud)
+  - [Adobe Stock](#adobe-stock)
+- [Experience Cloud](#experience-cloud)
+  - [Adobe Analytics](#adobe-analytics)
+- [Scope Definitions](#scope-definitions)
+  - [openid](#openid)
+  - [creative_sdk](#creative_sdk)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Access-Type Scopes
-This scope type determines the type of access to protected resources an application can be granted authorization to. Scopes are aggregates of specific attributes.  
+## Creative Cloud
+Scopes for Creative Cloud OAuth based APIs
+
+
+### Adobe Stock
+`openid,creative_sdk`
+
+
+
+## Experience Cloud
+Scopes for Experience Cloud OAuth based APIs
+
+
+### Adobe Analytics
+`openid,AdobeID,read_organizations,additional_info.projectedProductContext,additional_info.job_function`
+
+
+
+## Scope Definitions
+The scope determines the type of access to protected resources an application can be granted authorization to. Scopes are aggregates of specific attributes.  
 
 ### openid
 
@@ -32,6 +54,7 @@ One-stop-shop scope for accessing Adobe user profile information.
 |email|Primary email address|
 |preferred_languages|An array of locale codes indicating preferred language settings|
 |account_type|The account_type with one of the values: type1 (individual), type2 (enterprise), type3 (federated). See [Adobe Identity Types](https://helpx.adobe.com/enterprise/using/identity.html) for details.|
+
 
 ### creative_sdk
 
