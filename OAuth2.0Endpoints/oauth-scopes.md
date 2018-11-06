@@ -22,9 +22,9 @@ Scopes for Creative Cloud OAuth based APIs
 APIs | Scopes
 ---|---
 Adobe Stock | `openid`
-Creative SDK | `openid,AdobeID,creative_sdk`
-Photoshop | `openid,AdobeID,creative_sdk`
-Lightroom | `openid,AdobeID,creative_sdk`
+Creative SDK | `openid,creative_sdk`
+Photoshop | `openid,creative_sdk`
+Lightroom | `openid,creative_sdk`
 
 
 
