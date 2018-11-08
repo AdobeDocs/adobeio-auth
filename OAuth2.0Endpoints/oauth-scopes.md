@@ -28,6 +28,7 @@ Lightroom | `openid,creative_sdk`
 
 
 
+
 ## Experience Cloud
 Scopes for Experience Cloud OAuth based APIs
 
