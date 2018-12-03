@@ -46,6 +46,31 @@
 			"pages": [ ],
 			"path": "https://adobeioruntime.net/api/v1/web/io-solutions/adobe-oauth-playground/oauth.html",
 			"title": "OAuth 2.0 Playground"
+		},
+		{
+			"importedFileName": "Authentication Overview",
+			"path": "adobeio/adobeio-documentation/blob/stage/auth/AuthenticationOverview/AuthenticationGuide.md",
+			"title": "Authentication Overview",
+			"pages": [
+			{
+				"importedFileName": "API Key Integration",
+				"pages": [ ],
+				"path": "adobeio/adobeio-documentation/blob/stage/auth/AuthenticationOverview/APIKeyIntegration.md",
+				"title": "API Key Integration"
+			},
+			{
+				"importedFileName": "OAuth Integration",
+				"pages": [ ],
+				"path": "adobeio/adobeio-documentation/blob/stage/auth/AuthenticationOverview/OAuthIntegration.md",
+				"title": "OAuth Integration"
+			},
+			{
+				"importedFileName": "Service Account Integration",
+				"pages": [ ],
+				"path": "adobeio/adobeio-documentation/blob/stage/auth/AuthenticationOverview/ServiceAccountIntegration.md",
+				"title": "Service Account Integration"
+			}
+			]
 		}
 	]
 }
