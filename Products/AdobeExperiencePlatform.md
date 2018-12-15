@@ -1,3 +1,3 @@
-#Adobe Experience Platform
+# Adobe Experience Platform
 
-##Coming Soon
+## Coming Soon
