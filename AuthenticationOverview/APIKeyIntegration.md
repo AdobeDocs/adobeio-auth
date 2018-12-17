@@ -19,6 +19,26 @@ If your integration needs to access Adobe services or content on behalf of a use
 
 To create a new API Key integration, sign in to the [Adobe I/O Console](https://console.adobe.io/) with your Adobe ID, and click New Integration. (Notice that you may also choose existing integrations and edit their details from here.)
 
+![api-key-1](/auth/images/api-key-1.png)
+
+Choose the type of service you want to include in your integration. You can get API access to several Adobe services or subscribe to real-time events. An integration can access multiple services and event sources. Simply perform these steps for each service or event you want to add to your integration.
+
+![api-key-2](/auth/images/api-key-2.png)
+
+Select **Access an API** to create an integration that will access an Adobe product API or service, you will have an opportunity to subscribe to additional services and events once you have created the integration.
+
+Choose the service or event source that you would like to add to your integration. APIs and products available through Adobe I/O are typically listed by cloud.
+
+![api-key-3](/auth/images/api-key-3.png)
+
+If you have an existing integration that is compatible with the service you have selected, you can update that integration with access to the selected service.
+
+![api-key-4](/auth/images/api-key-4.png)
+
+To update an existing integration, simply select it and click **Continue**.
+
+If you would like to create a brand new integration, select that option and click **Continue**.
+
 ### Step 2: Configure an API Key Integration
 
 ### Step 3: Secure your Client Credentials
