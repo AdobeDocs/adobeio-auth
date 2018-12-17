@@ -13,7 +13,7 @@ An integration can be subscribed to one or more services. In many cases, you wil
 
 ## Types of Authentication
 
-### [API Key Integration (Integration Only)](/auth/AuthenticationOverview/APIKeyIntegration.md)
+### [API Key Integration (Authorization Only)](/auth/AuthenticationOverview/APIKeyIntegration.md)
 The [Adobe I/O Console](https://console.adobe.io/) is where you can generate an API Key, an important requirement to obtain client credentials.
 e.g. Adobe Stock etc.
 
