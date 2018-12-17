@@ -59,6 +59,37 @@
                "title":"Adobe Photoshop"
             }
          ]
+      },
+      {
+         "importedFileName":"Adobe Experience Cloud",
+         "path":"",
+         "title":"Adobe Experience Cloud",
+         "pages":[
+            {
+               "importedFileName":"Adobe Analytics",
+               "pages":[],
+               "path":"adobeio/adobeio-documentation/master/auth/Products/AdobeAnalytics.md",
+               "title":"Adobe Analytics"
+            },
+	    {
+               "importedFileName":"Adobe Campaign",
+               "pages":[],
+               "path":"adobeio/adobeio-documentation/master/auth/Products/AdobeCampaign.md",
+               "title":"Adobe Campaign"
+            },
+	    {
+               "importedFileName":"Adobe Experience Platform",
+               "pages":[],
+               "path":"adobeio/adobeio-documentation/master/auth/Products/AdobeExperiencePlatform.md",
+               "title":"Adobe Experience Platform"
+            },
+	    {
+               "importedFileName":"Adobe Launch",
+               "pages":[],
+               "path":"adobeio/adobeio-documentation/master/auth/Products/AdobeLaunch.md",
+               "title":"Adobe Launch"
+            }
+         ]
       }
    ]
 }
