@@ -12,7 +12,7 @@ If your integration needs to access Adobe services or content on behalf of a use
 
 [Step 2: Configure an API Key Integration](#step-2-configure-an-api-key-integration)
 
-[Step 3: Secure your Client Credentials](#step-3-secure-your-client-credentials)
+[Step 3: Test it!](#step-3-test-it)
 
 
 ### Step 1: Subscribe to a Service or Event Provider
@@ -41,4 +41,22 @@ If you would like to create a brand new integration, select that option and clic
 
 ### Step 2: Configure an API Key Integration
 
-### Step 3: Secure your Client Credentials
+The configuration page lets you provide all of the required details for a new integration, or add new information to update an existing integration. On this page:
+
+|Integration Details| |
+-----|----
+`Name`|Enter a unique name to easily identify your integration
+`Description`|Provide a brief description about this integration. If you have multiple applications or access multiple services, you can use these properties to better organize your integrations.
+`Platform`|Select a platform on which the integration is intended to be used: `iOS`,`Android`,`Web`
+`Default Redirect URI`|After a user successfully authorizes an application, the authorization server will redirect the user back to the application with either an authorization code in the URL. Because the redirect URL will contain sensitive information, it is critical that the service doesn’t redirect the user to arbitrary locations. *(HTTPS required)*
+`Redirect URI pattern`|A comma seperated list of URI patterns, to validate additional custom redirect uri passed along with Authorization request. *(HTTPS required)* e.g. `https://www\\.myapp\\.com` will allow redirect uris like `https://www.myapp.com/OAuth/callback`
+
+Tip: Give your integrations accurate and descriptive names. Integrations are shared with developers within your organization, so choose a name that is clear and easily understood. Generic names like My Test App are discouraged.
+
+Click **Create integration**.
+
+When creation is confirmed, visit the overview section for your new integration. The overview section contains the newly generated API Key, and allows you to subscribe to additional services or events.
+
+
+### Step 3: Test It!
+
