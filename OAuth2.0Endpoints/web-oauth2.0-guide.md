@@ -68,7 +68,7 @@ Your application needs to be registered with Adobe and a specific set of Adobe A
 
 After registering your application, [access the integration details page on the Adobe I/O Console](https://console.adobe.io/integrations) to retrieve the Client ID (API Key) and Client Secret values:
 
-![Credentials page on the Adobe I/O Console](assets/credentials_page.png?raw=true)
+![Credentials page on the Adobe I/O Console](../images/credentials_page.png?raw=true)
 
 
 ## Convenience libraries
@@ -155,7 +155,7 @@ _Note: Follow security best practices while storing the access token on the user
 
 Once the request from the previous step is sent, Adobe will redirect the user to the Adobe ID sign-in page. After sign-in, the user will see a consent window showing the name of your application and the information that your application is requesting permission to access with the user's credentials:
 
-![Adobe ID sign-in](assets/login_screen.png?raw=true) ![Consent page](assets/access_grant.png?raw=true)
+![Adobe ID sign-in](../images/login_screen.png?raw=true) ![Consent page](../images/access_grant.png?raw=true)
 
 The user can either allow or refuse access.
 
