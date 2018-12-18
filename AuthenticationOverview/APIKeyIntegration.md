@@ -67,6 +67,7 @@ curl 'https://stock.adobe.io/Rest/Media/1/Search/Files?locale=en_US%26search_par
 ```
 
 Open Postman and go to Import->Paste Raw Text and paste the curl command.
+
 ![api-key-5](/auth/images/api-key-5.png)
 
 
