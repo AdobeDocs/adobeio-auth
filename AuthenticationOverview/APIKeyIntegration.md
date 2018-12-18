@@ -12,7 +12,7 @@ If your integration needs to access Adobe services or content on behalf of a use
 
 [Step 2: Configure an API Key Integration](#step-2-configure-an-api-key-integration)
 
-[Step 3: Test it!](#step-3-test-it)
+[Step 3: Try It](#step-3-try-it)
 
 
 ### Step 1: Subscribe to a Service or Event Provider
@@ -58,5 +58,18 @@ Click **Create integration**.
 When creation is confirmed, visit the overview section for your new integration. The overview section contains the newly generated API Key, and allows you to subscribe to additional services or events.
 
 
-### Step 3: Test It!
+### Step 3: Try It
+Copy your integration **API Key** and replace it with `myAPIKey` in below request.
+```curl
+curl 'https://stock.adobe.io/Rest/Media/1/Search/Files?locale=en_US%26search_parameters%5Bwords%5D=kittens '
+  -H 'x-api-key:myAPIKey' 
+  -H 'x-product:myTestApp1.0'
+```
 
+Open Postman and go to Import->Paste Raw Text and paste the curl command.
+![api-key-5](/auth/images/api-key-5.png)
+
+
+Click Send.
+  
+  
