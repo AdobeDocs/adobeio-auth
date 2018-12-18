@@ -58,14 +58,14 @@ The Environments feature of Postman allows you to efficiently switch between mul
 
 * Copy your values into the pre-configured template
 
-The value for ```meta_scope``` might be more challenging to find. This setting is different per solution / product that you integrate with. You can find this in the I/O Console for your created integration under the "JWT" tab. See highlighted element in the screenshot below.
+The value for `meta_scope` might be more challenging to find. This setting is different per solution / product that you integrate with. You can find this in the I/O Console for your created integration under the "JWT" tab. See highlighted element in the screenshot below.
 ![Imported Postman Collection](https://github.com/ktukker/adobe.io-jwt-postman/raw/master/images/where_to_find_the_metascope.png)
-In this case the ```meta_scope``` is ```ent_dataservices_sdk```. If you have created an integration that is bound to multiple Adobe solutions, you will see multiple entries with different ```meta_scope``` values defined. In this case, add all the meta_scopes to the ```meta_scope```, separated by a comma (```,```). For example ```ent_dataservices_sdk,ent_reactor_sdk```.
+In this case the `meta_scope` is `ent_dataservices_sdk`. If you have created an integration that is bound to multiple Adobe solutions, you will see multiple entries with different `meta_scope` values defined. In this case, add all the meta_scopes to the `meta_scope`, separated by a comma (`,`). For example `ent_dataservices_sdk,ent_reactor_sdk`.
 
 After configuring your template, it will look like this:
 ![Imported Postman Collection](https://github.com/ktukker/adobe.io-jwt-postman/raw/master/images/postman_environment_example.png)
 
-Note: The ```secret``` variable contains the full text of the private key that you generated for the selected integration. Copy and past it into the field including the header (```-----BEGIN RSA PRIVATE KEY------```) and footer.
+Note: The `secret` variable contains the full text of the private key that you generated for the selected integration. Copy and past it into the field including the header (`-----BEGIN RSA PRIVATE KEY------`) and footer.
 
 
 ## Bootstrapping the authentication process
@@ -85,20 +85,20 @@ With the Crypto JavaScript Library in place, you can now execute the real JWT au
 
 The Postman call will generate a bearer token and automatically store it in the selected environment as `access_token`.
 
-As a next step, you can do a call to the Adobe IMS ```/profile``` endpoint. This will provide you additional details of the Integration you created and have authenticated with.
+As a next step, you can do a call to the Adobe IMS `/profile` endpoint. This will provide you additional details of the Integration you created and have authenticated with.
 
 In my case, I can now successfully call the Adobe Cloud Platform - Data Services APIs. For example access the Data Catalog to get a list of registered datasets. (Note this is only available if your Organization is provisioned for the "Data Services" solution). 
 
 If you are using this in combination with another Adobe Solution that is using Service-to-Service authentication, make sure that you have configured the right `meta_scope` for that solution.
 
 ## How it works
-So, what is going on behind the scenes? This Postman script is using a JavaScript based Crypto library (['jsrsasign'](http://kjur.github.io/jsrsasign/)) to use the "RS256" Encryption library. Normally, this library runs in the context of a browser sandbox, but in this case, we want it to use in Postman. I used the method provide [here](https://github.com/kjur/jsrsasign/issues/199) to load it into Postman. This is done using a 'Tests' script which is executed after the call has been completed:
+So, what is going on behind the scenes? This Postman script is using a JavaScript based Crypto library ([`jsrsasign`](http://kjur.github.io/jsrsasign/)) to use the "RS256" Encryption library. Normally, this library runs in the context of a browser sandbox, but in this case, we want it to use in Postman. I used the method provide [here](https://github.com/kjur/jsrsasign/issues/199) to load it into Postman. This is done using a 'Tests' script which is executed after the call has been completed:
 
 ```
 postman.setGlobalVariable("jsrsasign-js", responseBody);
 ```
 
-Once the library is ready for use, it can be used in the actual JWT generation process. In a 'pre-request Script', the JavaScript library is loaded using the ```eval``` command 
+Once the library is ready for use, it can be used in the actual JWT generation process. In a 'pre-request Script', the JavaScript library is loaded using the `eval` command 
 
 ```
 var navigator = {}; //fake a navigator object for the lib
@@ -158,7 +158,7 @@ Example output of a generated JWT token (payload), which shows the content that 
 }
 ```
 
-You can do the same for an ```access_token``` that was returned after the JWT authentication flow.
+You can do the same for an `access_token` that was returned after the JWT authentication flow.
 
 ```
 Left as an exersize to the reader
