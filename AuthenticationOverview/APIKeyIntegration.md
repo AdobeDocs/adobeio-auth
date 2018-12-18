@@ -43,6 +43,8 @@ If you would like to create a brand new integration, select that option and clic
 
 The configuration page lets you provide all of the required details for a new integration, or add new information to update an existing integration. On this page:
 
+![api-key-6](/auth/images/api-key-6.png)
+
 |Integration Details| |
 -----|----
 `Name`|Enter a unique name to easily identify your integration
