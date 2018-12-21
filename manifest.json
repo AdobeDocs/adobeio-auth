@@ -12,25 +12,25 @@
    "pages":[
       {
          "importedFileName":"Authentication Overview",
-         "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/AuthenticationGuide.md",
+         "path":"adobedocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md",
          "title":"Authentication Overview",
          "pages":[
             {
                "importedFileName":"API Key Integration",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/APIKeyIntegration.md",
+               "path":"adobedocs/adobeio-auth/master/AuthenticationOverview/APIKeyIntegration.md",
                "title":"API Key Integration"
             },
             {
                "importedFileName":"OAuth Integration",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/OAuthIntegration.md",
+               "path":"adobedocs/adobeio-auth/master/AuthenticationOverview/OAuthIntegration.md",
                "title":"OAuth Integration"
             },
             {
                "importedFileName":"Service Account Integration",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/ServiceAccountIntegration.md",
+               "path":"adobedocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md",
                "title":"Service Account Integration"
             }
          ]
@@ -43,19 +43,19 @@
             {
                "importedFileName":"Adobe Stock",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Products/AdobeStock.md",
+               "path":"adobedocs/adobeio-auth/master/Products/AdobeStock.md",
                "title":"Adobe Stock"
             },
 	    {
                "importedFileName":"Creative SDK",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Products/CreativeSDK.md",
+               "path":"adobedocs/adobeio-auth/master/Products/CreativeSDK.md",
                "title":"Creative SDK"
             },
 	    {
                "importedFileName":"Adobe Photoshop",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Products/AdobePhotoshop.md",
+               "path":"adobedocs/adobeio-auth/master/Products/AdobePhotoshop.md",
                "title":"Adobe Photoshop"
             }
          ]
@@ -68,25 +68,25 @@
             {
                "importedFileName":"Adobe Analytics",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Products/AdobeAnalytics.md",
+               "path":"adobedocs/adobeio-auth/master/Products/AdobeAnalytics.md",
                "title":"Adobe Analytics"
             },
 	    {
                "importedFileName":"Adobe Campaign",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Products/AdobeCampaign.md",
+               "path":"adobedocs/adobeio-auth/master/Products/AdobeCampaign.md",
                "title":"Adobe Campaign"
             },
 	    {
                "importedFileName":"Adobe Experience Platform",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Products/AdobeExperiencePlatform.md",
+               "path":"adobedocs/adobeio-auth/master/Products/AdobeExperiencePlatform.md",
                "title":"Adobe Experience Platform"
             },
 	    {
                "importedFileName":"Adobe Launch",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Products/AdobeLaunch.md",
+               "path":"adobedocs/adobeio-auth/master/Products/AdobeLaunch.md",
                "title":"Adobe Launch"
             }
          ]
