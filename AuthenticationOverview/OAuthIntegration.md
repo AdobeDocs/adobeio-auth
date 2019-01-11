@@ -114,7 +114,7 @@ https://www.myapp.com/OAuth/callback?code=eyJ4NXUiOiJpbXNfbmExLWtleS....
 ```
 https://ims-na1.adobelogin.com/ims/token/
 ```
-Include the following parameters:
+- Include the following parameters:
 
 Parameters | Description
 ---- | ----
@@ -124,6 +124,8 @@ client_id |	The Client ID obtained from the Adobe I/O Console.
 client_secret |	The Client Secret obtained from the Adobe I/O Console.
 
 *Note that Adobe OAuth does not support the practice of passing Base64 encoded client_id and  client_secret using the HTTP BASIC authorization header.*
+
+- Example Request:
 
 ```curl
 curl -X POST \
