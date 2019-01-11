@@ -118,8 +118,8 @@ Include the following parameters:
 
 Parameters | Description
 ---- | ----
-code |	The base-64 encoded authorization_code returned from the  /ims/authorize/ request.
-grant_type |	The constant value authorization_code.
+code |	The base-64 encoded `authorization_code` returned from the  /ims/authorize/ request in callback.
+grant_type |	The constant value `authorization_code`.
 client_id |	The Client ID obtained from the Adobe I/O Console.
 client_secret |	The Client Secret obtained from the Adobe I/O Console.
 
