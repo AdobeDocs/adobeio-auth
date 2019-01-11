@@ -94,17 +94,17 @@ https://ims-na1.adobelogin.com/ims/authorize
 ```
 **Prompting the user for consent**
 
-Once the request from the previous step is sent, Adobe will redirect the user to the Adobe ID sign-in page. After sign-in, the user will see a consent window showing the name of your application and the information that your application is requesting permission to access with the user's credentials:
+- Once the request from the previous step is sent, Adobe will redirect the user to the Adobe ID sign-in page. After sign-in, the user will see a consent window showing the name of your application and the information that your application is requesting permission to access with the user's credentials:
 
 ![oauth-5](../Images/oauth-5.png) ![oauth-6](../Images/oauth-6.png)
 
-The user can either allow or refuse access.
+- The user can either allow or refuse access.
 
 **Handling the callback**
 
-Adobe's OAuth 2.0 server will respond to your application's access request by using the redirect URI specified in the request. If the user has signed-in successfully and granted permissions, the OAuth 2.0 server will respond with an authorization code in the query string. If the user has not approved the request, the OAuth 2.0 server will send an error message.
+- Adobe's OAuth 2.0 server will respond to your application's access request by using the redirect URI specified in the request. If the user has signed-in successfully and granted permissions, the OAuth 2.0 server will respond with an authorization code in the query string. If the user has not approved the request, the OAuth 2.0 server will send an error message.
 
-Example Authorization grant type response (code response type):
+- Example Authorization grant type response (code response type):
 ```
 https://www.myapp.com/OAuth/callback?code=eyJ4NXUiOiJpbXNfbmExLWtleS....
 ```
