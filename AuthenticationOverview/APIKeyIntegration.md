@@ -19,21 +19,21 @@ If your integration needs to access Adobe services or content on behalf of a use
 
 - To create a new API Key integration, sign in to the [Adobe I/O Console](https://console.adobe.io/) with your Adobe ID, and click New Integration. (Notice that you may also choose existing integrations and edit their details from here.)
 
-![api-key-1](../Images/api-key-1.png)
+<kbd>![api-key-1](../Images/api-key-1.png)</kbd>
 
 - Choose the type of service you want to include in your integration. You can get API access to several Adobe services or subscribe to real-time events. An integration can access multiple services and event sources. Simply perform these steps for each service or event you want to add to your integration.
 
-![api-key-2](../Images/api-key-2.png)
+<kbd>![api-key-2](../Images/api-key-2.png)</kbd>
 
 - Select **Access an API** to create an integration that will access an Adobe product API or service, you will have an opportunity to subscribe to additional services and events once you have created the integration.
 
 - Choose the service or event source that you would like to add to your integration. APIs and products available through Adobe I/O are typically listed by cloud.
 
-![api-key-3](../Images/api-key-3.png)
+<kbd>![api-key-3](../Images/api-key-3.png)</kbd>
 
 - If you have an existing integration that is compatible with the service you have selected, you can update that integration with access to the selected service.
 
-![api-key-4](../Images/api-key-4.png)
+<kbd>![api-key-4](../Images/api-key-4.png)</kbd>
 
 - To update an existing integration, simply select it and click **Continue**.
 
@@ -43,7 +43,7 @@ If your integration needs to access Adobe services or content on behalf of a use
 
 - The configuration page lets you provide all of the required details for a new integration, or add new information to update an existing integration. On this page:
 
-![api-key-6](../Images/api-key-6.png)
+<kbd>![api-key-6](../Images/api-key-6.png)</kbd>
 
 |Integration Details| |
 -----|----
@@ -70,7 +70,7 @@ curl 'https://stock.adobe.io/Rest/Media/1/Search/Files?locale=en_US%26search_par
 
 - Open Postman and go to Import->Paste Raw Text and paste the curl command.
 
-![api-key-5](../Images/api-key-5.png)
+<kbd>![api-key-5](../Images/api-key-5.png)</kbd>
 
 
 - Click Send.
