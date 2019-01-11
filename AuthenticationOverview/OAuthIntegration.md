@@ -92,7 +92,8 @@ https://ims-na1.adobelogin.com/ims/authorize
 &scope=openid,creative_sdk
 &response_type=code
 ```
-**Prompting the user for consent**
+- **Prompting the user for consent**
+
 Once the request from the previous step is sent, Adobe will redirect the user to the Adobe ID sign-in page. After sign-in, the user will see a consent window showing the name of your application and the information that your application is requesting permission to access with the user's credentials:
 
 ![oauth-5](../Images/oauth-5.png)
