@@ -11,7 +11,7 @@ If your integration needs to access Adobe services or content on behalf of an or
 This article will walk you through the steps to set up an **OAuth integration**.
 
 ## OAuth Integration Workflow
-[Step 1: Subscribe to a Service or Event Provider](#step-1-subscribe-to-a-service-or-event-provider)
+[Step 1: Subscribe to an Adobe](#step-1-subscribe-to-an-adobe-service)
 
 [Step 2: Configure an API Key Integration](#step-2-configure-an-api-key-integration)
 
@@ -21,7 +21,7 @@ This article will walk you through the steps to set up an **OAuth integration**.
 
 [Step 5: Try It](#step-5-try-it)
 
-### Step 1: Subscribe to a Service or Event Provider
+### Step 1: Subscribe to an Adobe Service
 
 - To create a new API Key integration, sign in to the [Adobe I/O Console](https://console.adobe.io/) with your Adobe ID, and click New Integration. (Notice that you may also choose existing integrations and edit their details from here.)
 
