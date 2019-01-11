@@ -109,5 +109,21 @@ https://ims-na1.adobelogin.com/ims/authorize
 https://www.myapp.com/OAuth/callback?code=eyJ4NXUiOiJpbXNfbmExLWtleS....
 ```
 ### Step 4: Authentication
+
+- After receiving the authorization code, send a POST request to the token endpoint:
+```
+https://ims-na1.adobelogin.com/ims/token/
+```
+Include the following parameters:
+
+Parameters | Description
+---- | ----
+code |	The base-64 encoded authorization_code returned from the  /ims/authorize/ request.
+grant_type |	The constant value authorization_code.
+client_id |	The Client ID obtained from the Adobe I/O Console.
+client_secret |	The Client Secret obtained from the Adobe I/O Console.
+
+*Note that Adobe OAuth does not support the practice of passing Base64 encoded client_id and  client_secret using the HTTP BASIC authorization header.*
+
 ### Step 5: Try It
 
