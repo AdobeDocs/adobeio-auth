@@ -129,7 +129,6 @@ client_secret |	The Client Secret obtained from the Adobe I/O Console.
 curl -X POST \
   https://ims-na1.adobelogin.com/ims/token \
   -H 'Content-Type: application/x-www-form-urlencoded' \
-  -H 'Postman-Token: 45875166-89f4-4632-94ff-60253e8be95e' \
   -H 'cache-control: no-cache' \
   -d 'code=eyJ4NXUiOiJpbXNfbmExLWt.......&grant_type=authorization_code&client_id=0b623b30......&client_secret=a9a10933-95d9-......'
   ```
