@@ -37,10 +37,6 @@ This article will walk you through the steps to set up an **OAuth integration**.
 
 ![oauth-1](../Images/oauth-1.png)
 
-- If you have an existing integration that is compatible with the service you have selected, you can update that integration with access to the selected service.
-
-![api-key-4](../Images/api-key-4.png)
-
 - To update an existing integration, simply select it and click **Continue**.
 
 - If you would like to create a brand new integration, select that option and click **Continue**.
@@ -49,7 +45,7 @@ This article will walk you through the steps to set up an **OAuth integration**.
 
 - The configuration page lets you provide all of the required details for a new integration, or add new information to update an existing integration. On this page:
 
-![api-key-6](../Images/api-key-6.png)
+![oauth-3](../Images/oauth-3.png)
 
 |Integration Details| |
 -----|----
@@ -64,6 +60,8 @@ This article will walk you through the steps to set up an **OAuth integration**.
 - Click **Create integration**.
 
 - When creation is confirmed, visit the overview section for your new integration. The overview section contains the newly generated API Key, and allows you to subscribe to additional services or events.
+
+![oauth-4](../Images/oauth-4.png)
 
 ### Step 3: Authorization
 ### Step 4: Authentication
