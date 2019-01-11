@@ -66,11 +66,11 @@ This article will walk you through the steps to set up an **OAuth integration**.
 ### Step 3: Authorization
 - The first step is to request the authorization token. This request sets the access scope and asks the user to grant permission to your application.
 
-In order to start this workflow, redirect the user to the Adobe's authorization endpoint:
+- In order to start this workflow, redirect the user to the Adobe's authorization endpoint:
 
 ```https://ims-na1.adobelogin.com/ims/authorize```
 
-Include the following parameters:
+- Include the following parameters:
 
 Parameters | Description
 ---- | ----
@@ -83,7 +83,7 @@ Parameters | Description
 
 - *Note that Adobe OAuth does not support the practice of passing Base64 encoded client_id and  client_secret using the HTTP BASIC authorization header.*
 
-Example URL (code response type):
+- Example URL (code response type):
 
 ```
 https://ims-na1.adobelogin.com/ims/authorize
@@ -92,6 +92,13 @@ https://ims-na1.adobelogin.com/ims/authorize
 &scope=openid,creative_sdk
 &response_type=code
 ```
+**Prompting the user for consent**
+Once the request from the previous step is sent, Adobe will redirect the user to the Adobe ID sign-in page. After sign-in, the user will see a consent window showing the name of your application and the information that your application is requesting permission to access with the user's credentials:
+
+![oauth-5](../Images/oauth-5.png)
+
+The user can either allow or refuse access.
+
 ### Step 4: Authentication
 ### Step 5: Try It
 
