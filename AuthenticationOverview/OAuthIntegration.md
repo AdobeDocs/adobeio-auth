@@ -25,17 +25,17 @@ This article will walk you through the steps to set up an **OAuth integration**.
 
 - To create a new API Key integration, sign in to the [Adobe I/O Console](https://console.adobe.io/) with your Adobe ID, and click New Integration. (Notice that you may also choose existing integrations and edit their details from here.)
 
-![oauth-0](../Images/oauth-0.png)
+<kbd>![oauth-0](../Images/oauth-0.png)</kbd>
 
 - Choose the type of service you want to include in your integration. You can get API access to several Adobe services or subscribe to real-time events. An integration can access multiple services and event sources. Simply perform these steps for each service or event you want to add to your integration.
 
-![oauth-2](../Images/oauth-2.png)
+<kbd>![oauth-2](../Images/oauth-2.png)</kbd>
 
 - Select **Access an API** to create an integration that will access an Adobe product API or service, you will have an opportunity to subscribe to additional services and events once you have created the integration.
 
 - Choose the service or event source that you would like to add to your integration. APIs and products available through Adobe I/O are typically listed by cloud.
 
-![oauth-1](../Images/oauth-1.png)
+<kbd>![oauth-1](../Images/oauth-1.png)</kbd>
 
 - To update an existing integration, simply select it and click **Continue**.
 
@@ -45,7 +45,7 @@ This article will walk you through the steps to set up an **OAuth integration**.
 
 - The configuration page lets you provide all of the required details for a new integration, or add new information to update an existing integration. On this page:
 
-![oauth-3](../Images/oauth-3.png)
+<kbd>![oauth-3](../Images/oauth-3.png)</kbd>
 
 |Integration Details| |
 -----|----
@@ -61,7 +61,7 @@ This article will walk you through the steps to set up an **OAuth integration**.
 
 - When creation is confirmed, visit the overview section for your new integration. The overview section contains the newly generated API Key, and allows you to subscribe to additional services or events.
 
-![oauth-4](../Images/oauth-4.png)
+<kbd>![oauth-4](../Images/oauth-4.png)</kbd>
 
 ### Step 3: Authorization
 - The first step is to request the authorization token. This request sets the access scope and asks the user to grant permission to your application.
@@ -96,7 +96,7 @@ https://ims-na1.adobelogin.com/ims/authorize
 
 - Once the request from the previous step is sent, Adobe will redirect the user to the Adobe ID sign-in page. After sign-in, the user will see a consent window showing the name of your application and the information that your application is requesting permission to access with the user's credentials:
 
-![oauth-5](../Images/oauth-5.png) ![oauth-6](../Images/oauth-6.png)
+<kbd>![oauth-5](../Images/oauth-5.png)</kbd> <kbd>![oauth-6](../Images/oauth-6.png)</kbd>
 
 - The user can either allow or refuse access.
 
