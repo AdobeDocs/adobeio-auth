@@ -17,31 +17,31 @@ If your integration needs to access Adobe services or content on behalf of a use
 
 ### Step 1: Subscribe to a Service or Event Provider
 
-To create a new API Key integration, sign in to the [Adobe I/O Console](https://console.adobe.io/) with your Adobe ID, and click New Integration. (Notice that you may also choose existing integrations and edit their details from here.)
+- To create a new API Key integration, sign in to the [Adobe I/O Console](https://console.adobe.io/) with your Adobe ID, and click New Integration. (Notice that you may also choose existing integrations and edit their details from here.)
 
 ![api-key-1](../Images/api-key-1.png)
 
-Choose the type of service you want to include in your integration. You can get API access to several Adobe services or subscribe to real-time events. An integration can access multiple services and event sources. Simply perform these steps for each service or event you want to add to your integration.
+- Choose the type of service you want to include in your integration. You can get API access to several Adobe services or subscribe to real-time events. An integration can access multiple services and event sources. Simply perform these steps for each service or event you want to add to your integration.
 
 ![api-key-2](../Images/api-key-2.png)
 
-Select **Access an API** to create an integration that will access an Adobe product API or service, you will have an opportunity to subscribe to additional services and events once you have created the integration.
+- Select **Access an API** to create an integration that will access an Adobe product API or service, you will have an opportunity to subscribe to additional services and events once you have created the integration.
 
-Choose the service or event source that you would like to add to your integration. APIs and products available through Adobe I/O are typically listed by cloud.
+- Choose the service or event source that you would like to add to your integration. APIs and products available through Adobe I/O are typically listed by cloud.
 
 ![api-key-3](../Images/api-key-3.png)
 
-If you have an existing integration that is compatible with the service you have selected, you can update that integration with access to the selected service.
+- If you have an existing integration that is compatible with the service you have selected, you can update that integration with access to the selected service.
 
 ![api-key-4](../Images/api-key-4.png)
 
-To update an existing integration, simply select it and click **Continue**.
+- To update an existing integration, simply select it and click **Continue**.
 
-If you would like to create a brand new integration, select that option and click **Continue**.
+- If you would like to create a brand new integration, select that option and click **Continue**.
 
 ### Step 2: Configure an API Key Integration
 
-The configuration page lets you provide all of the required details for a new integration, or add new information to update an existing integration. On this page:
+- The configuration page lets you provide all of the required details for a new integration, or add new information to update an existing integration. On this page:
 
 ![api-key-6](../Images/api-key-6.png)
 
@@ -53,26 +53,26 @@ The configuration page lets you provide all of the required details for a new in
 `Default Redirect URI`|After a user successfully authorizes an application, the authorization server will redirect the user back to the application with either an authorization code in the URL. Because the redirect URL will contain sensitive information, it is critical that the service doesn’t redirect the user to arbitrary locations. *(HTTPS required)*
 `Redirect URI pattern`|A comma seperated list of URI patterns, to validate additional custom redirect uri passed along with Authorization request. *(HTTPS required)* e.g. `https://www\\.myapp\\.com` will allow redirect uris like `https://www.myapp.com/OAuth/callback`
 
-Tip: Give your integrations accurate and descriptive names. Integrations are shared with developers within your organization, so choose a name that is clear and easily understood. Generic names like My Test App are discouraged.
+- Tip: Give your integrations accurate and descriptive names. Integrations are shared with developers within your organization, so choose a name that is clear and easily understood. Generic names like My Test App are discouraged.
 
-Click **Create integration**.
+- Click **Create integration**.
 
-When creation is confirmed, visit the overview section for your new integration. The overview section contains the newly generated API Key, and allows you to subscribe to additional services or events.
+- When creation is confirmed, visit the overview section for your new integration. The overview section contains the newly generated API Key, and allows you to subscribe to additional services or events.
 
 
 ### Step 3: Try It
-Copy your integration **API Key** and replace it with `myAPIKey` in below request.
+- Copy your integration **API Key** and replace it with `myAPIKey` in below request.
 ```curl
 curl 'https://stock.adobe.io/Rest/Media/1/Search/Files?locale=en_US%26search_parameters%5Bwords%5D=kittens '
   -H 'x-api-key:myAPIKey' 
   -H 'x-product:myTestApp1.0'
 ```
 
-Open Postman and go to Import->Paste Raw Text and paste the curl command.
+- Open Postman and go to Import->Paste Raw Text and paste the curl command.
 
 ![api-key-5](../Images/api-key-5.png)
 
 
-Click Send.
+- Click Send.
   
   
