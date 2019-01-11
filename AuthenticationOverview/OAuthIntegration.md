@@ -89,7 +89,7 @@ Parameters | Description
 https://ims-na1.adobelogin.com/ims/authorize
 ?client_id=<client_id>
 &redirect_uri=https://www.myapp.com/OAuth/callback
-&scope=openid,creative_sdk
+&scope=openid
 &response_type=code
 ```
 **Prompting the user for consent**
