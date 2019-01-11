@@ -134,6 +134,29 @@ curl -X POST \
   -H 'cache-control: no-cache' \
   -d 'code=eyJ4NXUiOiJpbXNfbmExLWt.......&grant_type=authorization_code&client_id=0b623b30......&client_secret=a9a10933-95d9-......'
   ```
+  
+- Example response:
+```
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+
+{
+    "access_token": "eyJ4NXU...",
+    "refresh_token": "eyJ4NXU...",
+    "sub": "5BEB2BB...@AdobeID",
+    "address": {
+        "country": "US"
+    },
+    "email_verified": "true",
+    "name": "USERNAME",
+    "token_type": "bearer",
+    "given_name": "USERNAME",
+    "expires_in": 86399985,
+    "family_name": "USERNAME",
+    "email": "USERNAME@example.com"
+}
+```
+- Similar to above, note that in addition to the access_token and refresh_token, the response also includes a JSON array of profile data that your client_id is authorized for and appropriate for the  scope that you requested.
 
 ### Step 5: Try It
 
