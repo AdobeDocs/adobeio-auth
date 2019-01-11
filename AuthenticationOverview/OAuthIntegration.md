@@ -100,6 +100,14 @@ Once the request from the previous step is sent, Adobe will redirect the user to
 
 The user can either allow or refuse access.
 
+**Handling the callback**
+
+Adobe's OAuth 2.0 server will respond to your application's access request by using the redirect URI specified in the request. If the user has signed-in successfully and granted permissions, the OAuth 2.0 server will respond with an authorization code in the query string. If the user has not approved the request, the OAuth 2.0 server will send an error message.
+
+Example Authorization grant type response (code response type):
+```
+https://www.myapp.com/OAuth/callback?code=eyJ4NXUiOiJpbXNfbmExLWtleS....
+```
 ### Step 4: Authentication
 ### Step 5: Try It
 
