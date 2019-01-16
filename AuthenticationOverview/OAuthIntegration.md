@@ -74,7 +74,7 @@ This article will walk you through the steps to set up an **OAuth integration**.
 
 Parameters | Description
 ---- | ----
-`client_id` |	The Client ID obtained from the Adobe I/O Console.
+`client_id` |	The Client ID obtained from the [Adobe I/O Console](https://console.adobe.io/).
 `redirect_uri` |	The URI to which the user agent is redirected once the authorization completes. Note that this URI must be HTTPS. The pattern is validated against the list of valid redirect URIs configured for your client.
 `scope`	| The scope of the access request, expressed as a list of comma-delimited, case sensitive strings. See the Scope Reference for more information.
 `response_type` |	The default response_type for the Authorization code flow is `code`. 
@@ -120,8 +120,8 @@ Parameters | Description
 ---- | ----
 code |	The base-64 encoded `authorization_code` returned from the  /ims/authorize/ request in callback.
 grant_type |	The constant value `authorization_code`.
-client_id |	The Client ID obtained from the Adobe I/O Console.
-client_secret |	The Client Secret obtained from the Adobe I/O Console.
+client_id |	The Client ID obtained from the [Adobe I/O Console](https://console.adobe.io/).
+client_secret |	The Client Secret obtained from the [Adobe I/O Console](https://console.adobe.io/).
 
 *Note that Adobe OAuth does not support the practice of passing Base64 encoded client_id and  client_secret using the HTTP BASIC authorization header.*
 
