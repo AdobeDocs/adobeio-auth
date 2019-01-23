@@ -22,7 +22,7 @@ This article walks you through the steps to set up a **Service Account integrati
 
 Regardless of your platform, you begin with the same steps in Adobe I/O Console:
 
-1. Create a new integration in Adobe I/O Console: <kbd>![https://console.adobe.io/integrations](https://console.adobe.io/integrations)
+1. Create a new integration in Adobe I/O Console: [https://console.adobe.io/integrations](https://console.adobe.io/integrations)
     !<kbd>![Create integration](../Images/auth_jwtqs_01.png "Create an integration") 
 
 2. Choose to access an API.
