@@ -23,12 +23,12 @@ This article walks you through the steps to set up a **Service Account integrati
 Regardless of your platform, you begin with the same steps in Adobe I/O Console:
 
 1. Create a new integration in Adobe I/O Console: [https://console.adobe.io/integrations](https://console.adobe.io/integrations)
-    !<kbd>![Create integration](../Images/auth_jwtqs_01.png "Create an integration") 
+    ![Create integration](../Images/auth_jwtqs_01.png "Create an integration") 
 
 2. Choose to access an API.
 
 3. Subscribe to an entitled product (for instance, Launch, by Adobe).
-    !<kbd>![Subscribe service](../Images/auth_jwtqs_02.png "Subscribe to a product or service")
+    ![Subscribe service](../Images/auth_jwtqs_02.png "Subscribe to a product or service")
 
 4. Confirm that you want to create a new integration.
 
@@ -42,7 +42,7 @@ Open a terminal and execute the following command:
 
 `openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt`
 
-!<kbd>![Generate public certificate](../Images/auth_jwtqs_00.png "Generate Public certificate")
+![Generate public certificate](../Images/auth_jwtqs_00.png "Generate Public certificate")
 
 _**Windows:**_
 
@@ -58,27 +58,27 @@ _**Windows:**_
 
     `openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt`
 
-    !<kbd>![Generate public certificate windows](../Images/auth_jwtqs_000.png "Generate Public certificate windows")
+    ![Generate public certificate windows](../Images/auth_jwtqs_000.png "Generate Public certificate windows")
 
 Once you&rsquo;ve complete the steps for your chosen platform, continue in the Adobe I/O Console:
 
 6. Upload the public certificate (certificate_pub.crt) as a part of creating the integration.
-    !<kbd>![Upload public certificate](../Images/auth_jwtqs_03.png "Upload public certificate")
+    ![Upload public certificate](../Images/auth_jwtqs_03.png "Upload public certificate")
 
 7. Your integration should now be created with the appropriate public certificate and claims.
-    !<kbd>![Integration created](../Images/auth_jwtqs_04.png "Integration created")
+    ![Integration created](../Images/auth_jwtqs_04.png "Integration created")
 
 8. Go to the JWT tab and paste in you private key to generate a JWT.
-    !<kbd>![JWT tab](../Images/auth_jwtqs_05.png "JWT tab")
+    ![JWT tab](../Images/auth_jwtqs_05.png "JWT tab")
 
 9. Copy the &ldquo;Sample CURL Command&rdquo; to get your first access token. 
-    !<kbd>![Get access token](../Images/auth_jwtqs_06.png "Get access token")
+    ![Get access token](../Images/auth_jwtqs_06.png "Get access token")
 
 10. Open Postman, then click Import &gt; Paste Raw Text and paste the copied curl command.
-    !<kbd>![Postman import](../Images/auth_jwtqs_07.png "Postman import")
+    ![Postman import](../Images/auth_jwtqs_07.png "Postman import")
 
 11. Click Send.
-    !<kbd>![Postman send](../Images/auth_jwtqs_08.png "Postman send")
+    ![Postman send](../Images/auth_jwtqs_08.png "Postman send")
 
 The example curl sends a POST request to [https://ims-na1.adobelogin.com/ims/exchange/jwt](https://ims-na1.adobelogin.com/ims/exchange/jwt) with the following parameters.
 
