@@ -13,14 +13,14 @@ An integration can be subscribed to one or more services. In many cases, you wil
 
 ## Types of Authentication
 
-### [API Key Integration (Authorization Only)](/auth/AuthenticationOverview/APIKeyIntegration.md)
+### [API Key Integration (Authorization Only)](/AuthenticationOverview/APIKeyIntegration.md)
 An API Key is the only client credential required for these services. These integrations do not need to pass an access token with each request.
 e.g. Adobe Stock etc.
 
-### [OAuth Integration (OAuth 2.0 authentication flow)](/auth/AuthenticationOverview/OAuthIntegration.md)
+### [OAuth Integration (OAuth 2.0 authentication flow)](/AuthenticationOverview/OAuthIntegration.md)
 If your integration needs to access content or a service on behalf of an end user, that user must be authenticated as well. Your integration will need to pass the OAuth token granted by the Adobe IMS.
 e.g. Creative SDK, Photoshop, Adobe Analytics, etc.
 
-### [Service Account Integration (JWT authentication flow)](/auth/AuthenticationOverview/ServiceAccountIntegration.md)
+### [Service Account Integration (JWT authentication flow)](/AuthenticationOverview/ServiceAccountIntegration.md)
 For service-to-service integrations, you will also need a JSON Web Token (JWT) that encapsulates your client credentials and authenticates the identity of your integration. You exchange the JWT for the OAuth token that authorizes access.
 e.g. Adobe Campaign, Adobe Launch, Adobe Target, etc.
