@@ -46,7 +46,7 @@ _**MacOS and Linux:**_
 
 _**Windows:**_
 
-- Download an OpenSSL client to generate public certificates; for example, you can try the <kbd><kbd>![OpenSSL Windows client](https://bintray.com/vszakats/generic/download_file?file_path=openssl-1.1.1-win64-mingw.zip).
+- Download an OpenSSL client to generate public certificates; for example, you can try the [OpenSSL Windows client](https://bintray.com/vszakats/generic/download_file?file_path=openssl-1.1.1-win64-mingw.zip).
 
 - Extract the folder and copy it to the C:/libs/ location.
 
