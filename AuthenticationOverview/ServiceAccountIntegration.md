@@ -8,15 +8,15 @@ This article walks you through the steps to set up a **Service Account integrati
 
 ## Service Account Integration Workflow
 
-<kbd>![Step 1: Subscribe to an Adobe Service](#step-1-subscribe-to-an-adobe-service)
+[Step 1: Subscribe to an Adobe Service](#step-1-subscribe-to-an-adobe-service)
 
-<kbd>![Step 2: Configure an API Key Integration](#step-2-configure-an-api-key-integration)
+[Step 2: Configure an API Key Integration](#step-2-configure-an-api-key-integration)
 
-<kbd>![Step 3: Authorization](#step-3-jwt-token)
+[Step 3: Authorization](#step-3-jwt-token)
 
-<kbd>![Step 4: Authentication](#step-4-access-token)
+[Step 4: Authentication](#step-4-access-token)
 
-<kbd>![Step 5: Try It](#step-5-try-it)
+[Step 5: Try It](#step-5-try-it)
 
 ### Step 1: Subscribe to an Adobe Service
 
@@ -80,7 +80,7 @@ Once you&rsquo;ve complete the steps for your chosen platform, continue in the A
 11. Click Send.
     !<kbd>![Postman send](../Images/auth_jwtqs_08.png "Postman send")
 
-The example curl sends a POST request to <kbd>![https://ims-na1.adobelogin.com/ims/exchange/jwt](https://ims-na1.adobelogin.com/ims/exchange/jwt) with the following parameters.
+The example curl sends a POST request to [https://ims-na1.adobelogin.com/ims/exchange/jwt](https://ims-na1.adobelogin.com/ims/exchange/jwt) with the following parameters.
 
 | Parameter | Description|
 |---|---|
