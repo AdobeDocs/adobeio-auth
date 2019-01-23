@@ -5,7 +5,7 @@ A small collection of Adobe services (e.g. Adobe Stock) require authorization, b
 This article will walk you through the steps to set up an **API Key integration**.
 
 To obtain an API Key, you'll need to create an API Key Integration using the Adobe I/O Console, as described here.
-If your integration needs to access Adobe services or content on behalf of a user or an Adobe enterprise organization, it needs additional credentials for authentication. For more information, check out the articles on **[OAuth Authentication](/auth/AuthenticationOverview/OAuthIntegration.md)** and **[Service Account Authentication](/auth/AuthenticationOverview/ServiceAccountIntegration.md)**.
+If your integration needs to access Adobe services or content on behalf of a user or an Adobe enterprise organization, it needs additional credentials for authentication. For more information, check out the articles on **[OAuth Authentication](/AuthenticationOverview/OAuthIntegration.md)** and **[Service Account Authentication](/AuthenticationOverview/ServiceAccountIntegration.md)**.
 
 ## API Key Integration Workflow
 [Step 1: Subscribe to an Adobe Service](#step-1-subscribe-to-an-adobe-service)
