@@ -160,3 +160,4 @@ Content-Type: application/json;charset=UTF-8
 
 ### Step 5: Try It
 
+- Generate an access token using [OAuth 2.0 Playground](https://adobeioruntime.net/api/v1/web/io-solutions/adobe-oauth-playground/oauth.html)
