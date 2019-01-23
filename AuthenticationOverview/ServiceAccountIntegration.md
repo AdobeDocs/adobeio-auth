@@ -12,9 +12,9 @@ This article walks you through the steps to set up a **Service Account integrati
 
 [Step 2: Configure an API Key Integration](#step-2-configure-an-api-key-integration)
 
-[Step 3: Authorization](#step-3-jwt-token)
+[Step 3: JWT Token](#step-3-jwt-token)
 
-[Step 4: Authentication](#step-4-access-token)
+[Step 4: Access Token](#step-4-access-token)
 
 [Step 5: Try It](#step-5-try-it)
 
@@ -22,23 +22,23 @@ This article walks you through the steps to set up a **Service Account integrati
 
 Regardless of your platform, you begin with the same steps in Adobe I/O Console:
 
-1. Create a new integration in Adobe I/O Console: [https://console.adobe.io/integrations](https://console.adobe.io/integrations)
+- Create a new integration in Adobe I/O Console: [https://console.adobe.io/integrations](https://console.adobe.io/integrations)
     <kbd>![Create integration](../Images/auth_jwtqs_01.png "Create an integration")</kbd> 
 
-2. Choose to access an API.
+- Choose to access an API.
 
-3. Subscribe to an entitled product (for instance, Launch, by Adobe).
+- Subscribe to an entitled product (for instance, Launch, by Adobe).
     <kbd>![Subscribe service](../Images/auth_jwtqs_02.png "Subscribe to a product or service")</kbd>
 
-4. Confirm that you want to create a new integration.
+- Confirm that you want to create a new integration.
 
-5. Create a private key and a public certificate. Make sure you store these securely.
+- Create a private key and a public certificate. Make sure you store these securely.
 
-Once you complete the above steps, your path diverges depending on your platform: 
+- Once you complete the above steps, your path diverges depending on your platform: 
 
 _**MacOS and Linux:**_
 
-Open a terminal and execute the following command:  
+- Open a terminal and execute the following command:  
 
 `openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt`
 
@@ -46,11 +46,11 @@ Open a terminal and execute the following command:
 
 _**Windows:**_
 
-1. Download an OpenSSL client to generate public certificates; for example, you can try the <kbd><kbd>![OpenSSL Windows client](https://bintray.com/vszakats/generic/download_file?file_path=openssl-1.1.1-win64-mingw.zip).
+- Download an OpenSSL client to generate public certificates; for example, you can try the <kbd><kbd>![OpenSSL Windows client](https://bintray.com/vszakats/generic/download_file?file_path=openssl-1.1.1-win64-mingw.zip).
 
-2. Extract the folder and copy it to the C:/libs/ location.
+- Extract the folder and copy it to the C:/libs/ location.
 
-3. Open a command line window and execute the following commands:
+- Open a command line window and execute the following commands:
 
     `set OPENSSL_CONF=C:/libs/openssl-1.1.1-win64-mingw/openssl.cnf`
 
@@ -60,24 +60,30 @@ _**Windows:**_
 
     <kbd>![Generate public certificate windows](../Images/auth_jwtqs_000.png "Generate Public certificate windows")</kbd>
 
-Once you&rsquo;ve complete the steps for your chosen platform, continue in the Adobe I/O Console:
+- Once you&rsquo;ve completed the steps for your chosen platform, continue in the Adobe I/O Console.
 
-6. Upload the public certificate (certificate_pub.crt) as a part of creating the integration.
+### Step 2: Configure an API Key Integration
+
+- Upload the public certificate (certificate_pub.crt) as a part of creating the integration.
     <kbd>![Upload public certificate](../Images/auth_jwtqs_03.png "Upload public certificate")</kbd>
 
-7. Your integration should now be created with the appropriate public certificate and claims.
+- Your integration should now be created with the appropriate public certificate and claims.
     <kbd>![Integration created](../Images/auth_jwtqs_04.png "Integration created")</kbd>
-
-8. Go to the JWT tab and paste in you private key to generate a JWT.
+### Step 3: JWT Token
+- Go to the JWT tab and paste in you private key to generate a JWT.
     <kbd>![JWT tab](../Images/auth_jwtqs_05.png "JWT tab")</kbd>
 
-9. Copy the &ldquo;Sample CURL Command&rdquo; to get your first access token. 
+### Step 4: Access Token
+
+- Copy the &ldquo;Sample CURL Command&rdquo; to get your first access token. 
     <kbd>![Get access token](../Images/auth_jwtqs_06.png "Get access token")</kbd>
 
-10. Open Postman, then click Import &gt; Paste Raw Text and paste the copied curl command.
+### Step 5: Try It
+
+- Open Postman, then click Import &gt; Paste Raw Text and paste the copied curl command.
     <kbd>![Postman import](../Images/auth_jwtqs_07.png "Postman import")</kbd>
 
-11. Click Send.
+- Click Send.
     <kbd>![Postman send](../Images/auth_jwtqs_08.png "Postman send")</kbd>
 
 The example curl sends a POST request to [https://ims-na1.adobelogin.com/ims/exchange/jwt](https://ims-na1.adobelogin.com/ims/exchange/jwt) with the following parameters.
