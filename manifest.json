@@ -7,30 +7,30 @@
    "meta_keywords":"adobe i/o, authentication",
    "meta_description":"default description",
    "publish_date":"02/08/2019",
-   "show_edit_github_banner":true,
+   "show_edit_github_banner":false,
    "base_path":"https://raw.githubusercontent.com",
    "pages":[
       {
          "importedFileName":"Authentication Overview",
-         "path":"adobedocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md",
+         "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/AuthenticationGuide.md",
          "title":"Authentication Overview",
          "pages":[
             {
                "importedFileName":"API Key Integration",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/AuthenticationOverview/APIKeyIntegration.md",
+               "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/APIKeyIntegration.md",
                "title":"API Key Integration"
             },
             {
                "importedFileName":"OAuth Integration",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/AuthenticationOverview/OAuthIntegration.md",
+               "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/OAuthIntegration.md",
                "title":"OAuth Integration"
             },
             {
                "importedFileName":"Service Account Integration",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md",
+               "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/ServiceAccountIntegration.md",
                "title":"Service Account Integration"
             }
          ]
@@ -43,43 +43,43 @@
             {
                "importedFileName":"Adobe Stock",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Guides/AdobeStock.md",
+               "path":"adobedocs/adobeio-auth/stage/Guides/AdobeStock.md",
                "title":"Adobe Stock"
             },
-	    {
+       {
                "importedFileName":"Creative SDK",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Guides/CreativeSDK.md",
+               "path":"adobedocs/adobeio-auth/stage/Guides/CreativeSDK.md",
                "title":"Creative SDK"
             },
-	    {
+       {
                "importedFileName":"Adobe Photoshop",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Guides/AdobePhotoshop.md",
+               "path":"adobedocs/adobeio-auth/stage/Guides/AdobePhotoshop.md",
                "title":"Adobe Photoshop"
             },
-	    {
+       {
                "importedFileName":"Adobe Analytics",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Guides/AdobeAnalytics.md",
+               "path":"adobedocs/adobeio-auth/stage/Guides/AdobeAnalytics.md",
                "title":"Adobe Analytics"
             },
-	    {
+       {
                "importedFileName":"Adobe Campaign",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Guides/AdobeCampaign.md",
+               "path":"adobedocs/adobeio-auth/stage/Guides/AdobeCampaign.md",
                "title":"Adobe Campaign"
             },
-	    {
+       {
                "importedFileName":"Adobe Experience Platform",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Guides/AdobeExperiencePlatform.md",
+               "path":"adobedocs/adobeio-auth/stage/Guides/AdobeExperiencePlatform.md",
                "title":"Adobe Experience Platform"
             },
-	    {
+       {
                "importedFileName":"Adobe Launch",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Guides/AdobeLaunch.md",
+               "path":"adobedocs/adobeio-auth/stage/Guides/AdobeLaunch.md",
                "title":"Adobe Launch"
             }
          ]
@@ -94,14 +94,14 @@
                "pages":[],
                "path":"",
                "title":"Tools"
-	    },
-	    {
+       },
+       {
                "importedFileName":"Code Samples",
                "pages":[],
                "path":"",
                "title":"Code Samples"
-	    }
-	 ]
+       }
+    ]
       }
    ]
 }
