@@ -18,7 +18,7 @@
             {
                "importedFileName":"API Key Integration",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/APIKeyIntegration.md",
+               "path":"AdobeDocs/adobeio-auth/stage/AuthenticationOverview/APIKeyIntegration.md",
                "title":"API Key Integration"
             },
             {
@@ -43,43 +43,43 @@
             {
                "importedFileName":"Adobe Stock",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Guides/AdobeStock.md",
+               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobeStock.md",
                "title":"Adobe Stock"
             },
        {
                "importedFileName":"Creative SDK",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Guides/CreativeSDK.md",
+               "path":"AdobeDocs/adobeio-auth/stage/Guides/CreativeSDK.md",
                "title":"Creative SDK"
             },
        {
                "importedFileName":"Adobe Photoshop",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Guides/AdobePhotoshop.md",
+               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobePhotoshop.md",
                "title":"Adobe Photoshop"
             },
        {
                "importedFileName":"Adobe Analytics",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Guides/AdobeAnalytics.md",
+               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobeAnalytics.md",
                "title":"Adobe Analytics"
             },
        {
                "importedFileName":"Adobe Campaign",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Guides/AdobeCampaign.md",
+               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobeCampaign.md",
                "title":"Adobe Campaign"
             },
        {
                "importedFileName":"Adobe Experience Platform",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Guides/AdobeExperiencePlatform.md",
+               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobeExperiencePlatform.md",
                "title":"Adobe Experience Platform"
             },
        {
                "importedFileName":"Adobe Launch",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/Guides/AdobeLaunch.md",
+               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobeLaunch.md",
                "title":"Adobe Launch"
             }
          ]
