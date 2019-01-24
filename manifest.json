@@ -124,6 +124,14 @@
                ],
                "path":"AdobeDocs/adobeio-auth/stage/Resources/CodeSamples/CodeOverview.md",
                "title":"Code Samples"
+            },
+            {
+               "importedFileName":"IMS APIs",
+               "pages":[
+                  
+               ],
+               "path":"AdobeDocs/adobeio-auth/stage/Resources/CodeSamples/IMS.md",
+               "title":"IMS APIs"
             }
          ]
       }
