@@ -12,7 +12,7 @@
    "pages":[
       {
          "importedFileName":"Authentication Overview",
-         "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/AuthenticationGuide.md",
+         "path":"AdobeDocs/adobeio-auth/stage/AuthenticationOverview/AuthenticationGuide.md",
          "title":"Authentication Overview",
          "pages":[
             {
@@ -24,13 +24,13 @@
             {
                "importedFileName":"OAuth Integration",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/OAuthIntegration.md",
+               "path":"AdobeDocs/adobeio-auth/stage/AuthenticationOverview/OAuthIntegration.md",
                "title":"OAuth Integration"
             },
             {
                "importedFileName":"Service Account Integration",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/stage/AuthenticationOverview/ServiceAccountIntegration.md",
+               "path":"AdobeDocs/adobeio-auth/stage/AuthenticationOverview/ServiceAccountIntegration.md",
                "title":"Service Account Integration"
             }
          ]
