@@ -112,7 +112,22 @@
             {
                "importedFileName":"Tools",
                "pages":[
+                  {
+                     "importedFileName":"OAuth Playground",
+                     "pages":[
 
+                     ],
+                     "path":"AdobeDocs/adobeio-auth/stage/Resources/Tools/OAuthPlayground.md",
+                     "title":"OAuth Playground"
+                  },
+                  {
+                     "importedFileName":"Postman",
+                     "pages":[
+
+                     ],
+                     "path":"AdobeDocs/adobeio-auth/stage/Resources/Tools/Postman.md",
+                     "title":"Postman"
+                  }
                ],
                "path":"AdobeDocs/adobeio-auth/stage/Resources/Tools/ToolsOverview.md",
                "title":"Tools"
