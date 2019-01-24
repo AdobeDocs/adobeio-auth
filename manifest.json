@@ -43,43 +43,43 @@
             {
                "importedFileName":"Adobe Stock",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Products/AdobeStock.md",
+               "path":"adobedocs/adobeio-auth/master/Guides/AdobeStock.md",
                "title":"Adobe Stock"
             },
 	    {
                "importedFileName":"Creative SDK",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Products/CreativeSDK.md",
+               "path":"adobedocs/adobeio-auth/master/Guides/CreativeSDK.md",
                "title":"Creative SDK"
             },
 	    {
                "importedFileName":"Adobe Photoshop",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Products/AdobePhotoshop.md",
+               "path":"adobedocs/adobeio-auth/master/Guides/AdobePhotoshop.md",
                "title":"Adobe Photoshop"
             },
 	    {
                "importedFileName":"Adobe Analytics",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Products/AdobeAnalytics.md",
+               "path":"adobedocs/adobeio-auth/master/Guides/AdobeAnalytics.md",
                "title":"Adobe Analytics"
             },
 	    {
                "importedFileName":"Adobe Campaign",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Products/AdobeCampaign.md",
+               "path":"adobedocs/adobeio-auth/master/Guides/AdobeCampaign.md",
                "title":"Adobe Campaign"
             },
 	    {
                "importedFileName":"Adobe Experience Platform",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Products/AdobeExperiencePlatform.md",
+               "path":"adobedocs/adobeio-auth/master/Guides/AdobeExperiencePlatform.md",
                "title":"Adobe Experience Platform"
             },
 	    {
                "importedFileName":"Adobe Launch",
                "pages":[],
-               "path":"adobedocs/adobeio-auth/master/Products/AdobeLaunch.md",
+               "path":"adobedocs/adobeio-auth/master/Guides/AdobeLaunch.md",
                "title":"Adobe Launch"
             }
          ]
