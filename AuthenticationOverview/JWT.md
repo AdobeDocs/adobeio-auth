@@ -1,3 +1,0 @@
-# JWT Authentication
-
-## Coming soon
