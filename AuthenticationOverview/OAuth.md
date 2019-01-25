@@ -1,3 +1,0 @@
-# OAuth Authentication
-
-## Coming Soon
