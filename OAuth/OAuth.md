@@ -4,10 +4,10 @@ Adobe Cloud Platform APIs use the OAuth 2.0 protocol for authentication and auth
 
 The basic Web OAuth 2.0 workflow will look like:
 
-1. Your application redirects the user to Adobe along with the list of requested permissions
+1. Your application **redirects** the user to Adobe along with the list of requested permissions
 2. Adobe prompts the user with a login screen and informs the user of the requested permissions
 3. The user decides whether to grant the permissions
-4. Adobe sends a callback to your application to notify whether the user granted the permissions
+4. Adobe sends a **callback** to your application to notify whether the user granted the permissions
 5. After permissions are granted, your application retrieves tokens required to make API requests on behalf of the user
 
 The process of providing secure access to protected resources has two stages, **authorization** and **authentication**. It is important to understand that they are separate concepts.
