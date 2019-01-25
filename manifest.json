@@ -56,7 +56,8 @@
          ],
          "path":"AdobeDocs/adobeio-auth/stage/JWT/JWT.md",
          "title":"JWT Authentication"
-      }      {
+      },
+      {
          "importedFileName":"Guides",
          "path":"AdobeDocs/adobeio-auth/stage/Guides/GuidesOverview.md",
          "title":"Guides",
