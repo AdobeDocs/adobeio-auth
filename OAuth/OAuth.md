@@ -13,4 +13,4 @@ The basic Web OAuth 2.0 workflow will look like:
 The process of providing secure access to protected resources has two stages, **authorization** and **authentication**. It is important to understand that they are separate concepts.
 
 - **Authorization** is the process of granting permission to a user to access a protected resource. Because authentication is usually a prerequisite for granting access, these two terms often occur together.
-- **Authentication** is the process of determining that a user is who she claims to be. Authentication can be checked by Adobe's own identity provider, or a trusted third party authentication domain, such as Google, Facebook, or a corporate LDAP.
+- **Authentication** is the process of determining that a user is who she claims to be. Authentication can be checked by Adobe's own identity provider, the Identity Management Services (IMS).
