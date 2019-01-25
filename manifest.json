@@ -32,31 +32,31 @@
                "title":"OAuth Integration"
             },
             {
-               "importedFileName":"OAuth Authentication",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/AuthenticationOverview/OAuth.md",
-               "title":"OAuth Authentication"
-            }            {
                "importedFileName":"Service Account Integration",
                "pages":[
 
                ],
                "path":"AdobeDocs/adobeio-auth/stage/AuthenticationOverview/ServiceAccountIntegration.md",
                "title":"Service Account Integration"
-            },
-            {
-               "importedFileName":"JWT Authentication",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/AuthenticationOverview/JWT.md",
-               "title":"JWT Authentication"
             }
          ]
       },
       {
+         "importedFileName":"OAuth Authentication",
+         "pages":[
+
+         ],
+         "path":"AdobeDocs/AdobeDocs/adobeio-auth/stage/Oauth/Oauth.md",
+         "title":"OAuth Authentication"
+      },
+      {
+         "importedFileName":"JWT Authentication",
+         "pages":[
+
+         ],
+         "path":"AdobeDocs/adobeio-auth/stage/JWT/JWT.md",
+         "title":"JWT Authentication"
+      }      {
          "importedFileName":"Guides",
          "path":"AdobeDocs/adobeio-auth/stage/Guides/GuidesOverview.md",
          "title":"Guides",
