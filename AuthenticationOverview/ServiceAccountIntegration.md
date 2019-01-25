@@ -10,13 +10,11 @@ This article walks you through the steps to set up a **Service Account integrati
 
 [Step 1: Subscribe to an Adobe Service](#step-1-subscribe-to-an-adobe-service)
 
-[Step 2: Configure an API Key Integration](#step-2-configure-an-api-key-integration)
+[Step 2: Create a Public Key Certificate](#step-2-create-a-public-key-certificate)
 
-[Step 3: JWT Token](#step-3-jwt-token)
+[Step 3: Configure an API Key Integration](#step-3-configure-an-api-key-integration)
 
-[Step 4: Access Token](#step-4-access-token)
-
-[Step 5: Try It](#step-5-try-it)
+[Step 4: Try It](#step-4-try-it)
 
 ### Step 1: Subscribe to an Adobe Service
 
@@ -33,6 +31,8 @@ Regardless of your platform, you begin with the same steps in Adobe I/O Console:
     <kbd>![Subscribe service](../Images/auth_jwtqs_02.png "Subscribe to a product or service")</kbd>
 
 - Confirm that you want to create a new integration.
+
+### Step 2: Create a Public Key Certificate
 
 - Create a private key and a public certificate. Make sure you store these securely.
 
@@ -66,7 +66,7 @@ _**Windows:**_
 
 - Once you&rsquo;ve completed the steps for your chosen platform, continue in the Adobe I/O Console.
 
-### Step 2: Configure an API Key Integration
+### Step 3: Configure an API Key Integration
 
 - Upload the public certificate (certificate_pub.crt) as a part of creating the integration.
 
@@ -75,18 +75,17 @@ _**Windows:**_
 - Your integration should now be created with the appropriate public certificate and claims.
 
     <kbd>![Integration created](../Images/auth_jwtqs_04.png "Integration created")</kbd>
-### Step 3: JWT Token
+    
+### Step 4: Try It
+
 - Go to the JWT tab and paste in you private key to generate a JWT.
 
     <kbd>![JWT tab](../Images/auth_jwtqs_05.png "JWT tab")</kbd>
-
-### Step 4: Access Token
 
 - Copy the &ldquo;Sample CURL Command&rdquo; to get your first access token. 
 
     <kbd>![Get access token](../Images/auth_jwtqs_06.png "Get access token")</kbd>
 
-### Step 5: Try It
 
 - Open Postman, then click Import &gt; Paste Raw Text and paste the copied curl command.
 
