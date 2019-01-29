@@ -17,12 +17,12 @@ The process of providing secure access to protected resources has two stages, **
 
 ## Authentication Workflow
 
-[Step 1: Authorization](#step-1-authorization)
+[1: Authorization](#1-authorization)
 
-[Step 2: Authentication](#step-2-authentication)
+[2: Authentication](#2-authentication)
 
 
-### Step 1: Authorization
+### 1: Authorization
 - The first step is to request the authorization token. This request sets the access scope and asks the user to grant permission to your application.
 
 - In order to start this workflow, redirect the user to the Adobe's authorization endpoint:
@@ -67,7 +67,7 @@ https://ims-na1.adobelogin.com/ims/authorize
 ```
 https://www.myapp.com/OAuth/callback?code=eyJ4NXUiOiJpbXNfbmExLWtleS....
 ```
-### Step 2: Authentication
+### 2: Authentication
 
 - After receiving the authorization code, send a POST request to the token endpoint:
 ```
@@ -116,3 +116,80 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 - Similar to above, note that in addition to the access_token and refresh_token, the response also includes a JSON array of profile data that your client_id is authorized for and appropriate for the  scope that you requested.
+
+### Exchanging a refresh token for an access token
+
+The default expiry of access tokens is 24 hours. You can refresh an access token without prompting the user for permission again even if user is not present. The refresh token, by default, expires in 2 weeks.
+
+You can send a POST request to the token endpoint:
+
+```
+https://ims-na1.adobelogin.com/ims/token/
+```
+
+Include the following parameters:
+
+| Parameters    | Description                                             |
+| ------------- |:--------------------------------------------------------|
+| refresh_token |The base-64 encoded `refresh_token` received in the response to the initial request for an access token.|
+| grant_type    |The constant value `refresh_token`.|
+| client_id     |The Client ID obtained from the [Adobe I/O Console](https://console.adobe.io/integrations).|
+| client_secret |The Client Secret obtained from the [Adobe I/O Console](https://console.adobe.io/integrations).|
+
+_Note that Adobe OAuth does not support the practice of passing Base64 encoded `client_id` and `client_secret` using the HTTP BASIC authorization header._
+
+Example request:
+
+```
+POST /ims/token HTTP/1.1
+Host: ims-na1.adobelogin.com
+
+Content-Type: application/x-www-form-urlencoded
+grant_type=refresh_token
+&client_id=<client_id>
+&client_secret=<client_secret>
+&refresh_token=<refresh_token>
+```
+
+Example response:
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+
+{
+	"access_token": "eyJ4NXU...",
+	"refresh_token": "eyJ4NXU...",
+	"sub": "5BEB2BB...@AdobeID",
+	"address": {
+		"country": "US"
+	},
+	"email_verified": "true",
+	"name": "USERNAME",
+	"token_type": "bearer",
+	"given_name": "USERNAME",
+	"expires_in": 86399985,
+	"family_name": "USERNAME",
+	"email": "USERNAME@example.com"
+}
+```
+
+Similar to above, note that in addition to the `access_token` and `refresh_token`, the response also includes a JSON array of profile data that your `client_id` is authorized for and appropriate for the `scope` that you requested.
+
+### Revoking authorization for end user
+
+Users can revoke access to your application themselves by visiting [Connected Applications Page](https://accounts.adobe.com/security/connected-applications#). When the user launches your application next time, the authorization workflow will start from the beginning.
+
+## Complete examples for OAuth endpoints
+
+The following samples demonstrate basic interaction with the Adobe OAuth endpoints.
+
+
+### Node.js Example
+
+[Github repo](https://github.com/adobeio/adobeio-documentation/tree/master/auth/OAuth2.0Endpoints/samples/adobe-auth-node) where you can find a complete Node.js based web app example that uses Adobe OAuth.
+
+
+### Python Example
+
+[Github repo](https://github.com/adobeio/adobeio-documentation/tree/master/auth/OAuth2.0Endpoints/samples/adobe-auth-python) where you can find a complete Python based web app example that uses Adobe OAuth.
