@@ -15,12 +15,14 @@ The process of providing secure access to protected resources has two stages, **
 - **Authorization** is the process of granting permission to a user to access a protected resource. Because authentication is usually a prerequisite for granting access, these two terms often occur together.
 - **Authentication** is the process of determining that a user is who she claims to be. Authentication can be checked by Adobe's own identity provider, the Identity Management Services (IMS).
 
-[Authorization](#authorization)
+## Authentication Workflow
 
-[Authentication](#authentication)
+[Step 1: Authorization](#step-1-authorization)
+
+[Step 2: Authentication](#step-2-authentication)
 
 
-### Authorization
+### Step 1: Authorization
 - The first step is to request the authorization token. This request sets the access scope and asks the user to grant permission to your application.
 
 - In order to start this workflow, redirect the user to the Adobe's authorization endpoint:
@@ -65,7 +67,7 @@ https://ims-na1.adobelogin.com/ims/authorize
 ```
 https://www.myapp.com/OAuth/callback?code=eyJ4NXUiOiJpbXNfbmExLWtleS....
 ```
-### Authentication
+### Step 2: Authentication
 
 - After receiving the authorization code, send a POST request to the token endpoint:
 ```
