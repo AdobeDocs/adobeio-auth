@@ -17,12 +17,12 @@ The process of providing secure access to protected resources has two stages, **
 
 ## Authentication Workflow
 
-[1: Authorization](#1-authorization)
+[Authorization](#authorization)
 
-[2: Authentication](#2-authentication)
+[Authentication](#authentication)
 
 
-### 1: Authorization
+### Authorization
 - The first step is to request the authorization token. This request sets the access scope and asks the user to grant permission to your application.
 
 - In order to start this workflow, redirect the user to the Adobe's authorization endpoint:
@@ -67,7 +67,7 @@ https://ims-na1.adobelogin.com/ims/authorize
 ```
 https://www.myapp.com/OAuth/callback?code=eyJ4NXUiOiJpbXNfbmExLWtleS....
 ```
-### 2: Authentication
+### Authentication
 
 - After receiving the authorization code, send a POST request to the token endpoint:
 ```
