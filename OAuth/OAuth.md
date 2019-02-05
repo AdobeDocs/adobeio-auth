@@ -119,6 +119,8 @@ Content-Type: application/json;charset=UTF-8
 
 ### Exchanging a refresh token for an access token
 
+*Note: Not all product APIs support refresh_token grant type. You may not be able to get valid response for such integrations. Please try creating a **Service Account Integration** for such APIs to create a service-service integration.*
+
 The default expiry of access tokens is 24 hours. You can refresh an access token without prompting the user for permission again even if user is not present. The refresh token, by default, expires in 2 weeks.
 
 You can send a POST request to the token endpoint:
