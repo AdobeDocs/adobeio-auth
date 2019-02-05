@@ -17,9 +17,9 @@ The process of providing secure access to protected resources has two stages, **
 
 ## Authentication Workflow
 
-[Authorization](#authorization)
+- [Authorization](#authorization)
 
-[Authentication](#authentication)
+- [Authentication](#authentication)
 
 
 ### Authorization
