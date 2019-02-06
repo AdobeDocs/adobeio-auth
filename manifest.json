@@ -132,8 +132,10 @@
                ],
                "path":"AdobeDocs/adobeio-auth/stage/Resources/IMS.md",
                "title":"IMS APIs"
-            },
-            {
+            }
+         ]
+      },
+                  {
                "importedFileName":"FAQs",
                "pages":[
 
@@ -149,7 +151,5 @@
                "path":"AdobeDocs/adobeio-auth/stage/Support/Index.md",
                "title":"Support"
             }
-         ]
-      }
    ]
 }
