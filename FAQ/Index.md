@@ -12,3 +12,8 @@ You can find the code samples here: [NodeJS](https://github.com/AdobeDocs/adobei
 ### How to use the private key for generating a JWT?
 Please copy the full content of private key including ```-----BEGIN PRIVATE KEY-----``` and ```-----END PRIVATE KEY-----``` to generate a correct JWT token.
 
+### What does Default Redirect URI and the Redirect URI Pattern means?
+The default redirect URI is the URL where IMS will send the authorization code after successful login with Adobe. You will need that to make call to the token endpoint to receive an access token.
+
+The redirect URI pattern is a regex representation of allowed URLs to receive the authorization code. It is used when you pass an optional parameter `redirect_url` with your request.
+
