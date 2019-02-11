@@ -29,13 +29,14 @@ sub |	*Required*. The subject, your **Technical Account ID** from the Adobe I/o 
 aud |	*Required*. The audience for the token, in the format: https://ims-na1.adobelogin.com/c/**api_key**.
 Configured claims | Required. The API-access claim configured for your organization: https://ims-na1.adobelogin.com/s/ent_dataservices_sdk.
 
-```
+The following is a sample payload to be signed and encoded.
+
+```json
 {
-  "sub": "12345667EDBA435@techacct.adobe.com",
-  "iss": "8765432DEAB65@AdobeOrg",
-  "exp": 1473901205,
-  "aud": "https://ims-na1.adobelogin.com/c/1234-5678-9876-5433",
-  "https://ims-na1.adobelogin.com/s/ent_user_sdk": true,
-  "jti": "1470000000"
+    "exp": 1550001438,
+    "iss": "C74F69D7594880280.....@AdobeOrg",
+    "sub": "6657031C5C095BB40A4.....@techacct.adobe.com",
+    "https://ims-na1.adobelogin.com/s/ent_dataservices_sdk": true,
+    "aud": "https://ims-na1.adobelogin.com/c/a64f5f10849a410a97ffdac8ae1....."
 }
 ```
