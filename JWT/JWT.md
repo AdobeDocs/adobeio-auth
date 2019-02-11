@@ -38,3 +38,9 @@ The following is a sample payload to be signed and encoded.
     "aud": "https://ims-na1.adobelogin.com/c/a64f5f10849a410a97ffdac8ae1....."
 }
 ```
+
+### Sign and Encode your JWT
+The JWT must be signed and base-64 encoded for inclusion in the access request. The JWT libraries provide functions to perform these tasks.
+
+- The token must be signed using the private key for a digital signing certificate that is associated with your API key. You can associate more than one certificate with an API key. If you do so, you can use the private key of any associated certificate to sign your JWT. For more information, see [Public Key Certificates for JWT](AdobeDocs/adobeio-auth/stage/AuthenticationOverview/ServiceAccountIntegration.md).
+- Adobe supports RSASSA-PKCS1-V1_5 Digital Signatures with SHA-2. The JWS algorithm ("alg") parameter value can be RS256, RS384, or RS512.
