@@ -27,4 +27,4 @@ exp |	*Required*. The expiration parameter is a required parameter measuring the
 iss |	*Required*. The issuer, your **Organization ID** from the Adobe I/O Console integration, in the format org_ident@AdobeOrg. Identifies your organization that has been configured for access to the Adobe I/O API. 
 sub |	*Required*. The subject, your Technical Account ID from the Adobe I/o Console integration,  in the format: id@techacct.adobe.com.
 aud |	*Required*. The audience for the token, in the format: https://ims-na1.adobelogin.com/c/api_key.
-Configured claims | Required. The API-access claim configured for your organization: https://ims-na1.adobelogin.com/s/ent_user_sdk.
+Configured claims | Required. The API-access claim configured for your organization: https://ims-na1.adobelogin.com/s/ent_dataservices_sdk.
