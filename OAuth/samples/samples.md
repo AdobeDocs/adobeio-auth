@@ -1,4 +1,4 @@
-## Sample Applications
+## Sample Code
 
 The following samples demonstrate basic interaction with the Adobe OAuth endpoints.
 
