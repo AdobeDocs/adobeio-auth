@@ -9,6 +9,7 @@ The basic Web JWT authentication workflow will look like:
 2. Exchanging the JWT with token endpoint to get an access token
 
 - [Creating a JSON Web Token](#creating-a-json-web-token)
+- [Retrieving an Access Token](#retrieving-an-access-token)
 
 ## Creating a JSON Web Token
 
