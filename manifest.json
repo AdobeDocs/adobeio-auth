@@ -1,162 +1,139 @@
 {
-   "name":"Authentication",
-   "version":"1.0.0",
-   "description":"Authentication",
-   "author":"Hiren Shah",
-   "view_type":"mdbook",
-   "meta_keywords":"adobe i/o, authentication",
-   "meta_description":"default description",
-   "publish_date":"02/08/2019",
-   "show_edit_github_banner":false,
-   "base_path":"https://raw.githubusercontent.com",
-   "pages":[
-      {
-         "importedFileName":"Authentication Overview",
-         "path":"AdobeDocs/adobeio-auth/stage/AuthenticationOverview/AuthenticationGuide.md",
-         "title":"Authentication Overview",
-         "pages":[
-            {
-               "importedFileName":"API Key Integration",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/AuthenticationOverview/APIKeyIntegration.md",
-               "title":"API Key Integration"
-            },
-            {
-               "importedFileName":"OAuth Integration",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/AuthenticationOverview/OAuthIntegration.md",
-               "title":"OAuth Integration"
-            },
-            {
-               "importedFileName":"Service Account Integration",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/AuthenticationOverview/ServiceAccountIntegration.md",
-               "title":"Service Account Integration"
-            }
-         ]
-      },
-      {
-         "importedFileName":"OAuth Authentication",
-         "pages":[
-            {
-               "importedFileName":"Sample Code",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/OAuth/samples/samples.md",
-               "title":"Sample Code"
-            }
-         ],
-         "path":"AdobeDocs/adobeio-auth/stage/OAuth/OAuth.md",
-         "title":"OAuth Authentication"
-      },
-      {
-         "importedFileName":"JWT Authentication",
-         "pages":[
-
-         ],
-         "path":"AdobeDocs/adobeio-auth/stage/JWT/JWT.md",
-         "title":"JWT Authentication"
-      },
-      {
-         "importedFileName":"Guides",
-         "path":"AdobeDocs/adobeio-auth/stage/Guides/GuidesOverview.md",
-         "title":"Guides",
-         "pages":[
-            {
-               "importedFileName":"Adobe Stock",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobeStock.md",
-               "title":"Adobe Stock"
-            },
-            {
-               "importedFileName":"Creative SDK",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/Guides/CreativeSDK.md",
-               "title":"Creative SDK"
-            },
-            {
-               "importedFileName":"Adobe Photoshop",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobePhotoshop.md",
-               "title":"Adobe Photoshop"
-            },
-            {
-               "importedFileName":"Adobe Analytics",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobeAnalytics.md",
-               "title":"Adobe Analytics"
-            },
-            {
-               "importedFileName":"Adobe Campaign",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobeCampaign.md",
-               "title":"Adobe Campaign"
-            },
-            {
-               "importedFileName":"Adobe Experience Platform",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobeExperiencePlatform.md",
-               "title":"Adobe Experience Platform"
-            },
-            {
-               "importedFileName":"Adobe Launch",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/Guides/AdobeLaunch.md",
-               "title":"Adobe Launch"
-            }
-         ]
-      },
-      {
-         "importedFileName":"Resources",
-         "path":"AdobeDocs/adobeio-auth/stage/Resources/ResourcesOverview.md",
-         "title":"Resources",
-         "pages":[
-            {
-               "importedFileName":"IMS APIs",
-               "pages":[
-
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/Resources/IMS.md",
-               "title":"IMS APIs"
-            }
-         ]
-      },
-      {
-         "importedFileName":"FAQs",
-         "pages":[
-
-         ],
-         "path":"AdobeDocs/adobeio-auth/stage/FAQ/Index.md",
-         "title":"FAQ"
-      },
-      {
-         "importedFileName":"Support",
-         "pages":[
-
-         ],
-         "path":"AdobeDocs/adobeio-auth/stage/Support/Index.md",
-         "title":"Support"
-      }
-   ]
+  "name": "Authentication",
+  "version": "1.0.0",
+  "description": "Authentication",
+  "author": "Hiren Shah",
+  "view_type": "mdbook",
+  "meta_keywords": "adobe i/o, authentication",
+  "meta_description": "default description",
+  "publish_date": "02/08/2019",
+  "show_edit_github_banner": false,
+  "base_path": "https://raw.githubusercontent.com",
+  "pages": [
+    {
+      "importedFileName": "Authentication Overview",
+      "path": "AdobeDocs/adobeio-auth/stage/AuthenticationOverview/AuthenticationGuide.md",
+      "title": "Authentication Overview",
+      "pages": [
+        {
+          "importedFileName": "API Key Integration",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/AuthenticationOverview/APIKeyIntegration.md",
+          "title": "API Key Integration"
+        },
+        {
+          "importedFileName": "OAuth Integration",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/AuthenticationOverview/OAuthIntegration.md",
+          "title": "OAuth Integration"
+        },
+        {
+          "importedFileName": "Service Account Integration",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/AuthenticationOverview/ServiceAccountIntegration.md",
+          "title": "Service Account Integration"
+        }
+      ]
+    },
+    {
+      "importedFileName": "OAuth Authentication",
+      "pages": [
+        {
+          "importedFileName": "Sample Code",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/OAuth/samples/samples.md",
+          "title": "Sample Code"
+        }
+      ],
+      "path": "AdobeDocs/adobeio-auth/stage/OAuth/OAuth.md",
+      "title": "OAuth Authentication"
+    },
+    {
+      "importedFileName": "JWT Authentication",
+      "pages": [
+        {
+          "importedFileName": "Sample Code",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/JWT/samples/samples.md",
+          "title": "Sample Code"
+        }
+      ],
+      "path": "AdobeDocs/adobeio-auth/stage/JWT/JWT.md",
+      "title": "JWT Authentication"
+    },
+    {
+      "importedFileName": "Guides",
+      "path": "AdobeDocs/adobeio-auth/stage/Guides/GuidesOverview.md",
+      "title": "Guides",
+      "pages": [
+        {
+          "importedFileName": "Adobe Stock",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobeStock.md",
+          "title": "Adobe Stock"
+        },
+        {
+          "importedFileName": "Creative SDK",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/Guides/CreativeSDK.md",
+          "title": "Creative SDK"
+        },
+        {
+          "importedFileName": "Adobe Photoshop",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobePhotoshop.md",
+          "title": "Adobe Photoshop"
+        },
+        {
+          "importedFileName": "Adobe Analytics",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobeAnalytics.md",
+          "title": "Adobe Analytics"
+        },
+        {
+          "importedFileName": "Adobe Campaign",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobeCampaign.md",
+          "title": "Adobe Campaign"
+        },
+        {
+          "importedFileName": "Adobe Experience Platform",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobeExperiencePlatform.md",
+          "title": "Adobe Experience Platform"
+        },
+        {
+          "importedFileName": "Adobe Launch",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobeLaunch.md",
+          "title": "Adobe Launch"
+        }
+      ]
+    },
+    {
+      "importedFileName": "Resources",
+      "path": "AdobeDocs/adobeio-auth/stage/Resources/ResourcesOverview.md",
+      "title": "Resources",
+      "pages": [
+        {
+          "importedFileName": "IMS APIs",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/Resources/IMS.md",
+          "title": "IMS APIs"
+        }
+      ]
+    },
+    {
+      "importedFileName": "FAQs",
+      "pages": [],
+      "path": "AdobeDocs/adobeio-auth/stage/FAQ/Index.md",
+      "title": "FAQ"
+    },
+    {
+      "importedFileName": "Support",
+      "pages": [],
+      "path": "AdobeDocs/adobeio-auth/stage/Support/Index.md",
+      "title": "Support"
+    }
+  ]
 }
