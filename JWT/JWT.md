@@ -12,9 +12,9 @@ The basic Web JWT authentication workflow will look like:
 
 A JSON web token for Service Account authentication requires a particular set of claims, and must be signed using a valid digital signing certificate. We recommend that you use one of the publicly available libraries or tools for building your JWT. Examples are provided for some popular languages.
 
-- Required Claims for a Service Account JWT
-- Sign and Encode your JWT
-- Using JWT Libraries and Creation Tools
+- [Required Claims for a Service Account JWT](#required-claims-for-a-service-account-jwt)
+- [Sign and Encode your JWT](#sign-and-encode-your-jwt))
+- [Using JWT Libraries and Creation Tools](#using-jwt-libraries-and-creation-tools)
 
 ### Required Claims for a Service Account JWT
 Your JWT must contain the following claims:
