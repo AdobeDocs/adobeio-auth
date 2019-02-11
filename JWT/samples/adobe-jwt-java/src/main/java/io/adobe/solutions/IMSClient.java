@@ -53,7 +53,7 @@ public class IMSClient {
         String orgId = prop.getProperty("orgId");
         String technicalAccountId = prop.getProperty("technicalAccountId");
         String apiKey = prop.getProperty("apiKey");
-        //String keyPath=prop.getProperty("key_path");
+        String keyPath=prop.getProperty("key_path");
         String imsHost = prop.getProperty("imsHost");
         // Expiration time in seconds
         Long expirationTime = System.currentTimeMillis() / 1000 + 86400L;
@@ -70,7 +70,7 @@ public class IMSClient {
         //$ openssl pkcs8 -topk8 -inform PEM -outform DER -in secret.pem  -nocrypt > secret.key
 
         // Secret key as byte array. Secret key file should be in DER encoded format.
-        byte[] privateKeyFileContent = Files.readAllBytes(Paths.get("secret.key"));
+        byte[] privateKeyFileContent = Files.readAllBytes(Paths.get(keyPath));
 
         // Read the private key
         KeyFactory keyFactory = KeyFactory.getInstance("RSA");
