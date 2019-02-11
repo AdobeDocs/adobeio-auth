@@ -53,8 +53,18 @@ Other JWT tools are publicly available, such as the [JWT.IO](https://jwt.io/), a
 
 Examples are provided for several popular languages.
 
-Language | Library | Example
----- | ---- | ----
-Java | `atlassian-jwt` `jsontoken`| Creating JWTs for Java Apps
-Node.js | `jsonwebtoken` | Creating JWTs for Node.js Apps
-Python | `pyjwt` | For an example Python script that creates a JWT, see the User Management Walkthrough.
+Language | Library 
+---- | ---- 
+Java | `atlassian-jwt` `jsontoken`
+Node.js | `jsonwebtoken`
+Python | `pyjwt`
+
+### Additional JWT Libraries and Creation Tools
+The following JWT libraries are available, in addition to the Java, Node.js, and Python libraries for which we have provided examples.
+
+Language | Library
+---- | ----
+Ruby | `ruby-jwt`
+PHP | `firebase php-jwt` `luciferous jwt`
+.NET | `jwt`
+Haskell	haskell-jwt
