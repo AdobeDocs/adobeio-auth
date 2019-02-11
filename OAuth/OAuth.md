@@ -182,16 +182,4 @@ Similar to above, note that in addition to the `access_token` and `refresh_token
 
 Users can revoke access to your application themselves by visiting [Connected Applications Page](https://accounts.adobe.com/security/connected-applications#). When the user launches your application next time, the authorization workflow will start from the beginning.
 
-## Complete examples for OAuth endpoints
 
-The following samples demonstrate basic interaction with the Adobe OAuth endpoints.
-
-
-### Node.js Example
-
-[Github repo](https://github.com/AdobeDocs/adobeio-auth/tree/stage/OAuth/samples/adobe-auth-node) where you can find a complete Node.js based web app example that uses Adobe OAuth.
-
-
-### Python Example
-
-[Github repo](https://github.com/AdobeDocs/adobeio-auth/tree/stage/OAuth/samples/adobe-auth-python) where you can find a complete Python based web app example that uses Adobe OAuth.
