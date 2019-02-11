@@ -69,3 +69,15 @@ Ruby | `ruby-jwt`
 PHP | `firebase php-jwt` `luciferous jwt`
 .NET | `jwt`
 Haskell | `haskell-jwt`
+
+## Retrieving an Access Token
+
+To initiate an API session,use the JWT to obtain an access token from Adobe by making a POST request to Adobe's Identity Management Service (IMS).
+
+- Send a POST request to:
+`https://ims-na1.adobelogin.com/ims/exchange/jwt`
+
+- The body of the request should contain URL-encoded parameters with your Client ID (API Key), Client Secret, and JWT:
+`client_id={api_key_value}&client_secret={client_secret_value}&jwt_token={base64_encoded_JWT}`
+
+
