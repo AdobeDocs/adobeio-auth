@@ -15,6 +15,7 @@ A JSON web token for Service Account authentication requires a particular set of
 - [Required Claims for a Service Account JWT](#required-claims-for-a-service-account-jwt)
 - [Sign and Encode your JWT](#sign-and-encode-your-jwt)
 - [Using JWT Libraries and Creation Tools](#using-jwt-libraries-and-creation-tools)
+- [Additional JWT Libraries and Creation Tools](#additional-jwt-libraries-and-creation-tools)
 
 ### Required Claims for a Service Account JWT
 Your JWT must contain the following claims:
