@@ -44,14 +44,14 @@
       {
          "importedFileName":"OAuth Authentication",
          "pages":[
-                  {
-         "importedFileName":"Sample Code",
-         "pages":[
+            {
+               "importedFileName":"Sample Code",
+               "pages":[
 
-         ],
-         "path":"AdobeDocs/adobeio-auth/stage/OAuth/samples/samples.md",
-         "title":"Sample Code"
-      }
+               ],
+               "path":"AdobeDocs/adobeio-auth/stage/OAuth/samples/samples.md",
+               "title":"Sample Code"
+            }
          ],
          "path":"AdobeDocs/adobeio-auth/stage/OAuth/OAuth.md",
          "title":"OAuth Authentication"
@@ -142,21 +142,21 @@
             }
          ]
       },
-                  {
-               "importedFileName":"FAQs",
-               "pages":[
+      {
+         "importedFileName":"FAQs",
+         "pages":[
 
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/FAQ/Index.md",
-               "title":"FAQ"
-            },
-            {
-               "importedFileName":"Support",
-               "pages":[
+         ],
+         "path":"AdobeDocs/adobeio-auth/stage/FAQ/Index.md",
+         "title":"FAQ"
+      },
+      {
+         "importedFileName":"Support",
+         "pages":[
 
-               ],
-               "path":"AdobeDocs/adobeio-auth/stage/Support/Index.md",
-               "title":"Support"
-            }
+         ],
+         "path":"AdobeDocs/adobeio-auth/stage/Support/Index.md",
+         "title":"Support"
+      }
    ]
 }
