@@ -106,10 +106,12 @@ Response | Description
 
 ### Example
 
-```========================= REQUEST ==========================
+```
+========================= REQUEST ==========================
 POST https://ims-na1.adobelogin.com/ims/exchange/jwt
 -------------------------- body ----------------------------
 client_id={myClientId}&client_secret={myClientSecret}&jwt_token={myJSONWebToken}
 ------------------------- headers --------------------------
 Content-Type: application/x-www-form-urlencoded
-Cache-Control: no-cache```
+Cache-Control: no-cache
+```
