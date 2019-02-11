@@ -51,7 +51,7 @@ _**Windows:**_
 
 - Download an OpenSSL client to generate public certificates; for example, you can try the [OpenSSL Windows client](https://bintray.com/vszakats/generic/download_file?file_path=openssl-1.1.1-win64-mingw.zip).
 
-- Extract the folder and copy it to the C:/libs/ location.
+- Extract the folder and copy it to the **C:/libs/** location.
 
 - Open a command line window and execute the following commands:
 
