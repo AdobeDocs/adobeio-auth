@@ -75,9 +75,11 @@ Haskell | `haskell-jwt`
 To initiate an API session,use the JWT to obtain an access token from Adobe by making a POST request to Adobe's Identity Management Service (IMS).
 
 - Send a POST request to:
+
 ```https://ims-na1.adobelogin.com/ims/exchange/jwt```
 
 - The body of the request should contain URL-encoded parameters with your Client ID (API Key), Client Secret, and JWT:
+
 ```client_id={api_key_value}&client_secret={client_secret_value}&jwt_token={base64_encoded_JWT}```
 
 ### Request parameters
@@ -104,6 +106,7 @@ Response | Description
 400 bad_request | JWT payload can be decoded and decrypted but contents are incorrect. Can occur when values for fields such as sub, iss, exp, or jti are not in the proper format.
 
 ### Example
+
 ```========================= REQUEST ==========================
 POST https://ims-na1.adobelogin.com/ims/exchange/jwt
 -------------------------- body ----------------------------
