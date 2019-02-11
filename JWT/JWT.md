@@ -28,3 +28,14 @@ iss |	*Required*. The issuer, your **Organization ID** from the Adobe I/O Consol
 sub |	*Required*. The subject, your **Technical Account ID** from the Adobe I/o Console integration,  in the format: id@techacct.adobe.com.
 aud |	*Required*. The audience for the token, in the format: https://ims-na1.adobelogin.com/c/**api_key**.
 Configured claims | Required. The API-access claim configured for your organization: https://ims-na1.adobelogin.com/s/ent_dataservices_sdk.
+
+```
+{
+  "sub": "12345667EDBA435@techacct.adobe.com",
+  "iss": "8765432DEAB65@AdobeOrg",
+  "exp": 1473901205,
+  "aud": "https://ims-na1.adobelogin.com/c/1234-5678-9876-5433",
+  "https://ims-na1.adobelogin.com/s/ent_user_sdk": true,
+  "jti": "1470000000"
+}
+```
