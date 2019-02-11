@@ -67,4 +67,4 @@ Language | Library
 Ruby | `ruby-jwt`
 PHP | `firebase php-jwt` `luciferous jwt`
 .NET | `jwt`
-Haskell	haskell-jwt
+Haskell | `haskell-jwt`
