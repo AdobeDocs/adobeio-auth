@@ -44,7 +44,14 @@
       {
          "importedFileName":"OAuth Authentication",
          "pages":[
+                  {
+         "importedFileName":"Sample Code",
+         "pages":[
 
+         ],
+         "path":"AdobeDocs/adobeio-auth/stage/OAuth/samples/samples.md",
+         "title":"Sample Code"
+      }
          ],
          "path":"AdobeDocs/adobeio-auth/stage/OAuth/OAuth.md",
          "title":"OAuth Authentication"
