@@ -1,4 +1,4 @@
-# Service Account Integraiton
+# Service Account Integration
 
 A Service Account integration allows your application to call Adobe services on behalf of the application itself, or on behalf of an enterprise organization.
 
