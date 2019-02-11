@@ -27,8 +27,6 @@ sub |	*Required*. The subject, your **Technical Account ID** from the Adobe I/o 
 aud |	*Required*. The audience for the token, in the format: https://ims-na1.adobelogin.com/c/**api_key**.
 Configured claims | Required. The API-access claim configured for your organization: https://ims-na1.adobelogin.com/s/ent_dataservices_sdk.
 
-**Algorithm**: **RS256** (RSA Signature with SHA-256) is an asymmetric algorithm, and it uses a public/private key pair: the identity provider has a private (secret) key used to generate the signature, and the consumer of the JWT gets a public key to validate the signature. Since the public key, as opposed to the private key, doesn’t need to be kept secured, most identity providers make it easily available for consumers to obtain and use (usually through a metadata URL).
-
 The following is a sample payload to be signed and encoded.
 
 ```json
@@ -45,16 +43,18 @@ The following is a sample payload to be signed and encoded.
 The JWT must be signed and base-64 encoded for inclusion in the access request. The JWT libraries provide functions to perform these tasks.
 
 - The token must be signed using the private key for a digital signing certificate that is associated with your API key. You can associate more than one certificate with an API key. If you do so, you can use the private key of any associated certificate to sign your JWT. For more information, see **Service Account Integration**.
-- Adobe supports RSASSA-PKCS1-V1_5 Digital Signatures with SHA-2. The JWS algorithm ("alg") parameter value can be RS256, RS384, or RS512.
+
+**Algorithm**: **RS256** (RSA Signature with SHA-256) is an asymmetric algorithm, and it uses a public/private key pair: the identity provider has a private (secret) key used to generate the signature, and the consumer of the JWT (i.e. Adobe I/O Console) gets a public key to validate the signature. 
 
 ### Using JWT Libraries and Creation Tools
 Most modern languages have JWT libraries available. We recommend you use one of these libraries (or other JWT-compatible libraries) before trying to hand-craft the JWT.
 
-Other JWT tools are publicly available, such as the [JWT.IO](https://jwt.io/), a handy web-based encoder/decoder for Atlassian Connect JWTs.
+Other JWT tools are publicly available, such as the [JWT.IO](https://jwt.io/), a handy web-based encoder/decoder for JWTs.
 
 Examples are provided for several popular languages.
 
-Language	Library	Example
-Java	atlassian-jwt jsontoken	Creating JWTs for Java Apps
-Node.js	jsonwebtoken	Creating JWTs for Node.js Apps
-Python	pyjwt	For an example Python script that creates a JWT, see the User Management Walkthrough.
+Language | Library | Example
+---- | ---- | ----
+Java | `atlassian-jwt` `jsontoken`| Creating JWTs for Java Apps
+Node.js | `jsonwebtoken` | Creating JWTs for Node.js Apps
+Python | `pyjwt` | For an example Python script that creates a JWT, see the User Management Walkthrough.
