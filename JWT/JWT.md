@@ -8,6 +8,8 @@ The basic Web JWT authentication workflow will look like:
 1. Creat a JSON Web Token (JWT) using the **Private key, API Key, Client Secret, Technical Account ID, Org ID, Metascope and Expiration time**
 2. Exchanging the JWT with token endpoint to get an access token
 
+- [Creating a JSON Web Token](#creating-a-json-web-token)
+
 ## Creating a JSON Web Token
 
 A JSON web token for Service Account authentication requires a particular set of claims, and must be signed using a valid digital signing certificate. We recommend that you use one of the publicly available libraries or tools for building your JWT. Examples are provided for some popular languages.
