@@ -1,6 +1,6 @@
 - [OAuth Access Token](#oauth-access-token)
 - [JWT Access Token](#jwt-access-token)
-- [A trick for windows user](#curl-request)
+- [A trick for Windows user](#a-trick-for-windows-user)
 
 ## OAuth Access Token
 
