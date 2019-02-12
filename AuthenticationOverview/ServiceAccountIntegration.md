@@ -64,9 +64,8 @@ _**Windows:**_
 ```
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt
 ```
-    
 
-    <kbd>![Generate public certificate windows](../Images/auth_jwtqs_000.png "Generate Public certificate windows")</kbd>
+<kbd>![Generate public certificate windows](../Images/auth_jwtqs_000.png "Generate Public certificate windows")</kbd>
 
 - Once you&rsquo;ve completed the steps for your chosen platform, continue in the Adobe I/O Console.
 
