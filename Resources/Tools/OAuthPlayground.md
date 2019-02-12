@@ -15,7 +15,10 @@
 
 5. Copy **API Key**, **Client Secret** from Adobe I/O Console integration to OAuth 2.0 Playground
 
-6. Enter scopes as: `openid,read_organizations,additional_info.projectedProductContext,additional_info.job_function`
+6. Enter scopes as:
+```
+openid,read_organizations,additional_info.projectedProductContext,additional_info.job_function
+```
 
 <kbd>![op-3](../../Images/OP_3.png)</kbd>
 
