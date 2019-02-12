@@ -22,7 +22,10 @@
 
 <kbd>![pm-3](../../Images/PM_3.png)</kbd>
 
-6. Copy your `API Key (Client ID)`, `Client Secret` and the `Default Redirect URI` from your Adobe I/O Console integration and paste it in the Postman `GET NEW ACCESS TOKEN` window. Assuming you are trying to get an access token for Adobe Analytics use below for scope: `openid,AdobeID,read_organizations,additional_info.projectedProductContext,additional_info.job_function`
+6. Copy your `API Key (Client ID)`, `Client Secret` and the `Default Redirect URI` from your Adobe I/O Console integration and paste it in the Postman `GET NEW ACCESS TOKEN` window. Assuming you are trying to get an access token for Adobe Analytics use below for scope: 
+```
+openid,AdobeID,read_organizations,additional_info.projectedProductContext,additional_info.job_function
+```
 
 *Note: If you are not sure about scope, use `openid` to proceed, it will generate an access token for you but certain APIs won't work without appropriate scopes.*
 
