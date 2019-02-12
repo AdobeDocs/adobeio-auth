@@ -1,3 +1,0 @@
-# Postman
-
-## Coming Soon
