@@ -62,55 +62,6 @@
       "title": "JWT Authentication"
     },
     {
-      "importedFileName": "Guides",
-      "path": "AdobeDocs/adobeio-auth/stage/Guides/GuidesOverview.md",
-      "title": "Guides",
-      "pages": [
-        {
-          "importedFileName": "Adobe Stock",
-          "pages": [],
-          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobeStock.md",
-          "title": "Adobe Stock"
-        },
-        {
-          "importedFileName": "Creative SDK",
-          "pages": [],
-          "path": "AdobeDocs/adobeio-auth/stage/Guides/CreativeSDK.md",
-          "title": "Creative SDK"
-        },
-        {
-          "importedFileName": "Adobe Photoshop",
-          "pages": [],
-          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobePhotoshop.md",
-          "title": "Adobe Photoshop"
-        },
-        {
-          "importedFileName": "Adobe Analytics",
-          "pages": [],
-          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobeAnalytics.md",
-          "title": "Adobe Analytics"
-        },
-        {
-          "importedFileName": "Adobe Campaign",
-          "pages": [],
-          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobeCampaign.md",
-          "title": "Adobe Campaign"
-        },
-        {
-          "importedFileName": "Adobe Experience Platform",
-          "pages": [],
-          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobeExperiencePlatform.md",
-          "title": "Adobe Experience Platform"
-        },
-        {
-          "importedFileName": "Adobe Launch",
-          "pages": [],
-          "path": "AdobeDocs/adobeio-auth/stage/Guides/AdobeLaunch.md",
-          "title": "Adobe Launch"
-        }
-      ]
-    },
-    {
       "importedFileName": "Resources",
       "path": "AdobeDocs/adobeio-auth/stage/Resources/ResourcesOverview.md",
       "title": "Resources",
