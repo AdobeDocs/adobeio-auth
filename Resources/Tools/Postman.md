@@ -81,7 +81,7 @@ curl https://stock.adobe.io/Rest/Media/1/Search/Files?locale=en_US%26search_para
   -H 'x-product:myTestApp1.0'
  ```
  
- 2. Open Postman. Click Import -> Paste Raw Text -> Paste the CURL request.
+ 2. Open Postman. Click `Import` -> `Paste Raw Text` -> Paste the CURL request.
  
  <kbd>![pmw-1](../../Images/PMW_1.png)</kbd>
  
