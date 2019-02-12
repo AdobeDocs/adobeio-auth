@@ -23,8 +23,8 @@ Claim |	Description
 ---- | ----
 exp |	*Required*. The expiration parameter is a required parameter measuring the absolute time since 01/01/1970 GMT. You must ensure that the expiration time is later than the time of issue. After this time, the JWT is no longer valid. At maximum, the expiration period can be set up to 24 hours from time of issue. *Note: This is an expirtation time for the JWT token and not the access token. Access token expiration is set to 24 hours by default.*
 iss |	*Required*. The issuer, your **Organization ID** from the Adobe I/O Console integration, in the format org_ident@AdobeOrg. Identifies your organization that has been configured for access to the Adobe I/O API. 
-sub |	*Required*. The subject, your **Technical Account ID** from the Adobe I/o Console integration,  in the format: id@techacct.adobe.com.
-aud |	*Required*. The audience for the token, **API Key** in the format: https://ims-na1.adobelogin.com/c/api_key.
+sub |	*Required*. The subject, your **Technical Account ID** from the Adobe I/O Console integration,  in the format: id@techacct.adobe.com.
+aud |	*Required*. The audience for the token, your **API Key** from the Adobe I/O Console integration, in the format: https://ims-na1.adobelogin.com/c/api_key.
 Configured claims | Required. The API-access claim configured for your organization: https://ims-na1.adobelogin.com/s/ent_dataservices_sdk.
 
 The following is a sample payload to be signed and encoded.
