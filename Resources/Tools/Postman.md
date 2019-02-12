@@ -1,6 +1,6 @@
 - [OAuth Access Token](#oauth-access-token)
 - [JWT Access Token](#jwt-access-token)
-- [A trick for Windows user](#a-trick-for-windows-user)
+- [CURL Requests in Windows](#curl-requests-in-windows)
 
 ## OAuth Access Token
 
@@ -60,7 +60,7 @@
 
 <kbd>![pmj-5](/Images/PM_JWT_5.png)</kbd>
 
-## A trick for Windows user
+## CURL Requests in Windows
 
 In API Documentation, sample CURL requests are common and helpful for the developers. Mac and Linux terminals are capable of executing such CURL requests but the Windows command prompt doesn't support it out of the box.
 
