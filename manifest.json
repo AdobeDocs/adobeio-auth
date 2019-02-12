@@ -39,10 +39,10 @@
       "importedFileName": "OAuth Authentication",
       "pages": [
         {
-          "importedFileName": "Sample Code",
+          "importedFileName": "OAuth Sample Code",
           "pages": [],
           "path": "AdobeDocs/adobeio-auth/stage/OAuth/samples/samples.md",
-          "title": "Sample Code"
+          "title": "OAuth Sample Code"
         }
       ],
       "path": "AdobeDocs/adobeio-auth/stage/OAuth/OAuth.md",
@@ -52,10 +52,10 @@
       "importedFileName": "JWT Authentication",
       "pages": [
         {
-          "importedFileName": "Sample Code",
+          "importedFileName": "JWT Sample Code",
           "pages": [],
           "path": "AdobeDocs/adobeio-auth/stage/JWT/samples/samples.md",
-          "title": "Sample Code"
+          "title": "JWT Sample Code"
         }
       ],
       "path": "AdobeDocs/adobeio-auth/stage/JWT/JWT.md",
