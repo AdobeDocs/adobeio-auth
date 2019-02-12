@@ -44,10 +44,18 @@
 
 <kbd>![pmj-1](/Images/PM_JWT_1.png)</kbd>
 
+3. Click on the JWT tab, paste the entire private key file content including the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----` and click on `Generate JWT`.
+
 <kbd>![pmj-2](/Images/PM_JWT_2.png)</kbd>
+
+4. Copy the `Sample CURL command` and open Postman. (*Mac and Linux user can also paste the CURL command in terminal and get the access token.*)
 
 <kbd>![pmj-3](/Images/PM_JWT_3.png)</kbd>
 
+5. Click on `Import` -> `Paste Raw Text` and paste the CURL command.
+ 
 <kbd>![pmj-4](/Images/PM_JWT_4.png)</kbd>
+
+6. Click on `Send`. You will receive an access token.
 
 <kbd>![pmj-5](/Images/PM_JWT_5.png)</kbd>
