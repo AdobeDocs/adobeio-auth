@@ -1,3 +1,0 @@
-# Code Samples
-
-## Coming Soon
