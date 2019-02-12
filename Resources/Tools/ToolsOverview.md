@@ -5,8 +5,8 @@
 ## OAuth 2.0 Playground
 Do you have an OAuth integration created? Try the OAuth 2.0 Playground tool to generate an access token.
 
-## Postman
-Try Postman for generating an access token for both OAuth and Service Account Integration.
-
 ## Adobe I/O Console-JWT
 Do you have a Service Account integration created? Try the Adobe I/O Console JWT tool to generate an access token.
+
+## Postman
+Try Postman for generating an access token for both OAuth and Service Account Integration.
