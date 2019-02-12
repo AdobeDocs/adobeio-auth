@@ -9,7 +9,7 @@ Invalidates the user's access token, as well as the refresh token (if any), and 
 Request method | GET or POST
 ---- | ----
 Authorization required | User access token and client ID for front-channel request Client ID and secret for back-channel request
-Available versions | `<ENV>/ims/logout/v1`  `<ENV>/ims/logout/v1/token`
+Available versions | `ims-na1.adobelogin.com/ims/logout/v1`  `ims-na1.adobelogin.com/ims/logout/v1/token`
 
 ### Request syntax for front-channel logout
 
@@ -58,7 +58,7 @@ callback | Optional, a JavaScript callback function to handle the JSONP response
 #### Front-channel logout
 ```
 GET /ims/logout/v1?redirect_uri=REDIRECT_URI&access_token=ACCESS_TOKEN&client_id=CLIENT_ID HTTP/1.1
-Host: ims-na1-dev1.adobelogin.com
+Host: ims-na1.adobelogin.com
 
 ```
 After internal redirects, IMS redirects the user agent back to the supplied redirect_uri location.
@@ -73,7 +73,7 @@ Location: REDIRECT_URI
 #### Back-channel logout
 ```
 GET /ims/logout/v1?client_id=CLIENT_ID&client_secret=CLIENT_SECRET&access_token=ACCESS_TOKEN HTTP/1.1
-Host: ims-na1-dev1.adobelogin.com
+Host: ims-na1.adobelogin.com
 ```
 **Success response**
 ```
