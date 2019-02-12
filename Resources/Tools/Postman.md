@@ -35,3 +35,19 @@
 8. Your access token will be generated.
 
 <kbd>![pm-6](/Images/PM_6.png)</kbd>
+
+## JWT Access Token
+### Steps
+1. Go to [Adobe I/O Console](https://console.adobe.io)
+
+2. Open the Service Account Integration for which you want to generate an access token.
+
+<kbd>![pmj-1](/Images/PM_JWT_1.png)</kbd>
+
+<kbd>![pmj-2](/Images/PM_JWT_2.png)</kbd>
+
+<kbd>![pmj-3](/Images/PM_JWT_3.png)</kbd>
+
+<kbd>![pmj-4](/Images/PM_JWT_4.png)</kbd>
+
+<kbd>![pmj-5](/Images/PM_JWT_5.png)</kbd>
