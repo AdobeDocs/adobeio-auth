@@ -11,7 +11,7 @@ Request method | GET or POST
 Authorization required | User access token and client ID for front-channel request Client ID and secret for back-channel request
 Available versions | `<ENV>/ims/logout/v1`  `<ENV>/ims/logout/v1/token`
 
-**Request syntax for front-channel logout**
+### Request syntax for front-channel logout
 
 Request method | GET
 ---- | ----
@@ -25,7 +25,7 @@ redirect_uri | A URL to which the user agent is redirected on successful logout.
 access_token | Optional, the user's base-64 encoded access token. If specified and still valid, IMS attempts to revoke this token.
 callback | Optional, a JavaScript callback function to handle the JSONP response. If not provided, the body of the successful response contains the requested data in JSON format.
 
-**Request syntax for back-channel logout with redirect**
+### Request syntax for back-channel logout with redirect
 
 Request method | GET / POST
 ---- | ----
@@ -40,7 +40,7 @@ redirect_uri | A URL to which the user agent is redirected on successful logout.
 access_token | Optional, the user's base-64 encoded access token. If specified and still valid, IMS attempts to revoke this token.
 callback | Optional, a JavaScript callback function to handle the JSONP response. If not provided, the body of the successful response contains the requested data in JSON format.
 
-**Request syntax for non-redirect logout**
+### Request syntax for non-redirect logout
 
 Request method | GET / POST
 ---- | ----
@@ -55,7 +55,7 @@ callback | Optional, a JavaScript callback function to handle the JSONP response
 
 ### Examples
 
-**Front-channel logout**
+#### Front-channel logout
 ```
 GET /ims/logout/v1?redirect_uri=REDIRECT_URI&access_token=ACCESS_TOKEN&client_id=CLIENT_ID HTTP/1.1
 Host: ims-na1-dev1.adobelogin.com
@@ -70,7 +70,7 @@ Cache-Control: no-store
 Location: REDIRECT_URI
 ```
 
-**Back-channel logout**
+#### Back-channel logout
 ```
 GET /ims/logout/v1?client_id=CLIENT_ID&client_secret=CLIENT_SECRET&access_token=ACCESS_TOKEN HTTP/1.1
 Host: ims-na1-dev1.adobelogin.com
@@ -81,7 +81,7 @@ HTTP/1.1 200
 Cache-Control: no-store
 ```
 
-**Non redirect logout examples**
+#### Non redirect logout examples
 
 Request using JSONP
 ```
