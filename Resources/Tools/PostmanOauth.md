@@ -1,5 +1,3 @@
-# Postman
-
 ## OAuth Access Token
 
 ### Steps
