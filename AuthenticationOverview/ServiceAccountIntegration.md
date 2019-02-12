@@ -57,11 +57,13 @@ _**Windows:**_
 
 - Open a command line window and execute the following commands:
 
-    `set OPENSSL_CONF=C:/libs/openssl-1.1.1-win64-mingw/openssl.cnf`
+`set OPENSSL_CONF=C:/libs/openssl-1.1.1-win64-mingw/openssl.cnf`
 
-    `cd C:/libs/openssl-1.1.1-win64-mingw/`
+`cd C:/libs/openssl-1.1.1-win64-mingw/`
 
-    `openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt`
+```
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt
+```
     
 
     <kbd>![Generate public certificate windows](../Images/auth_jwtqs_000.png "Generate Public certificate windows")</kbd>
