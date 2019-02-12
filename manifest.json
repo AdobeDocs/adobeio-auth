@@ -71,12 +71,6 @@
             "title": "OAuth 2.0 Playground"
           },
           {
-            "importedFileName": "Adobe I/O Console - JWT",
-            "pages": [],
-            "path": "AdobeDocs/adobeio-auth/stage/Resources/Tools/IOConsoleJWT.md",
-            "title": "Adobe I/O Console - JWT"
-          },
-          {
             "importedFileName": "Postman",
             "pages": [],
             "path": "AdobeDocs/adobeio-auth/stage/Resources/Tools/Postman.md",
