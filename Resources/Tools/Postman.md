@@ -59,3 +59,34 @@
 6. Click on `Send`. You will receive an access token.
 
 <kbd>![pmj-5](/Images/PM_JWT_5.png)</kbd>
+
+## A trick for Windows user
+
+In API Documentation, sample CURL requests are common and helpful for the developers. Mac and Linux terminals are capable of executing such CURL requests but the Windows command prompt doesn't support it out of the box.
+
+For windows users, you can follow below steps to execute the CURL requests easily by using Postman.
+
+### Steps
+
+1. Copy the CURL Request.
+e.g.
+```
+curl https://stock.adobe.io/Rest/Media/1/Search/Files?locale=en_US%26search_parameters%5Bwords%5D=kittens 
+  -H 'x-api-key:myAPIKey' 
+  -H 'x-product:myTestApp1.0'
+ ```
+ 
+ 2. Open Postman. Click Import -> Paste Raw Text -> Paste the CURL request.
+ 
+ <kbd>![pmw-1](/Images/PMW_1.png)</kbd>
+ 
+ 3. Go to `Headers` tab and replace `myAPIKey` with your actual API Key from Adobe I/O Console integration for Adobe Stock.
+ 
+ <kbd>![pmw-2](/Images/PMW_2.png)</kbd>
+ 
+ 4. Click Send. You will receive a response.
+ 
+ <kbd>![pmw-3](/Images/PMW_3.png)</kbd>
+ 
+ *Note: You can import any CURL Request into Postman by following the above steps.*
+ 
