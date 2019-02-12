@@ -25,6 +25,21 @@ redirect_uri | A URL to which the user agent is redirected on successful logout.
 access_token | Optional, the user's base-64 encoded access token. If specified and still valid, IMS attempts to revoke this token.
 callback | Optional, a JavaScript callback function to handle the JSONP response. If not provided, the body of the successful response contains the requested data in JSON format.
 
+#### Example
+```
+GET /ims/logout/v1?redirect_uri=REDIRECT_URI&access_token=ACCESS_TOKEN&client_id=CLIENT_ID HTTP/1.1
+Host: ims-na1.adobelogin.com
+
+```
+After internal redirects, IMS redirects the user agent back to the supplied redirect_uri location.
+
+**Success response**
+```
+HTTP/1.1 302 Moved Temporarily
+Cache-Control: no-store
+Location: REDIRECT_URI
+```
+
 ### Request syntax for back-channel logout with redirect
 
 Request method | GET / POST
@@ -40,6 +55,17 @@ redirect_uri | A URL to which the user agent is redirected on successful logout.
 access_token | Optional, the user's base-64 encoded access token. If specified and still valid, IMS attempts to revoke this token.
 callback | Optional, a JavaScript callback function to handle the JSONP response. If not provided, the body of the successful response contains the requested data in JSON format.
 
+#### Example
+```
+GET /ims/logout/v1?client_id=CLIENT_ID&client_secret=CLIENT_SECRET&access_token=ACCESS_TOKEN HTTP/1.1
+Host: ims-na1.adobelogin.com
+```
+**Success response**
+```
+HTTP/1.1 200
+Cache-Control: no-store
+```
+
 ### Request syntax for non-redirect logout
 
 Request method | GET / POST
@@ -53,35 +79,7 @@ access_token | Optional, the user's base-64 encoded access token. If specified a
 client_id | 	Mandatory for front-channel CORS requests, optional for front-channel JSONP requests.
 callback | Optional, a JavaScript callback function to handle the JSONP response. If not provided, the body of the successful response contains the requested data in JSON format.
 
-### Examples
-
-#### Front-channel logout
-```
-GET /ims/logout/v1?redirect_uri=REDIRECT_URI&access_token=ACCESS_TOKEN&client_id=CLIENT_ID HTTP/1.1
-Host: ims-na1.adobelogin.com
-
-```
-After internal redirects, IMS redirects the user agent back to the supplied redirect_uri location.
-
-**Success response**
-```
-HTTP/1.1 302 Moved Temporarily
-Cache-Control: no-store
-Location: REDIRECT_URI
-```
-
-#### Back-channel logout
-```
-GET /ims/logout/v1?client_id=CLIENT_ID&client_secret=CLIENT_SECRET&access_token=ACCESS_TOKEN HTTP/1.1
-Host: ims-na1.adobelogin.com
-```
-**Success response**
-```
-HTTP/1.1 200
-Cache-Control: no-store
-```
-
-#### Non redirect logout examples
+#### Example
 
 Request using JSONP
 ```
@@ -107,3 +105,9 @@ Server: ASIT
  
 callbackName({});
 ```
+
+
+
+
+
+
