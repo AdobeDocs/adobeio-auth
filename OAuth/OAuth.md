@@ -27,7 +27,9 @@ The process of providing secure access to protected resources has two stages, **
 
 - In order to start this workflow, redirect the user to the Adobe's authorization endpoint:
 
-```https://ims-na1.adobelogin.com/ims/authorize```
+```
+https://ims-na1.adobelogin.com/ims/authorize
+```
 
 - Include the following parameters:
 
