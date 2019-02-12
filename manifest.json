@@ -116,6 +116,12 @@
       "title": "Resources",
       "pages": [
         {
+          "importedFileName": "Tools",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/Resources/Tools/ToolsOverview.md",
+          "title": "Tools"
+        },
+        {
           "importedFileName": "IMS APIs",
           "pages": [],
           "path": "AdobeDocs/adobeio-auth/stage/Resources/IMS.md",
