@@ -42,7 +42,9 @@ _**MacOS and Linux:**_
 
 - Open a terminal and execute the following command:  
 
-`openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt`
+```
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt
+```
 
 
 <kbd>![Generate public certificate](../Images/auth_jwtqs_00.png "Generate Public certificate")</kbd>
