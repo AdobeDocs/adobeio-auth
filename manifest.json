@@ -62,23 +62,35 @@
       "title": "JWT Authentication"
     },
     {
-      "importedFileName": "Resources",
-      "path": "AdobeDocs/adobeio-auth/stage/Resources/ResourcesOverview.md",
-      "title": "Resources",
+      "importedFileName": "Tools",
       "pages": [
-        {
-          "importedFileName": "Tools",
-          "pages": [],
-          "path": "AdobeDocs/adobeio-auth/stage/Resources/Tools/ToolsOverview.md",
-          "title": "Tools"
-        },
-        {
-          "importedFileName": "IMS APIs",
-          "pages": [],
-          "path": "AdobeDocs/adobeio-auth/stage/Resources/IMS.md",
-          "title": "IMS APIs"
-        }
-      ]
+          {
+            "importedFileName": "OAuth 2.0 Playground",
+            "pages": [],
+            "path": "AdobeDocs/adobeio-auth/stage/Resources/Tools/OAuthPlayground.md",
+            "title": "OAuth 2.0 Playground"
+          },
+          {
+            "importedFileName": "Adobe I/O Console - JWT",
+            "pages": [],
+            "path": "AdobeDocs/adobeio-auth/stage/Resources/Tools/IOConsoleJWT.md",
+            "title": "Adobe I/O Console - JWT"
+          },
+          {
+            "importedFileName": "Postman",
+            "pages": [],
+            "path": "AdobeDocs/adobeio-auth/stage/Resources/Tools/Postman.md",
+            "title": "Postman"
+          }
+      ],
+      "path": "AdobeDocs/adobeio-auth/stage/Resources/Tools/ToolsOverview.md",
+      "title": "Tools"
+    },
+    {
+      "importedFileName": "IMS APIs",
+      "pages": [],
+      "path": "AdobeDocs/adobeio-auth/stage/Resources/IMS.md",
+      "title": "IMS APIs"
     },
     {
       "importedFileName": "FAQs",
