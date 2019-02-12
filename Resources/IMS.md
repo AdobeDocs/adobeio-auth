@@ -1,6 +1,6 @@
 # IMS APIs
 
-Here is a list of Adobe Identity Management Services (IMS) which can be useful for specific use cases.
+Here is a list of Adobe Identity Management Services (IMS) APIs, which can be useful for specific use cases.
 
 ## Logout
 
