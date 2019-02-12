@@ -34,7 +34,7 @@ The process of providing secure access to protected resources has two stages, **
 Parameters | Description
 ---- | ----
 `client_id` |	The Client ID obtained from the [Adobe I/O Console](https://console.adobe.io/).
-`redirect_uri` |	The URI to which the user agent is redirected once the authorization completes. Note that this URI must be HTTPS. The pattern is validated against the list of valid redirect URIs configured for your client.
+`redirect_uri` | Optional. The URI to which the user agent is redirected once the authorization completes. Note that this URI must be HTTPS. The pattern is validated against the list of valid redirect URIs configured for your client. If the redirect URI is not provided with request it will consider the Default Redirect URI in Adobe I/O Console.
 `scope`	| The scope of the access request, expressed as a list of comma-delimited, case sensitive strings. See the Scope Reference for more information.
 `response_type` |	The default response_type for the Authorization code flow is `code`. 
 `locale` | Optional. The locale code for the authentication UI. Default is en_US.
