@@ -9,7 +9,7 @@
 
 3. Create an integration-> Select Access an API-> Select services you wish to integrate with (e.g. Adobe Analytics->OAuth 2.0 Integration)
 
-4. Provide the Redirect URI pattern as **https://runtime\\\\.adobe\\\\.io**
+4. Provide the Redirect URI pattern as **https://runtime\\.adobe\\.io**
 
 <kbd>![op-2](../../Images/OP_2.png)</kbd>
 
