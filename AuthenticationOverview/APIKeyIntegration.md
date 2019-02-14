@@ -75,6 +75,6 @@ curl 'https://stock.adobe.io/Rest/Media/1/Search/Files?locale=en_US%26search_par
 
 - Click Send. You will receive a successful response. Note that you did not need an access token for making a successful request using API Key integration.
 
-<kbd>![api-key-5](../Images/api-key-7.png)</kbd>
+<kbd>![api-key-7](../Images/api-key-7.png)</kbd>
   
   
