@@ -7,7 +7,7 @@ To establish a secure service-to-service Adobe I/O API session, you must create 
 The basic Web JWT authentication workflow will look like:
 
 - [Creating a JSON Web Token](#creating-a-json-web-token)
-- [Retrieving an Access Token](#retrieving-an-access-token)
+- [Exchanging JWT to retrieve an access token](#exchanging-jwt-to-retrieve-an-access-token)
 
 ## Creating a JSON Web Token
 
@@ -67,7 +67,7 @@ PHP | `firebase php-jwt` `luciferous jwt`
 .NET | `jwt`
 Haskell | `haskell-jwt`
 
-## Retrieving an Access Token
+## Exchanging JWT to retrieve an access token
 
 To initiate an API session,use the JWT to obtain an access token from Adobe by making a POST request to Adobe's Identity Management Service (IMS).
 
