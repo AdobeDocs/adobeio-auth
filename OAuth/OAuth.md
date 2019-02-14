@@ -1,6 +1,6 @@
 # OAuth 2.0 Authentication
 
-Adobe Cloud Platform APIs use the OAuth 2.0 protocol for authentication and authorization. Using Adobe OAuth 2.0, you can generate an access token which is used to make API calls from your web server or browser-based apps.
+Adobe Cloud Platform APIs use the OAuth 2.0 protocol for authentication and authorization. Using Adobe OAuth 2.0, you can generate an access token using the [OAuth Integration](../AuthenticationOverview/OAuthIntegration.md) created in [Adobe I/O Console](https://console.adobe.io) which is used to make API calls from your web server or browser-based apps.
 
 The basic Web OAuth 2.0 workflow will look like:
 
