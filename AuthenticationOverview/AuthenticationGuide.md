@@ -22,5 +22,5 @@ If your integration needs to access content or a service on behalf of an end use
 e.g. Creative SDK, Photoshop, Adobe Analytics, etc.
 
 ### [Service Account Integration (JWT authentication flow)](ServiceAccountIntegration.md)
-For service-to-service integrations, you will also need a JSON Web Token (JWT) that encapsulates your client credentials and authenticates the identity of your integration. You exchange the JWT for the OAuth token that authorizes access.
+For service-to-service integrations, you will also need a JSON Web Token (JWT) that encapsulates your client credentials and authenticates the identity of your integration. You exchange the JWT for the access token that authorizes access.
 e.g. Adobe Campaign, Adobe Launch, Adobe Target, etc.
