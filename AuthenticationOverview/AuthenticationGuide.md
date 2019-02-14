@@ -2,7 +2,7 @@
 
 Adobe is committed to privacy and security. Nearly all Adobe services require your application to authenticate through the Adobe Identity Management System (IMS) to receive client credentials. The client credentials determine the access and permissions granted to your application.
 
-Any API that accesses a service, data or content on behalf of an end user authenticates using the OAuth and JSON Web Token standards.
+Any API that accesses a service, data or content on behalf of an end user authenticates using the OAuth or JSON Web Token standards.
 
 
 
