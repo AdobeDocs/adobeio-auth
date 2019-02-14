@@ -68,11 +68,13 @@ curl 'https://stock.adobe.io/Rest/Media/1/Search/Files?locale=en_US%26search_par
   -H 'x-product:myTestApp1.0'
 ```
 
-- Open Postman and go to Import->Paste Raw Text and paste the curl command.
+- Open Postman and go to `Import`->`Paste Raw Text` and paste the curl command.
 
 <kbd>![api-key-5](../Images/api-key-5.png)</kbd>
 
 
-- Click Send.
+- Click Send. You will receive a successful response. Note that you did not need an access token for making a successful request using API Key integration.
+
+<kbd>![api-key-5](../Images/api-key-7.png)</kbd>
   
   
