@@ -8,11 +8,11 @@ OAuth scopes govern the access and privileges an Adobe user will grant authoriza
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
-1. [Creative Cloud](#creative-cloud)
-1. [Experience Cloud](#experience-cloud)
-1. [Scope Definitions](#scope-definitions)
-    1. [openid](#openid)
-    1. [creative_sdk](#creative_sdk)
+- [Creative Cloud](#creative-cloud)
+- [Experience Cloud](#experience-cloud)
+- [Scope Definitions](#scope-definitions)
+    - [openid](#openid)
+    - [creative_sdk](#creative_sdk)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
