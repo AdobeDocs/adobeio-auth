@@ -37,7 +37,7 @@ Parameters | Description
 ---- | ----
 `client_id` |	The Client ID obtained from the [Adobe I/O Console](https://console.adobe.io/).
 `redirect_uri` | Optional. The URI to which the user agent is redirected once the authorization completes. Note that this URI must be HTTPS. The pattern is validated against the list of valid redirect URIs configured for your client. If the redirect URI is not provided with the request it will consider the Default Redirect URI in Adobe I/O Console.
-`scope`	| The scope of the access request, expressed as a list of comma-delimited, case sensitive strings. See the Scope Reference for more information.
+`scope`	| The scope of the access request, expressed as a list of comma-delimited, case sensitive strings. See the [Scope Reference](Scopes.md) for more information.
 `response_type` |	The default response_type for the Authorization code flow is `code`. 
 `locale` | Optional. The locale code for the authentication UI. Default is en_US.
 `state` |	Optional. Client-defined state data that is replayed back to the client. It must not be longer than 255 characters. The value should be sent in JSON format, for example  state={“st”:some_alphanumeric_value}. This parameter should be used to prevent CSRF (Cross-Site Request Forgery).
