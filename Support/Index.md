@@ -1,6 +1,6 @@
 # Support
 
-Before asking for support, please check the [FAQ for commonly asked questions](/FAQ). It will save your time, so that you can get back into the code!
+Before asking for support, please check the [FAQ for commonly asked questions](/FAQ/Index.md). It will save your time, so that you can get back into the code!
 
 ## [Github Issues](https://github.com/AdobeDocs/adobeio-auth/issues)
 
