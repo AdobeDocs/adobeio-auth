@@ -2,7 +2,7 @@
 
 This is a knowledge base of common questions and issues from developers.
 
-## Table of Contents
+## Contents
 - [Where can I find the sample code for OAuth authentication?](#where-can-i-find-the-sample-code-for-oauth-authentication-)
 - [How to use the private key for generating a JWT?](#how-to-use-the-private-key-for-generating-a-jwt-)
 - [What does Default Redirect URI and the Redirect URI Pattern means?](#what-does-default-redirect-uri-and-the-redirect-uri-pattern-means-)
