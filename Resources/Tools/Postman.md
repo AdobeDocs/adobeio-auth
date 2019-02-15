@@ -31,7 +31,7 @@
 openid,AdobeID,read_organizations,additional_info.projectedProductContext,additional_info.job_function
 ```
 
-*Note: If you are not sure about scope, refer to [Scope Reference](../OAuth/Scopes.md).*
+*Note: If you are not sure about scope, refer to [Scope Reference](../../OAuth/Scopes.md).*
 
 <kbd>![pm-4](../../Images/PM_4.png)</kbd>
 
