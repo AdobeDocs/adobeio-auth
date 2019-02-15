@@ -31,7 +31,7 @@
 openid,AdobeID,read_organizations,additional_info.projectedProductContext,additional_info.job_function
 ```
 
-*Note: If you are not sure about scope, use `openid` to proceed, it will generate an access token for you but certain APIs won't work without appropriate scopes.*
+*Note: If you are not sure about scope, refer to [Scope Reference](../OAuth/Scopes.md).*
 
 <kbd>![pm-4](../../Images/PM_4.png)</kbd>
 
