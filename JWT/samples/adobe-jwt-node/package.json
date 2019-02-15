@@ -1,0 +1,11 @@
+{
+  "name":"adobe-jwt-node",
+  "main": "./app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.4.0",
+    "request": "^2.88.0"
+  }
+}
