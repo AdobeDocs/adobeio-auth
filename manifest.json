@@ -39,6 +39,12 @@
       "importedFileName": "OAuth Authentication",
       "pages": [
         {
+          "importedFileName": "OAuth Scopes",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/stage/OAuth/Scopes.md",
+          "title": "OAuth Scopes"
+        },
+        {
           "importedFileName": "OAuth Sample Code",
           "pages": [],
           "path": "AdobeDocs/adobeio-auth/stage/OAuth/samples/samples.md",
