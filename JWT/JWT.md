@@ -40,7 +40,7 @@ The following is a sample payload to be signed and encoded.
 ### Sign and Encode your JWT
 The JWT must be signed and base-64 encoded for inclusion in the access request. The JWT libraries provide functions to perform these tasks.
 
-- The token must be signed using the private key for a digital signing certificate that is associated with your API key. You can associate more than one certificate with an API key. If you do so, you can use the private key of any associated certificate to sign your JWT. For more information, see [Service Account Integration](../AuthenticationOverview/ServiceAccountIntegration.md#step-2-create-a-public-key-certificate).
+- The token must be signed using the private key for a digital signing certificate that is associated with your API key. You can associate more than one certificate with an API key. If you do so, you can use the private key of any associated certificate to sign your JWT. For more information about private key/public certificate, see [Create a public key certificate](../AuthenticationOverview/ServiceAccountIntegration.md#step-2-create-a-public-key-certificate).
 
 **Algorithm**: **RS256** (RSA Signature with SHA-256) is an asymmetric algorithm, and it uses a public/private key pair: the identity provider has a private (secret) key used to generate the signature, and the consumer of the JWT (i.e. Adobe I/O Console) gets a public key to validate the signature. 
 
