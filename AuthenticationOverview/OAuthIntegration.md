@@ -63,4 +63,4 @@ This article will walk you through the steps to set up an **OAuth integration**.
 
 ### Step 3: Try It
 
-- Generate an access token using [OAuth 2.0 Playground](https://adobeioruntime.net/api/v1/web/io-solutions/adobe-oauth-playground/oauth.html)
+- Generate an access token using [OAuth 2.0 Playground](../Resources/Tools/OAuthPlayground.md)
