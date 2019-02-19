@@ -63,4 +63,4 @@ This article will walk you through the steps to set up an **OAuth integration**.
 
 ### Step 3: Try It
 
-- Generate an access token using [OAuth 2.0 Playground](../Tools/OauthPlayground.md)
+- Generate an access token using [OAuth 2.0 Playground](../Tools/OAuthPlayground.md)
