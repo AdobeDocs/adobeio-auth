@@ -9,15 +9,24 @@ JWT metascopes govern the access and privileges for Service accounts. As an appl
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
+- [Adobe I/O](#adobe-io)
 - [Creative Cloud](#creative-cloud)
 - [Document Cloud](#document-cloud)
 - [Experience Cloud](#experience-cloud)
-- [Adobe I/O](#adobe-io)
-- [Sensei](#sensei)
 - [GDPR](#gdpr)
+- [Sensei](#sensei)
 - [User Management](#user-management)
 - [Other](#other)
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Adobe I/O
+Metascopes for Adobe I/O Service Account APIs
+
+APIs | Metascopes
+---|---
+I/O Events | ``https://ims-na1.adobelogin.com/s/ent_receiver_api``
+I/O Management | ``ttps://ims-na1.adobelogin.com/s/ent_adobeio_sdk``
+
 
 ## Creative Cloud
 Metacopes for Creative Cloud Service Account APIs
@@ -56,13 +65,13 @@ Experience Platform Launch (Approver) | ``https://ims-na1.adobelogin.com/s/ent_r
 Experience Platform Launch (Publisher) | ``https://ims-na1.adobelogin.com/s/ent_reactor_publisher_sdk``
 Experience Platform Launch (Extension developer) | ``https://ims-na1.adobelogin.com/s/ent_reactor_extension_developer_sdk``
 
-## Adobe I/O
-Metascopes for Adobe I/O Service Account APIs
+## GDPR
+Metascopes for GDPR Service Account APIs
 
 APIs | Metascopes
 ---|---
-I/O Events | ``https://ims-na1.adobelogin.com/s/ent_receiver_api``
-I/O Management | ``ttps://ims-na1.adobelogin.com/s/ent_adobeio_sdk``
+GDPR | ``https://ims-na1.adobelogin.com/s/ent_gdpr_sdk``
+
 
 ## Sensei 
 Metascopes for Sensei Service Account APIs
@@ -72,12 +81,6 @@ APIs | Metascopes
 Smart Content | ``https://ims-na1.adobelogin.com/s/ent_smartcontent_sdk``
 Auto Crop, Auto Tag | ``https://ims-na1.adobelogin.com/s/ent_sensei_image_sdk``
 
-## GDPR
-Metascopes for GDPR Service Account APIs
-
-APIs | Metascopes
----|---
-GDPR | ``https://ims-na1.adobelogin.com/s/ent_gdpr_sdk``
 
 ## User Management
 Metascopes for User management Service Account APIs
