@@ -94,6 +94,5 @@ APIs | Metascopes
 AEM Brand portal | ``https://ims-na1.adobelogin.com/s/ent_brand_portal_sdk``
 Places | ``https://ims-na1.adobelogin.com/s/ent_places_sdk``
 Cloud Manager | ``https://ims-na1.adobelogin.com/s/ent_cloudmgr_sdk``
----|---
 
 
