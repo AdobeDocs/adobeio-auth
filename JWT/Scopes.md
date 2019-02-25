@@ -1,5 +1,5 @@
 
-# JWT Metacopes
+# JWT Metascopes
 
 JWT metascopes govern the access and privileges for Service accounts. As an application developer, you will choose the set of scopes to access certain resources by specifying the scopes as part of the encoding claims for JWT.
 
