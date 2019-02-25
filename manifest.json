@@ -58,6 +58,12 @@
       "importedFileName": "JWT Authentication",
       "pages": [
         {
+          "importedFileName": "JWT Metascopes",
+          "pages": [],
+          "path": "AdobeDocs/adobeio-auth/master/JWT/Scopes.md",
+          "title": "JWT Metascopes"
+        },
+        {
           "importedFileName": "JWT Sample Code",
           "pages": [],
           "path": "AdobeDocs/adobeio-auth/master/JWT/samples/samples.md",
