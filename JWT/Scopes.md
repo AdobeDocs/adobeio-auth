@@ -25,7 +25,7 @@ Metascopes for Adobe I/O Service Account APIs
 APIs | Metascopes
 ---|---
 I/O Events | ``https://ims-na1.adobelogin.com/s/ent_receiver_api``
-I/O Management | ``ttps://ims-na1.adobelogin.com/s/ent_adobeio_sdk``
+I/O Management | ``https://ims-na1.adobelogin.com/s/ent_adobeio_sdk``
 
 
 ## Creative Cloud
