@@ -101,13 +101,13 @@
     {
       "importedFileName": "FAQs",
       "pages": [],
-      "path": "AdobeDocs/adobeio-auth/stage/FAQ/Index.md",
+      "path": "AdobeDocs/adobeio-auth/stage/FAQ.md",
       "title": "FAQ"
     },
     {
       "importedFileName": "Support",
       "pages": [],
-      "path": "AdobeDocs/adobeio-auth/stage/Support/Index.md",
+      "path": "AdobeDocs/adobeio-auth/stage/Support.md",
       "title": "Support"
     }
   ]
