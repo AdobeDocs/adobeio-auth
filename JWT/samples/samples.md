@@ -10,3 +10,6 @@ The following samples demonstrate JWT token generation and exchanging it with Ad
 
 ### Python Example
 [Github repo](https://github.com/AdobeDocs/adobeio-auth/tree/master/JWT/samples/adobe-jwt-python) where you can find a complete sample Python code to generate a JWT Token and exchanging it with Adobe IMS Endpoint to retrieve an access token.
+
+### C#.NET Example
+[Github repo](https://github.com/AdobeDocs/adobeio-auth/tree/master/JWT/samples/adobe-jwt-dotnet) where you can find a complete sample C#.NET code to generate a JWT Token and exchanging it with Adobe IMS Endpoint to retrieve an access token.
