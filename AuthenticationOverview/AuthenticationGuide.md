@@ -4,6 +4,9 @@ Adobe is committed to privacy and security. Nearly all Adobe services require yo
 
 Any API that accesses a service, data or content on behalf of an end user authenticates using the OAuth or JSON Web Token standards.
 
+
+
+
 Use the [Adobe I/O Console](https://console.adobe.io/) to obtain client credentials by creating a new **Integration**. When you create an Integration, you are assigned an **API Key** (client ID) and other access credentials. You can then obtain a secure access token from Adobe for each API session.
 
 An integration can be subscribed to one or more services. In many cases, you will use the same client credentials to access multiple Adobe services. In addition to APIs, you may also subscribe your integration to I/O Events so that your applications can access content and services in real-time.
