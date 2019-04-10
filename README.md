@@ -3,9 +3,9 @@ This guide contains all you need to know to authenticate your apps with Adobe se
 
 In this Guide:
 - [Authentication Overview](AuthenticationOverview/AuthenticationGuide.md): Discover Adobe authentication models and find out about how to authenticate with Adobe in one of three ways, depending on your application model:
-    - [API Key Integration](authenticationoverview/apikeyintegration.md)
-    - [OAuth Integration](oauthauthentication.md)
-    - [Service Account Integration](authenticationoverview/serviceaccountintegration.md)
+    - [API Key Integration](AuthenticationOverview/APIKeyIntegration.md)
+    - [OAuth Integration](/AuthenticationOverview/OAuthIntegration.md)
+    - [Service Account Integration](/AuthenticationOverview/ServiceAccountIntegration.md)
 - [OAuth Authentication](OAuth/OAuth.md): Get technical specifications on OAuth 2.0 authorization and authentication. Discover sample applications that can help you create your first integrations.
 - [JWT Authentication](JWT/JWT.md): Get technical specifications on JSON Web Token (JWT) authentication, the model used for service account integrations. Discover sample apps.
 - [Tools](Resources/Tools/ToolsOverview.md): Adobe recommends two tools for generating access tokens:
