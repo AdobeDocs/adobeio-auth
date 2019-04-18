@@ -7,8 +7,10 @@ generateToken(_config, function(err, token) {
   {
     console.log("Error occured: " + err);
   }
-
-  console.log("Access token generated: " + token);
+  else
+  {
+    console.log("Access token generated: " + token);
+  }
 });
 
 function generateToken(_config, callback) {
