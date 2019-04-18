@@ -3,7 +3,10 @@ var jwt = require("jsonwebtoken");
 var _config = require("./config.js");
 
 generateToken(_config, function(err, token) {
-  if (err) reject(err);
+  if (err)
+  {
+    console.log("Error occured: " + err);
+  }
 
   console.log("Access token generated: " + token);
 });
