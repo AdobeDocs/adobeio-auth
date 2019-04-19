@@ -2,9 +2,9 @@
   "name": "jwtauth-test",
   "version": "1.0.0",
   "description": "This is a test code for testing jwtauth-test",
-  "main": "./index.js",
+  "main": "./app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "author": "Hiren Shah",
   "license": "MIT",
