@@ -11,7 +11,7 @@ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key 
 ```
 
 
-<kbd>![Generate public certificate](/Images/auth_jwtqs_00.png "Generate Public certificate")</kbd>
+<kbd>![Generate public certificate](../Images/auth_jwtqs_00.png "Generate Public certificate")</kbd>
 
 _**Windows:**_
 
@@ -29,7 +29,7 @@ _**Windows:**_
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt
 ```
 
-<kbd>![Generate public certificate windows](/Images/auth_jwtqs_000.png "Generate Public certificate windows")</kbd>
+<kbd>![Generate public certificate windows](../Images/auth_jwtqs_000.png "Generate Public certificate windows")</kbd>
 
 - Once you&rsquo;ve completed the steps for your chosen platform, continue in the Adobe I/O Console.
 
@@ -37,8 +37,8 @@ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key 
 
 - Upload the public certificate (certificate_pub.crt) as a part of creating the integration.
 
-    <kbd>![Upload public certificate](/Images/auth_jwtqs_03.png "Upload public certificate")</kbd>
+    <kbd>![Upload public certificate](../Images/auth_jwtqs_03.png "Upload public certificate")</kbd>
 
 - Your integration should now be created with the appropriate public certificate and claims.
 
-    <kbd>![Integration created](/Images/auth_jwtqs_04.png "Integration created")</kbd>
+    <kbd>![Integration created](../Images/auth_jwtqs_04.png "Integration created")</kbd>
