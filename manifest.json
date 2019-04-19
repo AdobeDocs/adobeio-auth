@@ -55,7 +55,7 @@
       "title": "OAuth Authentication"
     },
     {
-      "importedFileName": "JWT Authentication",
+      "importedFileName": "JWT (Service Account) Authentication",
       "pages": [
         {
           "importedFileName": "Create a Public Key Certificate",
@@ -77,7 +77,7 @@
         }
       ],
       "path": "AdobeDocs/adobeio-auth/stage/JWT/JWT.md",
-      "title": "JWT Authentication"
+      "title": "JWT (Service Account) Authentication"
     },
     {
       "importedFileName": "Tools",
