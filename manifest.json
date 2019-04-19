@@ -58,10 +58,10 @@
       "importedFileName": "JWT Authentication",
       "pages": [
         {
-          "importedFileName": "Create Public Key Certificate",
+          "importedFileName": "Create a Public Key Certificate",
           "pages": [],
           "path": "AdobeDocs/adobeio-auth/master/JWT/JWTCertificate.md",
-          "title": "Create Public Key Certificate"
+          "title": "Create a Public Key Certificate"
         },
         {
           "importedFileName": "JWT Metascopes",
