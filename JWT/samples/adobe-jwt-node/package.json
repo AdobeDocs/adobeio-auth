@@ -1,14 +1,13 @@
 {
-  "name": "jwtauth-test",
+  "name": "adobe-jwt-node",
   "version": "1.0.0",
-  "description": "This is a test code for testing jwtauth-test",
-  "main": "./index.js",
+  "description": "This is a sample code",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "author": "Hiren Shah",
   "license": "MIT",
   "dependencies": {
-    "@adobe/jwt-auth": "0.0.1"
+    "@adobe/jwt-auth": "*"
   }
 }
