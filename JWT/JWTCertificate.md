@@ -2,8 +2,6 @@
 
 - Create a private key and a public certificate. Make sure you store these securely.
 
-- Once you complete the above steps, your path diverges depending on your platform: 
-
 _**MacOS and Linux:**_
 
 - Open a terminal and execute the following command:  
