@@ -33,7 +33,7 @@ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key 
 
 - Once you&rsquo;ve completed the steps for your chosen platform, continue in the Adobe I/O Console.
 
-# Using the public certificate for creating an integration
+# Using the Public Key Certificate for Service Account Integration
 
 - Upload the public certificate (certificate_pub.crt) as a part of creating the integration.
 
