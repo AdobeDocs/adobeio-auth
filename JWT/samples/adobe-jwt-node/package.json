@@ -1,8 +1,7 @@
 {
-  "name": "jwtauth-test",
+  "name": "adobe-jwt-node",
   "version": "1.0.0",
-  "description": "This is a test code for testing jwtauth-test",
-  "main": "./app.js",
+  "description": "This is a sample code",
   "scripts": {
     "start": "node app.js"
   },
