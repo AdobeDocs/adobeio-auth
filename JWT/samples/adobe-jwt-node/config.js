@@ -1,24 +1,24 @@
-//Adobe IO Trial-1 Org
+//console.adobe.io -> Integration -> Details
 
 module.exports = {
     credentials: {
-        clientId : "bb11ebd6406a4fce9bddd72af705b26a",
-        technicalAccountId : "8EDD35615AFC68F80A495CDB@techacct.adobe.com",
-        orgId : "EF2D36315AFC50870A495DCA@AdobeOrg",
-        clientSecret : "c811f67e-9ed3-41f4-b30d-004c625ea148",
-        metaScopes : "ent_user_sdk",
-        privateKey : "-----BEGIN RSA PRIVATE KEY-----\n" +
+        clientId : "bb11ebd6406a4f---------f705b26a", //Application ID (Client ID)
+        technicalAccountId : "8EDD3561-------5CDB@techacct.adobe.com", //Technical account ID
+        orgId : "EF2D363--------CA@AdobeOrg", // Org ID
+        clientSecret : "c811f67e-9ed------------25ea148", //Client Secret
+        metaScopes : "ent_user_sdk", // Metascopes
+        privateKey : "-----BEGIN RSA PRIVATE KEY-----\n" + //Content of private.key
         "MIIEowIBAAKCAQEAtqX3bHwETnyOizuDUWoyT0PTreyQJ9Hkti+5CssnRULAsE/D\n" +
         "Yw6RyB8WLlC07mYxUkA/7Ikd1oEvTuAYLCSuJWXu0WBhXHrw6268xP60LjQl1Xu5\n" +
         "GQjrTiQll8c0N10dww6TzzupLyFOD/J+TsH9T2zZ/DYukP/x0iOGs/7D3IvJfRcq\n" +
         "6FOoAcKSV3geW7IRDnmn+dX4W3SWN/SS9OGRgYu16KBYV2+YvAkRtWM3nMdLuz6a\n" +
         "ep16MBZJQErYguowmhrSmLRFOzkZbXPjr6JZmZaNuuPLQnLYLA2p0RUzva5PThkw\n" +
         "esidMH2WZQ5dP+4aDA8mwz6eiI6z4+WR8gp3DwIDAQABAoIBADmMN1YGCTFVi3AR\n" +
-        "E0IOrMVOwJ5XH+B8AIzqomnlMn1fF+k1aIGIcKRWLx3ureNDbZzVw45acX1JfMdk\n" +
+        "E0IOrMVOwJ5XH+B8AIz------------------------------ZzVw45acX1JfMdk\n" +
         "UhlugTQlVsa/kE2cKtZzMKT8/3ZjVdxavCpIJiObvgCBclFTVHJF4Ip16MuBud/K\n" +
         "bsOP2akxycjupWNoUR/9s4544etV0smbm2wV/KUVth8VFdRMaE2b0xHeCOvS4MP2\n" +
         "j1sSqdSmKUBddooFjQwDC/poOQC0GYj+VXEiHrR/uk/P/ipO2Q7N4+2DIDXAe1d7\n" +
-        "0A6reBaPagbvHhQbVZEA/shOhHWCfhnMmT7xurtDoX52CDVFJRQzncCXe6WD9tPT\n" +
+        "0A6reBaPagbvH---------------------------oX52CDVFJRQzncCXe6WD9tPT\n" +
         "ldx9F6ECgYEA8fMntK4pjLKVGkmjuHCmYZqCQfElbxZWBGgeTi6TtQAC/K0NqivL\n" +
         "57SMjiZEdE1Ct716PHs8YCHNVQVdPD2Bpv9HXq9Jcz+nQj0onofqsplnj/0nH3ls\n" +
         "fJGo27nB8LYDINWXEY3Mr8H7/Xs5/lQIDdoadWriJHCifO0sSdih/b8CgYEAwUE6\n" +
