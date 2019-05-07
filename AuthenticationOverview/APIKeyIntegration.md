@@ -17,7 +17,7 @@ This article will walk you through the steps to set up an **API Key integration*
 
 ### Step 1: Subscribe to an Adobe service
 
-1. To create a new API Key integration, sign in to the [Adobe I/O Console](https://console.adobe.io/) with your Adobe ID and select **New Integration.** (Notice that you may also choose existing integrations and edit their details from here.)  
+1. To create a new API Key integration, sign in to the [Adobe I/O Console](https://console.adobe.io/) with your Adobe ID and select **New Integration**. (Notice that you may also choose existing integrations and edit their details from here.)  
   
     <kbd>![api-key-1](../Images/api-key-1.png)</kbd>
 
@@ -40,15 +40,15 @@ This article will walk you through the steps to set up an **API Key integration*
 
 | Detail | Description |
 |---|---|
-| `Name` | Enter a unique name to easily identify your integration. |
-| `Description` | Provide a brief description about this integration. If you have multiple applications or access multiple services, you can use these properties to better organize your integrations. |
-| `Platform` | Select a platform on which the integration is intended to be used: `iOS`, `Android`, `Web` |
-| `Default Redirect URI` | After a user successfully authorizes an application, the authorization server will redirect the user back to the application with an authorization code in the URL. Because the redirect URL will contain sensitive information, it is critical that the service doesn’t redirect the user to arbitrary locations. _(HTTPS required)_ |
-| `Redirect URI pattern` | A comma-separated list of URI patterns, to validate additional custom redirect URIs passed along with the Authorization request. _(HTTPS required)_ For example, `https://www\\.myapp\\.com` will allow redirect URIs like `https://www.myapp.com/OAuth/callback`. |  
+| Name | Enter a unique name to easily identify your integration. |
+| Description | Provide a brief description about this integration. If you have multiple applications or access multiple services, you can use these properties to better organize your integrations. |
+| Platform | Select a platform on which the integration is intended to be used: `iOS`, `Android`, or `Web`. |
+| Default redirect URI | After a user successfully authorizes an application, the authorization server will redirect the user back to the application with an authorization code in the URI. Because the redirect URI will contain sensitive information, it is critical that the service doesn’t redirect the user to arbitrary locations. _(HTTPS required)_ |
+| Redirect URI pattern | A comma-separated list of URI patterns to validate additional custom redirect URIs passed along with the authorization request. _(HTTPS required)_ For example, `https://www\\.myapp\\.com` will allow redirect URIs like `https://www.myapp.com/OAuth/callback`. |  
   
 2. Select **Create integration**.
 
-3. When creation is confirmed, visit the Overview section for your new integration. The overview section contains the newly generated API key and allows you to subscribe to additional services or events.
+3. When creation is confirmed, visit the Overview section for your new integration. The overview section contains the newly generated API Key and allows you to subscribe to additional services or events.
 
 ### Step 3: Try it
 
