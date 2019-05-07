@@ -15,7 +15,7 @@ This article will walk you through the steps to set up an **OAuth integration**.
 
 [Step 2: Configure an API Key integration](#step-2-configure-an-api-key-integration)
 
-[Step 3: Try It](#step-3-try-it)
+[Step 3: Try it](#step-3-try-it)
 
 ### Step 1: Subscribe to an Adobe service
 1. To create a new API Key integration, sign in to the [Adobe I/O Console](https://console.adobe.io/) with your Adobe ID, and select **New Integration**. (Notice that you may also choose existing integrations and edit their details from here.)  
