@@ -13,7 +13,7 @@ This article will walk you through the steps to set up an **OAuth integration**.
 ## OAuth Integration Workflow
 [Step 1: Subscribe to an Adobe service](#step-1-subscribe-to-an-adobe-service)
 
-[Step 2: Configure an OAuth integration](#step-2-configure-an-oauth-integration)
+[Step 2: Configure an API Key integration](#step-2-configure-an-api-key-integration)
 
 [Step 3: Try It](#step-3-try-it)
 
@@ -32,7 +32,7 @@ This article will walk you through the steps to set up an **OAuth integration**.
     - To update an existing integration, simply choose it and select **Continue**.
     - If you would like to create a brand-new integration, choose that option and select **Continue**.
 
-### Step 2: Configure an OAuth integration
+### Step 2: Configure an API Key integration
 
 1. The configuration page lets you provide all of the required details for a new integration, or add new information to update an existing integration.  On the page shown below, enter your integration details.  
   **Tip:** Give your integrations accurate and descriptive names. Integrations are shared with developers within your organization, so choose a name that is clear and easily understood. Generic names like My Test App are discouraged.  
