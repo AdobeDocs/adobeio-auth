@@ -85,11 +85,7 @@ Regardless of your platform, you begin with the same steps in Adobe I/O Console:
 
 3. Open Postman, then click Import &gt; Paste Raw Text and paste the copied curl command.
 
-    <kbd>![Postman import](../Images/auth_jwtqs_07.png "Postman import")</kbd>
-
-4. Click Send.
-
-    <kbd>![Postman send](../Images/auth_jwtqs_08.png "Postman send")</kbd>
+    <kbd>![Postman import](../Images/auth_jwtqs_07.png "Postman import")</kbd>  
 
     The example curl sends a POST request to [https://ims-na1.adobelogin.com/ims/exchange/jwt](https://ims-na1.adobelogin.com/ims/exchange/jwt) with the following parameters.
 
@@ -99,4 +95,8 @@ Regardless of your platform, you begin with the same steps in Adobe I/O Console:
 | `client_secret` | The client secret generated for your integration. Find this on the I/O Console for your integration. |
 | `jwt_token` | A base64-encoded JSON Web Token that encapsulates the identity of your integration, signed with a private key that corresponds to a public key certificate attached to the integration. Generate this on the I/O Console in the JWT Tab for your integration. Note that this token has the expiration time parameter `exp` set to 24 hours from when the token is generated. | 
 
-You now have your access token. Look up documentation for the specific API service for which you’re hitting authenticated endpoints to find what other parameters are expected. Most of them need an `x-api-key`, which will be the same as your `client_id`.
+4. Click Send.
+
+    <kbd>![Postman send](../Images/auth_jwtqs_08.png "Postman send")</kbd>
+
+    You now have your access token. Look up documentation for the specific API service for which you’re hitting authenticated endpoints to find what other parameters are expected. Most of them need an `x-api-key`, which will be the same as your `client_id`.
