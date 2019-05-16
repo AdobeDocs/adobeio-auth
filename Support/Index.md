@@ -9,4 +9,3 @@ A knowledge base of frequently asked questions. This is a great starting place t
 ## [GitHub Issues](https://github.com/AdobeDocs/adobeio-auth/issues)
 
 This is the place to report bugs, ask questions, make feature requests, or start a discussion. You'll find official Adobe developers and community members available to help you out.
-

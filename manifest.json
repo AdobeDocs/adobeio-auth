@@ -60,7 +60,7 @@
         {
           "importedFileName": "Create a Public Key Certificate",
           "pages": [],
-          "path": "AdobeDocs/adobeio-auth/master/JWT/JWTCertificate.md",
+          "path": "AdobeDocs/adobeio-auth/stage/JWT/JWTCertificate.md",
           "title": "Create a Public Key Certificate"
         },
         {
@@ -76,7 +76,7 @@
           "title": "JWT Sample Code"
         }
       ],
-      "path": "AdobeDocs/adobeio-auth/master/JWT/JWT.md",
+      "path": "AdobeDocs/adobeio-auth/stage/JWT/JWT.md",
       "title": "JWT (Service Account) Authentication"
     },
     {
