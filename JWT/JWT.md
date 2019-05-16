@@ -1,7 +1,7 @@
 
 # JWT (Service Account) Authentication
 
-To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration and exchange it for an access token. Every request to an Adobe service must include the access token in the Authorization header, along with the API Key (Client ID) that was generated when you created the [Service Account Integration](../AuthenticationOverview/ServiceAccountIntegration.md) in the [Adobe I/O Console](https://console.adobe.io/).
+To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration, and then exchange it for an access token. Every request to an Adobe service must include the access token in the `Authorization` header, along with the API Key (Client ID) that was generated when you created the [Service Account Integration](../AuthenticationOverview/ServiceAccountIntegration.md) in the [Adobe I/O Console](https://console.adobe.io/).
 
 ## Authentication Workflow
 
@@ -10,7 +10,7 @@ To establish a secure service-to-service Adobe I/O API session, you must create 
 
 ## Creating a JSON Web Token
 
-A JSON web token for Service Account authentication requires a particular set of claims, and must be signed using a valid digital signing certificate. We recommend that you use one of the publicly available libraries or tools for building your JWT. Examples are provided for some popular languages.
+A JSON Web Token for Service Account authentication requires a particular set of claims, and must be signed using a valid digital signing certificate. We recommend that you use one of the publicly available libraries or tools for building your JWT. Examples are provided for some popular languages.
 
 
 ### Required claims for a service account JWT
@@ -68,7 +68,7 @@ The following JWT libraries are available in addition to the Java, Node.js, and 
 
 ## Exchanging JWT to Retrieve an Access Token
 
-To initiate an API session,use the JWT to obtain an access token from Adobe by making a POST request to Adobe's Identity Management Service (IMS).
+To initiate an API session, use the JWT to obtain an access token from Adobe by making a POST request to Adobe Identity Management Service (IMS).
 
 - Send a POST request to:  
   `https://ims-na1.adobelogin.com/ims/exchange/jwt`
@@ -127,7 +127,7 @@ A failed request can result in a response with an HTTP status of 400 or 401 and 
 		</tr>
 		<tr>
 			<td>400 bad_request</td>
-			<td>JWT payload can be decoded and decrypted but contents are incorrect. Can occur when values for fields such as sub, iss, exp, or jti are not in the proper format.</td>
+			<td>The JWT payload can be decoded and decrypted, but its contents are incorrect. This can occur when values for fields such as <code>sub</code>, <code>iss</code>, <code>exp</code>, or <code>jti</code> are not in the proper format.</td>
 		</tr>
 	</tbody>
 </table>
