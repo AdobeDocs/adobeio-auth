@@ -12,25 +12,25 @@
   "pages": [
     {
       "importedFileName": "Authentication Overview",
-      "path": "AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md",
+      "path": "AdobeDocs/adobeio-auth/stage/AuthenticationOverview/AuthenticationGuide.md",
       "title": "Authentication Overview",
       "pages": [
         {
           "importedFileName": "API Key Integration",
           "pages": [],
-          "path": "AdobeDocs/adobeio-auth/master/AuthenticationOverview/APIKeyIntegration.md",
+          "path": "AdobeDocs/adobeio-auth/stage/AuthenticationOverview/APIKeyIntegration.md",
           "title": "API Key Integration"
         },
         {
           "importedFileName": "OAuth Integration",
           "pages": [],
-          "path": "AdobeDocs/adobeio-auth/master/AuthenticationOverview/OAuthIntegration.md",
+          "path": "AdobeDocs/adobeio-auth/stage/AuthenticationOverview/OAuthIntegration.md",
           "title": "OAuth Integration"
         },
         {
           "importedFileName": "Service Account Integration",
           "pages": [],
-          "path": "AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md",
+          "path": "AdobeDocs/adobeio-auth/stage/AuthenticationOverview/ServiceAccountIntegration.md",
           "title": "Service Account Integration"
         }
       ]
@@ -41,17 +41,17 @@
         {
           "importedFileName": "OAuth Scopes",
           "pages": [],
-          "path": "AdobeDocs/adobeio-auth/master/OAuth/Scopes.md",
+          "path": "AdobeDocs/adobeio-auth/stage/OAuth/Scopes.md",
           "title": "OAuth Scopes"
         },
         {
           "importedFileName": "OAuth Sample Code",
           "pages": [],
-          "path": "AdobeDocs/adobeio-auth/master/OAuth/samples/samples.md",
+          "path": "AdobeDocs/adobeio-auth/stage/OAuth/samples/samples.md",
           "title": "OAuth Sample Code"
         }
       ],
-      "path": "AdobeDocs/adobeio-auth/master/OAuth/OAuth.md",
+      "path": "AdobeDocs/adobeio-auth/stage/OAuth/OAuth.md",
       "title": "OAuth Authentication"
     },
     {
@@ -60,23 +60,23 @@
         {
           "importedFileName": "Create a Public Key Certificate",
           "pages": [],
-          "path": "AdobeDocs/adobeio-auth/master/JWT/JWTCertificate.md",
+          "path": "AdobeDocs/adobeio-auth/stage/JWT/JWTCertificate.md",
           "title": "Create a Public Key Certificate"
         },
         {
           "importedFileName": "JWT Metascopes",
           "pages": [],
-          "path": "AdobeDocs/adobeio-auth/master/JWT/Scopes.md",
+          "path": "AdobeDocs/adobeio-auth/stage/JWT/Scopes.md",
           "title": "JWT Metascopes"
         },
         {
           "importedFileName": "JWT Sample Code",
           "pages": [],
-          "path": "AdobeDocs/adobeio-auth/master/JWT/samples/samples.md",
+          "path": "AdobeDocs/adobeio-auth/stage/JWT/samples/samples.md",
           "title": "JWT Sample Code"
         }
       ],
-      "path": "AdobeDocs/adobeio-auth/master/JWT/JWT.md",
+      "path": "AdobeDocs/adobeio-auth/stage/JWT/JWT.md",
       "title": "JWT (Service Account) Authentication"
     },
     {
@@ -85,35 +85,35 @@
           {
             "importedFileName": "OAuth 2.0 Playground",
             "pages": [],
-            "path": "AdobeDocs/adobeio-auth/master/Resources/Tools/OAuthPlayground.md",
+            "path": "AdobeDocs/adobeio-auth/stage/Resources/Tools/OAuthPlayground.md",
             "title": "OAuth 2.0 Playground"
           },
           {
             "importedFileName": "Postman",
             "pages": [],
-            "path": "AdobeDocs/adobeio-auth/master/Resources/Tools/Postman.md",
+            "path": "AdobeDocs/adobeio-auth/stage/Resources/Tools/Postman.md",
             "title": "Postman"
           }
       ],
-      "path": "AdobeDocs/adobeio-auth/master/Resources/Tools/ToolsOverview.md",
+      "path": "AdobeDocs/adobeio-auth/stage/Resources/Tools/ToolsOverview.md",
       "title": "Tools"
     },
     {
       "importedFileName": "IMS APIs",
       "pages": [],
-      "path": "AdobeDocs/adobeio-auth/master/Resources/IMS.md",
+      "path": "AdobeDocs/adobeio-auth/stage/Resources/IMS.md",
       "title": "IMS APIs"
     },
     {
       "importedFileName": "FAQs",
       "pages": [],
-      "path": "AdobeDocs/adobeio-auth/master/FAQ/Index.md",
+      "path": "AdobeDocs/adobeio-auth/stage/FAQ/Index.md",
       "title": "FAQ"
     },
     {
       "importedFileName": "Support",
       "pages": [],
-      "path": "AdobeDocs/adobeio-auth/master/Support/Index.md",
+      "path": "AdobeDocs/adobeio-auth/stage/Support/Index.md",
       "title": "Support"
     }
   ]
