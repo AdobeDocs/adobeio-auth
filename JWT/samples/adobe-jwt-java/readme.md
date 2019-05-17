@@ -13,3 +13,4 @@
 4. Edit the config.properties in src/main/resources/ and add the values from your Adobe I/O Console integration.
 
 
+
