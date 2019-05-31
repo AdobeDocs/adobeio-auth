@@ -1,7 +1,6 @@
-
 # JWT Metascopes
 
-JWT metascopes govern the access and privileges for Service accounts. As an application developer, you will choose the set of scopes to access certain resources by specifying the scopes as part of the encoding claims for JWT.
+JSON Web Token (JWT) metascopes govern the access and privileges for service accounts. As an application developer, you will choose the set of scopes to access certain resources by specifying the scopes as part of the encoding claims for your JWTs.
 
 <!-- doctoc command: doctoc . --title "## Contents" --entryprefix 1. --gitlab --maxlevel 3 -->
 

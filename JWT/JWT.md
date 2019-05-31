@@ -1,8 +1,7 @@
 
 # JWT (Service Account) Authentication
 
-To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration, and exchange it for an access token. Every request to an Adobe service must include the access token in the Authorization header, along with the API Key (Client ID) that was generated when you created the [Service Account Integration](../AuthenticationOverview/ServiceAccountIntegration.md) in the [Adobe I/O Console](https://console.adobe.io/).
-
+To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration, and then exchange it for an access token. Every request to an Adobe service must include the access token in the `Authorization` header, along with the API Key (Client ID) that was generated when you created the [Service Account Integration](../AuthenticationOverview/ServiceAccountIntegration.md) in the [Adobe I/O Console](https://console.adobe.io/).
 
 ## Authentication Workflow
 
@@ -11,7 +10,7 @@ To establish a secure service-to-service Adobe I/O API session, you must create 
 
 ## Creating a JSON Web Token
 
-A JSON web token for Service Account authentication requires a particular set of claims, and must be signed using a valid digital signing certificate. We recommend that you use one of the publicly available libraries or tools for building your JWT. Examples are provided for some popular languages.
+A JSON Web Token for Service Account authentication requires a particular set of claims, and must be signed using a valid digital signing certificate. We recommend that you use one of the publicly available libraries or tools for building your JWT. Examples are provided for some popular languages.
 
 
 ### Required Claims for a Service Account JWT
@@ -69,7 +68,7 @@ Haskell | `haskell-jwt`
 
 ## Exchanging JWT to retrieve an access token
 
-To initiate an API session,use the JWT to obtain an access token from Adobe by making a POST request to Adobe's Identity Management Service (IMS).
+To initiate an API session, use the JWT to obtain an access token from Adobe by making a POST request to Adobe Identity Management Service (IMS).
 
 - Send a POST request to:
 
@@ -93,14 +92,47 @@ When a request has been understood and at least partially completed, it returns 
 
 A failed request can result in a response with an HTTP status of 400 or 401 and one of the following error messages in the response body:
 
-Response | Description
----- | ----
-400 invalid_client | Integration does not exist. This applies both to the client_id parameter and the aud in the JWT. The client_id parameter and the aud field in the JWT do not match.
-401 invalid_client | Integration does not have the exchange_jwt scope. This indicates an improper client configuration. Contact Adobe I/O team to resolve it. The client ID and client secret combination is invalid.
-400 invalid_token | JWT is missing or cannot be decoded. JWT has expired. In this case, the error_description contains more details. The exp or jti field of the JWT is not an integer.
-400 invalid_signature | The JWT signature does not match any certificates attached to the integration. The signature does not match the algorithm specified in the JWT header.
-400 invalid_scope | Indicates a problem with the requested scope for the token. Specific scope problems can be: Metascopes in the JWT do not match metascopes in the binding. Metascopes in the JWT do not match target client scopes. Metascopes in the JWT contain a scope or scopes that do not exist. The JWT has no metascopes.
-400 bad_request | JWT payload can be decoded and decrypted but contents are incorrect. Can occur when values for fields such as sub, iss, exp, or jti are not in the proper format.
+<table>
+	<thead>
+		<tr>
+			<th>Response</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>400 invalid_client</td>
+			<td>Integration does not exist. This applies both to the <code>client_id</code> parameter and the <code>aud</code> in the JWT. The <code>client_id</code> parameter and the <code>aud</code> field in the JWT do not match.</td>
+		</tr>
+		<tr>
+			<td>401 invalid_client</td>
+			<td>Integration does not have the <code>exchange_jwt</code> scope. This indicates an improper client configuration. Contact the Adobe I/O team to resolve it. The client ID and client secret combination is invalid.</td>
+		</tr>
+		<tr>
+			<td>400 invalid_token</td>
+			<td>JWT is missing or cannot be decoded. JWT has expired. In this case, the <code>error_description</code> contains more details. The <code>exp</code> or <code>jti</code> field of the JWT is not an integer.</td>
+		</tr>
+		<tr>
+			<td>400 invalid_signature</td>
+			<td>The JWT signature does not match any certificates attached to the integration. The signature does not match the algorithm specified in the JWT header.</td>
+		</tr>
+		<tr>
+			<td>400 invalid_scope</td>
+			<td>Indicates a problem with the requested scope for the token. Specific scope problems can be:
+				<ul>
+					<li>Metascopes in the JWT do not match metascopes in the binding.</li>
+					<li>Metascopes in the JWT do not match target client scopes.</li>
+					<li>Metascopes in the JWT contain a scope or scopes that do not exist.</li>
+					<li>The JWT has no metascopes.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>400 bad_request</td>
+			<td>The JWT payload can be decoded and decrypted, but its contents are incorrect. This can occur when values for fields such as <code>sub</code>, <code>iss</code>, <code>exp</code>, or <code>jti</code> are not in the proper format.</td>
+		</tr>
+	</tbody>
+</table>
 
 ### Example
 
