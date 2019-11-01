@@ -8,6 +8,6 @@
   "author": "Hiren Shah",
   "license": "MIT",
   "dependencies": {
-    "@adobe/jwt-auth": "^0.0.5"
+    "@adobe/jwt-auth": "^0.3.0"
   }
 }
