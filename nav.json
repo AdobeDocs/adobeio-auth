@@ -12,8 +12,70 @@
             {
                 "label": "OAuth Integration",
                 "url": "/AuthenticationOverview/OAuthIntegration.md"
+            },
+            {
+                "label": "Service Account Integration",
+                "url": "/AuthenticationOverview/OAuthIntegration.md"
             }
         ]
+    },
+    {
+        "label": "OAuth Authentication",
+        "url": "/OAuth/OAuth.md",
+        "children": [
+            {
+                "label": "OAuth Scopes",
+                "url": "/OAuth/Scopes.md"
+            },
+            {
+                "label": "OAuth Sample Code",
+                "url": "/OAuth/samples/samples.md"
+            }
+        ]
+    },
+    {
+        "label": "JWT (Service Account) Authentication",
+        "url": "/JWT/samples/samples.md",
+        "children": [
+            {
+                "label": "Create a Public Key Certificate",
+                "url": "/JWT/JWTCertificate.md"
+            },
+            {
+                "label": "JWT Metascopes",
+                "url": "/JWT/Scopes.md"
+            },
+            {
+                "label": "JWT Sample Code",
+                "url": "/JWT/samples/samples.md"
+            }
+        ]
+    },
+    {
+        "label": "Tools",
+        "url": "/Resources/Tools/ToolsOverview.md",
+        "children": [
+            {
+                "label": "OAuth 2.0 Playground",
+                "url": "/Resources/Tools/OAuthPlayground.md"
+            },
+            {
+                "label": "Postman",
+                "url": "/Resources/Tools/Postman.md"
+            }
+        ]
+    },
+    {
+        "label": "IMS APIs",
+        "url": "/Resources/IMS.md"
+    },
+    {
+        "label": "FAQs",
+        "url": "/FAQ/Index.md"
+    },
+    {
+        "label": "Support",
+        "url": "/Support/Index.md"
     }
   ]
 }
