@@ -1,8 +1,19 @@
 {
-    "title": "Topics",
-    "pages": [
-  {
-    "label": "Readme",
-    "url": "/README.md"
-  }]
+  "title": "Topics",
+  "pages": [
+    {
+        "label": "Authentication Overview",
+        "url": "/AuthenticationOverview/AuthenticationGuide.md",
+        "children": [
+            {
+                "label": "API Key Integration",
+                "url": "/AuthenticationOverview/APIKeyIntegration.md"
+            },
+            {
+                "label": "OAuth Integration",
+                "url": "/AuthenticationOverview/OAuthIntegration.md"
+            }
+        ]
+    }
+  ]
 }
