@@ -15,7 +15,7 @@
             },
             {
                 "label": "Service Account Integration",
-                "url": "/AuthenticationOverview/OAuthIntegration.md"
+                "url": "/AuthenticationOverview/ServiceAccountIntegration.md"
             }
         ]
     },
