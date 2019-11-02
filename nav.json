@@ -35,7 +35,7 @@
     },
     {
         "label": "JWT (Service Account) Authentication",
-        "url": "/JWT/samples/samples.md",
+        "url": "/JWT/JWT.md",
         "children": [
             {
                 "label": "Create a Public Key Certificate",
