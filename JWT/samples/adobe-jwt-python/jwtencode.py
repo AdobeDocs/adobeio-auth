@@ -1,40 +1,37 @@
+import configparser
 import datetime
 import json
-import jwt
 import os
+import jwt
 import requests
 
-# Config Data
-url = 'https://ims-na1.adobelogin.com/ims/exchange/jwt'
-jwtPayloadRaw = """{ "iss": "{The issuer, your Organization ID from the Adobe I/O Console integration, in the format org_ident@AdobeOrg}",
-                     "sub": "{The subject, your Technical Account ID from the Adobe I/O Console integration, in the format: id@techacct.adobe.com}",
-                     "{The API-access claim configured for your organization: https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk}": true,
-                     "aud": "{The audience for the token, your API Key from the Adobe I/O Console integration, in the format: https://ims-na1.adobelogin.com/c/api_key}" }"""
-jwtPayloadJson = json.loads(jwtPayloadRaw)
-jwtPayloadJson["exp"] = datetime.datetime.utcnow() + datetime.timedelta(seconds=30)
+config_parser = configparser.ConfigParser()
+config_parser.read("config.ini")
+config = dict(config_parser["default"])
 
-accessTokenRequestPayload = {'client_id': '{Your Client Id (API Key)}'
-                            ,'client_secret': 'Your Client Secret'}
+# Config Data. Populate the payload with the config data from the config.ini
+token_exchange_url = config["imsexchange"]
+jwt_payload_json = {"exp": datetime.datetime.utcnow() + datetime.timedelta(seconds=90),
+                    "iss": config["iss"],
+                    "sub": config["technicalaccountid"],
+                    config["metascopes"]: True,
+                    "aud": "https://{}/c/{}".format(config["imshost"], config["apikey"])}
 
-# Request Access Key 
-#This Needs to point at where your private key is on the file system
-keyfile = open(os.path.join(os.path.expanduser('~'),'.ssh/private.key'),'r') 
-private_key = keyfile.read()
+# Request Access Key
+# This Needs to point to where your private key is on the file system. Currently, it points to your user dir.
+with open(os.path.join(os.path.expanduser('~'), config["key_file"]), 'rb') as f:
+    private_key = f.read()
 
-# Encode the jwt Token
-jwttoken = jwt.encode(jwtPayloadJson, private_key, algorithm='RS256')
-#print("Encoded JWT Token")
-#print(jwttoken.decode('utf-8'))
+# Encode the jwt Token. The cryptography module needs to be installed or this will return a token error.
+jwt_token = jwt.encode(jwt_payload_json, private_key, algorithm='RS256')
 
+# Get the bearer/access token to use with API requests.
+access_token_request_payload = {'client_id': config["apikey"],
+                                'client_secret': config["secret"],
+                                'jwt_token': jwt_token}
+result = requests.post(token_exchange_url, data=access_token_request_payload)
+resultjson = json.loads(result.text)
 
-# We are making a http request simmilar to this curl request
-#curl -X POST -H "Content-Type: multipart/form-data" -F "client_id=6e806c8aa87b42a49260d7a47a8d3218" -F "client_secret=f4813774-c72f-42ca-8039-3208ff189932" -F "jwt_token=`./jwtenc.sh`" https://ims-na1.adobelogin.com/ims/exchange/jwt
-accessTokenRequestPayload['jwt_token'] = jwttoken
-result = requests.post(url, data = accessTokenRequestPayload)
-resultjson = json.loads(result.text);
-#print("Full output from the access token request")
-#print(json.dumps(resultjson, indent=4, sort_keys=True))
-
-# Echo out the access token
-print(resultjson["access_token"]);
-
+# Print out the access token or wrap this in a method and return the access token.
+print("Use this token to make API requests:")
+print(resultjson["access_token"])
