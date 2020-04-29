@@ -7,9 +7,11 @@ Any API that accesses a service, data or content on behalf of an end user authen
 
 
 
-Use the [Adobe I/O Console](https://console.adobe.io/) to obtain client credentials by creating a new **Integration**. When you create an Integration, you are assigned an **API Key** (client ID) and other access credentials. You can then obtain a secure access token from Adobe for each API session.
+Use the [Adobe Developer Console](https://console.adobe.io/) to obtain client credentials by creating a new **Project**. Once you create a project, you can add APIs that include **API Keys** (client ID) and other access credentials. You can then obtain a secure access token from Adobe for each API session.
 
-An integration can be subscribed to one or more services. In many cases, you will use the same client credentials to access multiple Adobe services. In addition to APIs, you may also subscribe your integration to I/O Events so that your applications can access content and services in real-time.
+A project can include one or more services. In many cases, you will use the same client credentials to access multiple Adobe products and services. In addition to APIs, you may also add I/O Events and I/O Runtime to your projects so that your applications can access content and services in real-time.
+
+To learn more about creating projects in Adobe Developer Console, read the [Console getting started guide]().
 
 ## Types of Authentication
 
