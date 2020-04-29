@@ -1,6 +1,6 @@
 # JWT (Service Account) Authentication
 
-To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration, and then exchange it for an access token. Every request to an Adobe service must include the access token in the `Authorization` header, along with the API Key (Client ID) that was generated when you created the [Service Account Integration](../AuthenticationOverview/ServiceAccountIntegration.md) in the [Adobe I/O Console](https://console.adobe.io/).
+To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration, and then exchange it for an access token. Every request to an Adobe service must include the access token in the `Authorization` header, along with the API Key (Client ID) that was generated when you created the [Service Account Integration](../AuthenticationOverview/ServiceAccountIntegration.md) in the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/).
 
 ## Authentication Workflow
 
@@ -18,9 +18,9 @@ Your JWT must contain the following claims:
 | Claim      | Description|
 |---|---|
 | exp        | _Required_. The expiration parameter is a required parameter measuring the absolute time since 01/01/1970 GMT. You must ensure that the expiration time is later than the time of issue. After this time, the JWT is no longer valid. **Recommendation**: Have a very short lived token (a few minutes) - such that it expires soon after it has been exchanged for an IMS access token. Every time a new access token is required, one such JWT is signed and exchanged. This is secure approach. Longer lived tokens that are re-used to obtain access tokens as needed are not recommended. |
-| iss        | _Required_. The issuer, your **Organization ID** from the Adobe I/O Console integration, in the format `org_ident@AdobeOrg`. Identifies your organization that has been configured for access to the Adobe I/O API.|
-| sub        | _Required_. The subject, your **Technical Account ID** from the Adobe I/O Console integration, in the format: `id@techacct.adobe.com`.|
-| aud        | _Required_. The audience for the token, your **API Key** from the Adobe I/O Console integration, in the format: `https://ims-na1.adobelogin.com/c/api_key`.|
+| iss        | _Required_. The issuer, your **Organization ID** from the Adobe Developer Console integration, in the format `org_ident@AdobeOrg`. Identifies your organization that has been configured for access to the Adobe I/O API.|
+| sub        | _Required_. The subject, your **Technical Account ID** from the Adobe Developer Console integration, in the format: `id@techacct.adobe.com`.|
+| aud        | _Required_. The audience for the token, your **API Key** from the Adobe Developer Console integration, in the format: `https://ims-na1.adobelogin.com/c/api_key`.|
 | Metascopes | _Required_. The API-access claim configured for your organization: [JWT Metascopes](Scopes.md), in the format: `"https://ims-na1.adobelogin.com/s/meta_scope": true`|
 
 The following is a sample payload to be signed and encoded.
@@ -41,7 +41,7 @@ The JWT must be signed and base-64 encoded for inclusion in the access request. 
 
 - The token must be signed using the private key for a digital signing certificate that is associated with your API key. You can associate more than one certificate with an API key. If you do so, you can use the private key of any associated certificate to sign your JWT. For more information about private key/public certificate, see [Create a public key certificate](../AuthenticationOverview/ServiceAccountIntegration.md#step-2-create-a-public-key-certificate).
 
-**Algorithm**: **RS256** (RSA Signature with SHA-256) is an asymmetric algorithm, and it uses a public/private key pair: the identity provider has a private (secret) key used to generate the signature, and the consumer of the JWT (i.e. Adobe I/O Console) gets a public key to validate the signature.
+**Algorithm**: **RS256** (RSA Signature with SHA-256) is an asymmetric algorithm, and it uses a public/private key pair: the identity provider has a private (secret) key used to generate the signature, and the consumer of the JWT (i.e. Adobe Developer Console) gets a public key to validate the signature.
 
 ### Using JWT Libraries and Creation Tools
 

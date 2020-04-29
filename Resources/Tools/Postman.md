@@ -26,7 +26,7 @@
 
 <kbd>![pm-3](../../Images/PM_3.png)</kbd>
 
-6. Copy your `API Key (Client ID)`, `Client Secret` and the `Default Redirect URI` from your Adobe I/O Console integration and paste it in the Postman `GET NEW ACCESS TOKEN` window. Assuming you are trying to get an access token for Adobe Analytics use below for scope: 
+6. Copy your `API Key (Client ID)`, `Client Secret` and the `Default Redirect URI` from your Adobe Developer Console integration and paste it in the Postman `GET NEW ACCESS TOKEN` window. Assuming you are trying to get an access token for Adobe Analytics use below for scope: 
 ```
 openid,AdobeID,read_organizations,additional_info.projectedProductContext,additional_info.job_function
 ```
@@ -45,7 +45,7 @@ openid,AdobeID,read_organizations,additional_info.projectedProductContext,additi
 
 ## JWT Access Token
 ### Steps
-1. Go to [Adobe I/O Console](https://console.adobe.io)
+1. Go to [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui)
 
 2. Open the Service Account Integration for which you want to generate an access token.
 
@@ -87,7 +87,7 @@ curl https://stock.adobe.io/Rest/Media/1/Search/Files?locale=en_US%26search_para
  
  <kbd>![pmw-1](../../Images/PMW_1.png)</kbd>
  
- 3. Go to `Headers` tab and replace `myAPIKey` with your actual API Key from Adobe I/O Console integration for Adobe Stock.
+ 3. Go to `Headers` tab and replace `myAPIKey` with your actual API Key from Adobe Developer Console integration for Adobe Stock.
  
  <kbd>![pmw-2](../../Images/PMW_2.png)</kbd>
  

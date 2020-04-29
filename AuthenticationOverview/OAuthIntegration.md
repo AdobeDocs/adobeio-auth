@@ -2,7 +2,7 @@
 
 If your application needs to access Adobe services or content, you'll need a set of client credentials to authenticate your app and your user, and authorize access. The type of application you are building will determine the type of client credentials you will need.
 
-To obtain client credentials for an app that accesses services on behalf of an **end-user**, you'll need to create an **OAuth** connection using the [Adobe Developer Console](https://console.adobe.io/). You can integrate your app with more than one Adobe service.
+To obtain client credentials for an app that accesses services on behalf of an **end-user**, you'll need to create an **OAuth** connection using the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/). You can integrate your app with more than one Adobe service.
 
 OAuth allows your end users to sign in to your integration with an Adobe ID. With an OAuth token, your application will be able to access Adobe services or content on behalf of the logged in user.
 
