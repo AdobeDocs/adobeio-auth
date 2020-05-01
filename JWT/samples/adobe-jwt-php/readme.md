@@ -12,8 +12,8 @@ It also contains method `doAdobeIOAuth($jwt,$client_id,$client_secret)` which us
 
     **Usage**
     
-    ```AccessTokenProvider.php -i <client-id> -s <client-secret> -k <key-file> -u <issuer> -b <subject> -a <audience> -c <services, comma separated> -e <exp time, default 1 Day>```
+    ```AccessTokenProvider.php -i <client-id> -s <client-secret> -k <key-file> -u <issuer> -b <subject> -c <metascopes, comma separated> -e <exp time, default 1 Day>```
 
     **Example**
     
-    ```php JWT/samples/adobe-jwt-php/AccessTokenProvider.php -i"e1b8b4c4109c48....." -s"965f8635-........" -k"/Path/of/private.key" -u"DD0E3......@AdobeOrg" -b"D36......@techacct.adobe.com" -a"https://ims-na1.adobelogin.com/c/e1b8b4c....." -c"https://ims-na1.adobelogin.com/s/ent_reactor_sdk,https://ims-na1.adobelogin.com/s/ent_adobeio_sdk" -e"1 day"```
+    ```php JWT/samples/adobe-jwt-php/AccessTokenProvider.php -i"e1b8b4c4109c48....." -s"965f8635-........" -k"/Path/of/private.key" -u"DD0E3......@AdobeOrg" -b"D36......@techacct.adobe.com" -c"ent_reactor_sdk,ent_adobeio_sdk" -e"1 day"```
