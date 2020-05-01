@@ -1,9 +1,10 @@
 # PHP JWT Provider and auth example
 
-This PHP implementation to prepare JWT does not use any external library, it uses PHP `openssl_sign` and other functions available in PHP.
-It also contains method `doAdobeIOAuth($jwt,$client_id,$client_secret)` which uses prepared JWT to do an authentication on AdobeIO and fetch `access_token`
+This is a PHP implementation to prepare JWT and shows an example login to AdobeIO to obtain `access_token`, it does not use any external library and calls `openssl_sign` and other functions available in PHP to build JWT.
 
-**How To Run**
+The method `doAdobeIOAuth($jwt,$client_id,$client_secret)` should be used as reference for login, it uses prepared JWT to do an authentication on AdobeIO and fetch `access_token`.
+
+**To Run**
 1. Download and extract the repo
 
 2. Run PHP AccessTokenProvider.php to auth and get AdobeIO Access Token
