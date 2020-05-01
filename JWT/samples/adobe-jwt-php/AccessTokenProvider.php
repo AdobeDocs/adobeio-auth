@@ -5,6 +5,11 @@
  * Time: 16:46
  */
 
+const IMS_HOST = 'https://ims-na1.adobelogin.com/';
+const AUTH_ENDPOINT = IMS_HOST . 'ims/exchange/jwt/'; //token auth Endpoint
+const AUD_ENDPOINT_PREFIX = IMS_HOST . 'c/';
+const METASCOPE_ENDPOINT_PREFIX = IMS_HOST . 's/';
+
 /**
  * Class JWTProvider
  * simple implementation
@@ -68,10 +73,10 @@ class JWTProvider
      * @param string $issuer
      * @param string $subject
      * @param string $audience
-     * @param string $services
+     * @param string $metascopes
      * @return string[]
      */
-    public function buildJWTPayload($formattableTimeString, $issuer, $subject, $audience, $services)
+    public function buildJWTPayload($formattableTimeString, $issuer, $subject, $audience, $metascopes)
     {
 
         $data = [
@@ -81,14 +86,13 @@ class JWTProvider
             "aud" => $audience
         ];
 
-        if (is_array($services)) {
-            foreach ($services as &$aService) {
-//                echo "Found service " . $aService . "\n";
-                $data[$aService] = true;
+        if (is_array($metascopes)) {
+            foreach ($metascopes as &$aMetascope) {
+                $data[METASCOPE_ENDPOINT_PREFIX . $aMetascope] = true;
             }
         } else {
-            //assuming a single service
-            $data[$services] = true;
+//            single metascope
+            $data[METASCOPE_ENDPOINT_PREFIX . $metascopes] = true;
         }
 
         return $data;
@@ -96,7 +100,6 @@ class JWTProvider
 
 }
 
-const AUTH_ENDPOINT= "https://ims-na1.adobelogin.com/ims/exchange/jwt/"; //token auth Endpoint
 
 /** Authenticates with Adobe IO - returns Auth Response
  * @param $jwt
@@ -104,19 +107,16 @@ const AUTH_ENDPOINT= "https://ims-na1.adobelogin.com/ims/exchange/jwt/"; //token
  * @param $client_secret
  * @return mixed |
  */
-function doAdobeIOAuth($jwt,$client_id,$client_secret){
-
+function doAdobeIOAuth($jwt, $client_id, $client_secret)
+{
     $curl = curl_init();
-
     curl_setopt($curl, CURLOPT_POST, 1);
-
     curl_setopt($curl, CURLOPT_POSTFIELDS, array(
         "client_id" => $client_id,
         "client_secret" => $client_secret,
         "jwt_token" => $jwt,
 
     ));
-
     curl_setopt($curl, CURLOPT_URL, AUTH_ENDPOINT);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
@@ -129,7 +129,7 @@ function doAdobeIOAuth($jwt,$client_id,$client_secret){
 
 /** psvm - example implementation
  *  Usage:
- *      AccessTokenProvider.php -i <client-id> -s <client-secret> -k <key-file> -u <issuer> -b <subject> -a <audience> -c <services comma separated> -e <exp time, default 1 Day>"
+ *      AccessTokenProvider.php -i <client-id> -s <client-secret> -k <key-file> -u <issuer> -b <subject> -c <metascopes comma separated> -e <exp time, default 1 Day>"
  */
 function psvm()
 {
@@ -140,8 +140,7 @@ function psvm()
         . "k:"       // Key File path
         . "u:"       // Issuer
         . "b:"       // Subject
-        . "a:"       // Audience
-        . "c:"       // services
+        . "c:"       // metascopes
         . "e::";     // expires
 
     $show_usage = false;
@@ -155,48 +154,42 @@ function psvm()
                 $key_file = $cmdLineOpts["k"];
                 echo "Key file is " . $key_file . "\n";
                 if (is_file($key_file) && is_readable($key_file)) {
-                    $fHandle = fopen($key_file, "r") or die("Unable to read the key file " . $key_file."\n");
-                    $private_key = fread($fHandle, filesize($key_file)) or die("Unable to read the key file " . $key_file."\n");
+                    $fHandle = fopen($key_file, "r") or die("Unable to read the key file " . $key_file . "\n");
+                    $private_key = fread($fHandle, filesize($key_file)) or die("Unable to read the key file " . $key_file . "\n");
                     fclose($fHandle);
                     if (isset($cmdLineOpts["u"])) {             //Checking issuer
                         $issuer = $cmdLineOpts["u"];
                         if (isset($cmdLineOpts["b"])) {         //checking subject
                             $subject = $cmdLineOpts["b"];
-                            if (isset($cmdLineOpts["a"])) {     //checking audience
-                                $audience = $cmdLineOpts["a"];
-                                if (isset($cmdLineOpts["c"])) { //checking services
+                            $audience = AUD_ENDPOINT_PREFIX . $client_id;  //preparing audience
+                            if (isset($cmdLineOpts["c"])) { //checking metascopes
 
-                                    $services = preg_split("/,/", $cmdLineOpts["c"]);
+                                $metascopes = preg_split("/,/", $cmdLineOpts["c"]);
 
-                                    if (isset($cmdLineOpts["e"])) {
-                                        $exp_time = $cmdLineOpts["e"];
-                                    } else {
-                                        echo "exp_time not provided assuming 1 day\n";
-                                        $exp_time = '1 Day';
-                                    }
-
-                                    $jwtInstance = new JWTProvider();
-
-                                    $payload = $jwtInstance->buildJWTPayload($exp_time,
-                                        $issuer,
-                                        $subject,
-                                        $audience,
-                                        $services);
-
-                                    $jwt = $jwtInstance->encode($payload, $private_key);
-
-                                    echo "JWT Prepared:" . $jwt . "\n\n";
-
-                                    $result = doAdobeIOAuth($jwt,$client_id,$client_secret);
-
-                                    echo "Result of Auth:\n\n" . $result . "\n";
+                                if (isset($cmdLineOpts["e"])) {
+                                    $exp_time = $cmdLineOpts["e"];
                                 } else {
-                                    echo "Services not provided\n";
-                                    $show_usage = true;
-
+                                    echo "exp_time not provided assuming 1 day\n";
+                                    $exp_time = '1 Day';
                                 }
+
+                                $jwtInstance = new JWTProvider();
+
+                                $payload = $jwtInstance->buildJWTPayload($exp_time,
+                                    $issuer,
+                                    $subject,
+                                    $audience,
+                                    $metascopes);
+
+                                $jwt = $jwtInstance->encode($payload, $private_key);
+
+                                echo "JWT Prepared:" . $jwt . "\n\n";
+
+                                $result = doAdobeIOAuth($jwt, $client_id, $client_secret);
+
+                                echo "Result of Auth:\n\n" . $result . "\n";
                             } else {
-                                echo "Audience not provided\n";
+                                echo "Metascopes not provided\n";
                                 $show_usage = true;
                             }
                         } else {
@@ -215,21 +208,18 @@ function psvm()
             } else {
                 echo "Key file location not provided\n";
                 $show_usage = true;
-
             }
         } else {
             echo "Client-secret not provided\n";
             $show_usage = true;
-
         }
     } else {
         echo "Client ID not provided\n";
         $show_usage = true;
-
     }
 
     if ($show_usage) {
-        echo "Usage:\n  AccessTokenProvider.php -i <client-id> -s <client-secret> -k <key-file> -u <issuer> -b <subject> -a <audience> -c <services comma separated> -e <exp time, default 1 Day>";
+        echo "Usage:\n  AccessTokenProvider.php -i <client-id> -s <client-secret> -k <key-file> -u <issuer> -b <subject> -a <audience> -c <metascopes comma separated> -e <exp time, default 1 Day>";
     }
 }
 
