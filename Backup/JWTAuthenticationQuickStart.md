@@ -9,9 +9,9 @@ You must be an organizational admin for your enterprise organization with the ap
 
 ## Steps to get a JWT and an access token
 
-Regardless of your platform, you begin with the same steps in Adobe I/O Console:
+Regardless of your platform, you begin with the same steps in Adobe Developer Console:
 
-1. Create a new integration in Adobe I/O Console: [https://console.adobe.io/integrations](https://console.adobe.io/integrations)
+1. Create a new integration in Adobe Developer Console: [https://www.adobe.com/go/devs_console_ui/integrations](https://www.adobe.com/go/devs_console_ui/integrations)
     ![Create integration](Images/auth_jwtqs_01.png "Create an integration") 
 
 2. Choose to access an API.
@@ -49,7 +49,7 @@ _**Windows:**_
 
     ![Generate public certificate windows](Images/auth_jwtqs_000.png "Generate Public certificate windows")
 
-Once you&rsquo;ve complete the steps for your chosen platform, continue in the Adobe I/O Console:
+Once you&rsquo;ve complete the steps for your chosen platform, continue in the Adobe Developer Console:
 
 6. Upload the public certificate (certificate_pub.crt) as a part of creating the integration.
     ![Upload public certificate](Images/auth_jwtqs_03.png "Upload public certificate")

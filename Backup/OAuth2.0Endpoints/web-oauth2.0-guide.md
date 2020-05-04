@@ -50,7 +50,7 @@ By the end of this guide, you will be able to:
 
 Your application needs to be registered with Adobe and a specific set of Adobe APIs need to be enabled to start making API calls. To enable these APIs:
 
-1. [Go to the integration page in the Adobe I/O Console](https://console.adobe.io/integrations).
+1. [Go to the integration page in the Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/integrations).
 
     - If you do not already have an Adobe ID, you will need to create one.
 
@@ -66,9 +66,9 @@ Your application needs to be registered with Adobe and a specific set of Adobe A
 
 ### Retrieve application credentials
 
-After registering your application, [access the integration details page on the Adobe I/O Console](https://console.adobe.io/integrations) to retrieve the Client ID (API Key) and Client Secret values:
+After registering your application, [access the integration details page on the Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/integrations) to retrieve the Client ID (API Key) and Client Secret values:
 
-![Credentials page on the Adobe I/O Console](../Images/credentials_page.png?raw=true)
+![Credentials page on the Adobe Developer Console](../Images/credentials_page.png?raw=true)
 
 
 ## Convenience libraries
@@ -94,7 +94,7 @@ Include the following parameters:
 
 | Parameters    | Description                                             |
 | ------------- |:--------------------------------------------------------|
-| client_id     | The Client ID obtained from the [Adobe I/O Console](https://console.adobe.io/integrations).|
+| client_id     | The Client ID obtained from the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/integrations).|
 | redirect_uri  | The URI to which the user agent is redirected once the authorization completes. Note that this URI must be HTTPS. The pattern is validated against the list of valid redirect URIs configured for your client.|
 | scope         | The scope of the access request, expressed as a list of comma-delimited, case sensitive strings. See the [Scope Reference](oauth-scopes.md) for more information.|
 | response_type | The default `response_type` for the Authorization code flow is `code`. Use `token` for the Implicit grant flow. See below for more information. |
@@ -203,8 +203,8 @@ Include the following parameters:
 | ------------- |:--------------------------------------------------------|
 | code          |The base-64 encoded `authorization_code` returned from the `/ims/authorize/` request.|
 | grant_type    |The constant value `authorization_code`.|
-| client_id     |The Client ID obtained from the [Adobe I/O Console](https://console.adobe.io/integrations).|
-| client_secret |The Client Secret obtained from the [Adobe I/O Console](https://console.adobe.io/integrations).|
+| client_id     |The Client ID obtained from the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/integrations).|
+| client_secret |The Client Secret obtained from the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/integrations).|
 
 _Note that Adobe OAuth does not support the practice of passing Base64 encoded `client_id` and `client_secret` using the HTTP BASIC authorization header._
 
@@ -262,8 +262,8 @@ Include the following parameters:
 | ------------- |:--------------------------------------------------------|
 | refresh_token |The base-64 encoded `refresh_token` received in the response to the initial request for an access token.|
 | grant_type    |The constant value `refresh_token`.|
-| client_id     |The Client ID obtained from the [Adobe I/O Console](https://console.adobe.io/integrations).|
-| client_secret |The Client Secret obtained from the [Adobe I/O Console](https://console.adobe.io/integrations).|
+| client_id     |The Client ID obtained from the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/integrations).|
+| client_secret |The Client Secret obtained from the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/integrations).|
 
 _Note that Adobe OAuth does not support the practice of passing Base64 encoded `client_id` and `client_secret` using the HTTP BASIC authorization header._
 

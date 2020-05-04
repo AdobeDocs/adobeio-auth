@@ -44,7 +44,7 @@ Be sure to follow all instructions in the `readme`.
 
 This guide will assume that you have read the [Adobe OAuth 2.0 Guide for Web](../../web-oauth2.0-guide.md).
 
-You must also have [a registered app on the Adobe I/O Console](../../web-oauth2.0-guide.md#register-your-application-and-enable-apis) with the following settings:
+You must also have [a registered app on the Adobe Developer Console](../../web-oauth2.0-guide.md#register-your-application-and-enable-apis) with the following settings:
 
 1. `Platform`: web
 1. `Default redirect URI`: `https://localhost:8000`
@@ -89,7 +89,7 @@ class Config(object):
     ADOBE_API_SECRET = 'YOUR_ADOBE_SECRET'
 ```
 
-You can get your Adobe API Key and Secret from your registered app page on the [Adobe I/O Console](../../web-oauth2.0-guide.md#register-your-application-and-enable-apis).
+You can get your Adobe API Key and Secret from your registered app page on the [Adobe Developer Console](../../web-oauth2.0-guide.md#register-your-application-and-enable-apis).
 
 
 ## Usage

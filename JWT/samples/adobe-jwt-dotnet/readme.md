@@ -11,6 +11,6 @@
 
 ```$ openssl pkcs12 -export -out mycert.pfx -inkey private.key -in certificate_pub.crt```
 
-4. Edit the program.cs file and add the properties from your Adobe I/O Console integration.
+4. Edit the program.cs file and add the properties from your Adobe Developer Console integration.
 
 

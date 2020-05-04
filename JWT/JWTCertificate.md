@@ -27,7 +27,7 @@ Open a terminal and execute the following command:
     ```  
     <kbd>![Generate public certificate windows](../Images/auth_jwtqs_000.png "Generate Public certificate windows")</kbd>
 
-4. Once you&rsquo;ve completed the steps for your chosen platform, continue in the Adobe I/O Console.
+4. Once you&rsquo;ve completed the steps for your chosen platform, continue in the Adobe Developer Console.
 
 ## Using the Public Key Certificate for Service Account Integration
 

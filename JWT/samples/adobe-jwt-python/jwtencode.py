@@ -6,10 +6,10 @@ import requests
 
 # Config Data
 url = 'https://ims-na1.adobelogin.com/ims/exchange/jwt'
-jwtPayloadRaw = """{ "iss": "{The issuer, your Organization ID from the Adobe I/O Console integration, in the format org_ident@AdobeOrg}",
-                     "sub": "{The subject, your Technical Account ID from the Adobe I/O Console integration, in the format: id@techacct.adobe.com}",
+jwtPayloadRaw = """{ "iss": "{The issuer, your Organization ID from the Adobe Developer Console integration, in the format org_ident@AdobeOrg}",
+                     "sub": "{The subject, your Technical Account ID from the Adobe Developer Console integration, in the format: id@techacct.adobe.com}",
                      "{The API-access claim configured for your organization: https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk}": true,
-                     "aud": "{The audience for the token, your API Key from the Adobe I/O Console integration, in the format: https://ims-na1.adobelogin.com/c/api_key}" }"""
+                     "aud": "{The audience for the token, your API Key from the Adobe Developer Console integration, in the format: https://ims-na1.adobelogin.com/c/api_key}" }"""
 jwtPayloadJson = json.loads(jwtPayloadRaw)
 jwtPayloadJson["exp"] = datetime.datetime.utcnow() + datetime.timedelta(seconds=30)
 
