@@ -4,7 +4,7 @@ A small collection of Adobe services (e.g. Adobe Stock) require authorization, b
 
 To obtain an API Key, you'll need to create an API Key connection using the Adobe Developer Console.
 
-> **Note:** If your integration needs to access Adobe services or content on behalf of a user or an Adobe enterprise organization, it needs additional credentials for authentication. For more information, check out the articles on **[OAuth Authentication](OAuthIntegration.md)** and **[Service Account (JWT) Authentication](ServiceAccountIntegration.md)**.
+> **Note:** If your application needs to access Adobe services or content on behalf of a user or an Adobe enterprise organization, it needs additional credentials for authentication. For more information, read the **[OAuth Authentication](OAuthIntegration.md)** and **[Service Account (JWT) Authentication](ServiceAccountIntegration.md)** documentation.
 
 This article will walk you through the steps to set up an **API Key** connection.
 
@@ -18,13 +18,13 @@ This article will walk you through the steps to set up an **API Key** connection
 
 ### Step 1: Create a project in Adobe Developer Console
 
-Integrations are now created as part of a "project" within Adobe Developer Console. For complete steps to creating a project in Console, begin by reading the [Adobe Developer Console getting started guide]() and [projects overview](). 
+Integrations are now created as part of a "project" within Adobe Developer Console. For complete steps to creating a project in Console, begin by reading the [Adobe Developer Console getting started guide](https://www.adobe.com/go/devs_console_getting_started) and [projects overview](https://www.adobe.com/go/devs_projects_overview). 
 
-Once you have created a project, you will be able to add services including APIs, Adobe I/O Events registrations, and Adobe I/O Runtime.
+Once you have created a project, you will be able to add services including APIs, I/O Events, and I/O Runtime.
 
 ### Step 2: Add an API to your project using API Key authorization
 
-To add an API that uses API Key authorization, follow the steps outlined in the guide for [adding an API to a project using API Key authorization]().
+To add an API that uses API Key authorization, follow the steps outlined in the guide for [adding an API to a project using API Key authorization](https://www.adobe.com/go/devs_project_api_key).
 
 When the API has been successfully connected, you will be able to access the newly generated API Key.
 
