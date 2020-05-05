@@ -24,7 +24,7 @@ Once you have created a project, you will be able to add services including APIs
 
 ### Step 2: Add an API to your project using API Key authorization
 
-To add an API that uses API Key authorization, follow the steps outlined in the guide for [adding an API to a project using API Key authorization](https://www.adobe.com/go/devs_project_api_key).
+To add an API that uses API Key authorization, follow the steps outlined in the guide for [adding an API to a project using API Key authorization](https://www.adobe.com/go/devs_projects_api_key).
 
 When the API has been successfully connected, you will be able to access the newly generated API Key.
 
