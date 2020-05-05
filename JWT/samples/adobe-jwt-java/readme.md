@@ -10,7 +10,7 @@
 
 ```$ openssl pkcs8 -topk8 -inform PEM -outform DER -in secret.pem  -nocrypt > secret.key```
 
-4. Edit the config.properties in src/main/resources/ and add the values from your Adobe I/O Console integration.
+4. Edit the config.properties in src/main/resources/ and add the values from your Adobe Developer Console integration.
 
 
 

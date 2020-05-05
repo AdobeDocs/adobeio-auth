@@ -1,59 +1,36 @@
-# API Key Integration
+# API Key Connection
 
-A small collection of Adobe services (e.g. Adobe Stock) require authorization, but do not require authentication. These services can be called _“anonymously”_ and typically provide consistent results regardless of the application or user that made the request. An **API Key** is the only client credential required for these services. These integrations do not need to pass an access token with each request.
+A small collection of Adobe services (e.g. Adobe Stock) require authorization, but do not require authentication. These services can be called _“anonymously”_ and typically provide consistent results regardless of the application or user that made the request. An **API Key** is the only client credential required for these services. These connections do not need to pass an access token with each request.
 
-To obtain an API Key, you'll need to create an API Key Integration using the Adobe I/O Console, as described here.
-If your integration needs to access Adobe services or content on behalf of a user or an Adobe enterprise organization, it needs additional credentials for authentication. For more information, check out the articles on **[OAuth Authentication](OAuthIntegration.md)** and **[Service Account Authentication](ServiceAccountIntegration.md)**.
+To obtain an API Key, you'll need to create an API Key connection using the Adobe Developer Console.
 
-This article will walk you through the steps to set up an **API Key integration**.
+> **Note:** If your application needs to access Adobe services or content on behalf of a user or an Adobe enterprise organization, it needs additional credentials for authentication. For more information, read the **[OAuth Authentication](OAuthIntegration.md)** and **[Service Account (JWT) Authentication](ServiceAccountIntegration.md)** documentation.
 
-## API Key Integration Workflow
+This article will walk you through the steps to set up an **API Key** connection.
 
-[Step 1: Subscribe to an Adobe Service](#step-1-subscribe-to-an-adobe-service)
+## API Key connection workflow
 
-[Step 2: Configure an API Key Integration](#step-2-configure-an-api-key-integration)
+[Step 1: Create a project in Adobe Developer Console](#step-1-create-a-project-in-adobe-developer-console)
+
+[Step 2: Add an API to your project using API Key authorization](#step-2-add-an-api-to-your-project-using-API-Key-authorization)
 
 [Step 3: Try It](#step-3-try-it)
 
-### Step 1: Subscribe to an Adobe Service
+### Step 1: Create a project in Adobe Developer Console
 
-- To create a new API Key integration, sign in to the [Adobe I/O Console](https://console.adobe.io/) with your Adobe ID, and click New Integration. (Notice that you may also choose existing integrations and edit their details from here.)
+Integrations are now created as part of a "project" within Adobe Developer Console. For complete steps to creating a project in Console, begin by reading the [Adobe Developer Console getting started guide](https://www.adobe.com/go/devs_console_getting_started) and [projects overview](https://www.adobe.com/go/devs_projects_overview). 
 
-<kbd>![api-key-1](../Images/api-key-1.png)</kbd>
+Once you have created a project, you will be able to add services including APIs, I/O Events, and I/O Runtime.
 
-- Choose the type of service you want to include in your integration. You can get API access to several Adobe services or subscribe to real-time events. An integration can access multiple services and event sources. Simply perform these steps for each service or event you want to add to your integration.
+### Step 2: Add an API to your project using API Key authorization
 
-<kbd>![api-key-2](../Images/api-key-2.png)</kbd>
+To add an API that uses API Key authorization, follow the steps outlined in the guide for [adding an API to a project using API Key authorization](https://www.adobe.com/go/devs_projects_api_key).
 
-- Select **Access an API** to create an integration that will access an Adobe product API or service, you will have an opportunity to subscribe to additional services and events once you have created the integration.
-
-- Choose the service or event source that you would like to add to your integration. APIs and products available through Adobe I/O are typically listed by cloud.
-
-<kbd>![api-key-3](../Images/api-key-3.png)</kbd>
-
-### Step 2: Configure an API Key Integration
-
-- The configuration page lets you provide all of the required details for a new integration, or add new information to update an existing integration. On this page:
-
-<kbd>![api-key-6](../Images/api-key-6.png)</kbd>
-
-| Integration Details    |                                                                                                                                                                                                                                                                                                                                              |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Name`                 | Enter a unique name to easily identify your integration                                                                                                                                                                                                                                                                                      |
-| `Description`          | Provide a brief description about this integration. If you have multiple applications or access multiple services, you can use these properties to better organize your integrations.                                                                                                                                                        |
-| `Platform`             | Select a platform on which the integration is intended to be used: `iOS`,`Android`,`Web`                                                                                                                                                                                                                                                     |
-| `Default Redirect URI` | After a user successfully authorizes an application, the authorization server will redirect the user back to the application with either an authorization code in the URL. Because the redirect URL will contain sensitive information, it is critical that the service doesn’t redirect the user to arbitrary locations. _(HTTPS required)_ |
-| `Redirect URI pattern` | A comma seperated list of URI patterns, to validate additional custom redirect uri passed along with Authorization request. _(HTTPS required)_ e.g. `https://www\\.myapp\\.com` will allow redirect uris like `https://www.myapp.com/OAuth/callback`                                                                                         |
-
-- Tip: Give your integrations accurate and descriptive names. Integrations are shared with developers within your organization, so choose a name that is clear and easily understood. Generic names like My Test App are discouraged.
-
-- Click **Create integration**.
-
-- When creation is confirmed, visit the overview section for your new integration. The overview section contains the newly generated API Key, and allows you to subscribe to additional services or events.
+When the API has been successfully connected, you will be able to access the newly generated API Key.
 
 ### Step 3: Try It
 
-- Copy your integration **API Key** and replace it with `myAPIKey` in below request.
+Copy the API Key from the Adobe Developer Console project and replace `myAPIKey` in the sample request below.
 
 ```curl
 curl 'https://stock.adobe.io/Rest/Media/1/Search/Files?locale=en_US%26search_parameters%5Bwords%5D=kittens '
@@ -61,10 +38,10 @@ curl 'https://stock.adobe.io/Rest/Media/1/Search/Files?locale=en_US%26search_par
   -H 'x-product:myTestApp1.0'
 ```
 
-- Open Postman and go to `Import`->`Paste Raw Text` and paste the curl command.
+Open Postman and go to `Import`->`Paste Raw Text` and paste the curl command. Select **Import** to import it.
 
 <kbd>![api-key-5](../Images/api-key-5.png)</kbd>
 
-- Click Send. You will receive a successful response. Note that you did not need an access token for making a successful request using API Key integration.
+Select **Send**. You will receive a successful response. Note that you did not need an access token in order to make a successful request using API Key integration.
 
 <kbd>![api-key-7](../Images/api-key-7.png)</kbd>

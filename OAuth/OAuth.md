@@ -1,6 +1,6 @@
 # OAuth 2.0 Authentication and Authorization
 
-Adobe Cloud Platform APIs use the OAuth 2.0 protocol for authentication and authorization. Using Adobe OAuth 2.0, you can generate an access token using the [OAuth Integration](../AuthenticationOverview/OAuthIntegration.md) created in [Adobe I/O Console](https://console.adobe.io) which is used to make API calls from your web server or browser-based apps.
+Adobe Cloud Platform APIs use the OAuth 2.0 protocol for authentication and authorization. Using Adobe OAuth 2.0, you can generate an access token using the [OAuth Integration](../AuthenticationOverview/OAuthIntegration.md) created in [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui) which is used to make API calls from your web server or browser-based apps.
 
 ## Authentication Workflow
 
@@ -30,8 +30,8 @@ Include the following parameters:
 
 Parameter | Description
 ---- | ----
-`client_id` |	The Client ID obtained from the [Adobe I/O Console](https://console.adobe.io/).
-`redirect_uri` | Optional. The URI to which the user agent is redirected once the authorization completes. Note that this URI must be HTTPS. The pattern is validated against the list of valid redirect URIs configured for your client. If the redirect URI is not provided with the request, it will consider the Default Redirect URI in Adobe I/O Console.
+`client_id` |	The Client ID obtained from the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/).
+`redirect_uri` | Optional. The URI to which the user agent is redirected once the authorization completes. Note that this URI must be HTTPS. The pattern is validated against the list of valid redirect URIs configured for your client. If the redirect URI is not provided with the request, it will consider the Default Redirect URI in Adobe Developer Console.
 `scope`	| The scope of the access request, expressed as a list of comma-delimited, case-sensitive strings. See the [Scope Reference](Scopes.md) for more information.
 `response_type` |	The default response type for the Authorization code flow is `code`. 
 `locale` | Optional. The locale code for the authentication UI. Default is `en_US`.
@@ -75,8 +75,8 @@ Parameters | Description
 ---- | ----
 `code` |	The base64-encoded `authorization_code` returned from the `/ims/authorize/` request in callback.
 `grant_type` |	The constant value `authorization_code`.
-`client_id` |	The Client ID obtained from the [Adobe I/O Console](https://console.adobe.io/).
-`client_secret` |	The Client Secret obtained from the [Adobe I/O Console](https://console.adobe.io/).
+`client_id` |	The Client ID obtained from the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/).
+`client_secret` |	The Client Secret obtained from the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/).
 
 > **Note:** Adobe OAuth does not support the practice of passing base64-encoded `client_id` and `client_secret` parameters using the HTTP BASIC authorization header.
 Example request:
@@ -129,8 +129,8 @@ Include the following parameters:
 | ------------- |:--------------------------------------------------------|
 | `refresh_token` |The base64-encoded refresh token received in the response to the initial request for an access token.|
 | `grant_type`    |The constant value `refresh_token`.|
-| `client_id`     |The Client ID obtained from the [Adobe I/O Console](https://console.adobe.io/integrations).|
-| `client_secret` |The Client Secret obtained from the [Adobe I/O Console](https://console.adobe.io/integrations).|
+| `client_id`     |The Client ID obtained from the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/integrations).|
+| `client_secret` |The Client Secret obtained from the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/integrations).|
 
 > **Note:** Adobe OAuth does not support the practice of passing base64-encoded `client_id` and `client_secret` parameters using the HTTP BASIC authorization header.
 
