@@ -16,7 +16,7 @@ Available versions | `ims-na1.adobelogin.com/ims/logout/v1`  `ims-na1.adobelogin
 Request method | GET
 ---- | ----
 Authorization required | Access token
-Available versions | <ENV>/ims/logout/v1
+Available versions | /ims/logout/v1
 
 Query Parameters | |      
 ---- | ----
@@ -45,7 +45,7 @@ Location: REDIRECT_URI
 Request method | GET / POST
 ---- | ----
 Authorization required | Client ID and secret
-Available versions | <ENV>/ims/logout/v1
+Available versions | /ims/logout/v1
 
 Query Parameters | |      
 ---- | ----
@@ -71,7 +71,7 @@ Cache-Control: no-store
 Request method | GET / POST
 ---- | ----
 Authorization required | Access token
-Available versions | <ENV>/ims/logout/v1/token
+Available versions | /ims/logout/v1/token
 
 Query Parameters | |
 ---- | ----
