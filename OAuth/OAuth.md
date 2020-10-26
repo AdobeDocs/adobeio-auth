@@ -55,14 +55,6 @@ The first step is to request the authorization token. This request sets the acce
 |`code_challenge_method`|No, default to `plain`|Possible values: `S256`, `plain`<br/><br/><ul><li>For `code_challenge_method` = `plain`<ul><li>`code_challenge` = `code_verifier`</li></ul></li><li>For `code_challenge_method` = `S256`</li><ul><li>`code_challenge` =  `BASE64(SHA256(code_verifier))`</li></ul></li></ul>`code_verifier` is sent on the `/token` endpoint.<br/><br/>For more information, read the [Proof Key for Code Exchange by OAuth Public Clients](https://tools.ietf.org/html/rfc7636) documentation.|
 |`response_mode`|No|Possible values: `query`, `fragment`. <br/>For more information, refer to this [openid documentation](https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes).<br/><br/>If `response_mode` is not specified, the following defaults are applied:<br/><ul><li>code → query</li><li>token → fragment</li><li>id_token → fragment</li><li>id_token token → fragment</li><li>code id_token → fragment</li></ul>|
 
-
-|Parameter|These are currently included in public-facing doc and not in update wiki.|
-|---|---|
-|`locale`|The locale code for the authentication UI. Default is `en_US`.|
-|`state`|Client-defined state data that is replayed back to the client. It must not be longer than 255 characters. The value should be sent in JSON format: for example, `state={"st":`_`some_alphanumeric_value`_`}`. This parameter should be used to prevent CSRF ([Cross-Site Request Forgery](https://en.wikipedia.org/wiki/Cross-site_request_forgery 'Cross-Site Request Forgery')).|
-
-**Note:** Adobe OAuth does not support the practice of passing base64-encoded `client_id` and `client_secret` parameters using the HTTP BASIC authorization header.
-
 #### Sample request path
 
 The following request path provides an example of several parameters:  
@@ -180,7 +172,6 @@ This can be done by sending a POST request to the `/token` endpoint:
 |`refresh_token`|Yes|The base64-encoded refresh token received in the response to the initial request for an access token.|
 |`grant_type`|Yes|The value is always `refresh_token`.|
 
-
 **Note:** Not all product APIs support the `refresh_token` grant type. You may not be able to get a valid response for such integrations. Please try creating a **Service Account Integration** for such APIs to create a service-service integration.
 
 #### Authorization by client type
@@ -188,7 +179,7 @@ This can be done by sending a POST request to the `/token` endpoint:
 |Client Type|Authorization|
 |---|---|
 |Confidential|Basic Authorization header.<br/><br/>`Authorization: Basic Base64(clientId:clientSecret)`|
-|Public|Client Id passed as parameter.|
+|Public|Client ID passed as parameter.|
 
 #### Request for confidential client
 
