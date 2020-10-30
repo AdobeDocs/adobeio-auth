@@ -2,56 +2,9 @@
 
 Here is a list of Adobe Identity Management Services (IMS) APIs, which can be useful for specific use cases.
 
-* [Token revocation](#token-revocation)
 * [UserInfo](#userinfo)
+* [Token revocation](#token-revocation)
 * [Logout](#logout)
-
-## Token revocation
-
-To revoke access tokens, send a POST request to the `/revoke` endpoint:
-
-`https://ims-na1.adobelogin.com/ims/revoke`
-
-**Note:** Users can revoke access to your application themselves by visiting the [Connected Applications](https://accounts.adobe.com/security/connected-applications#) page. The next time the user launches your application, the authorization workflow will start from the beginning.
-
-#### Parameters
-
-Parameters can be sent in the body or as query parameters. Passing parameters in the body is recommended for sensitive data, as query parameters may be logged by app servers.
-
-|Parameter|Mandatory|Description|
-|---|---|---|
-|`client_id`|Only for PUBLIC clients| Your client id.|
-|`token`|Yes|Token you are invalidating. Can be an access token or a refresh token.
-
-#### Authorization by client type
-
-|Client Type|Authorization|
-|---|---|
-|Confidential|Basic Authorization header.<br/><br/>`Authorization: Basic Base64(clientId:clientSecret)`|
-|Public|Client Id passed as parameter.|
-
-#### Request for confidential client
-
-```curl
-curl -X POST \
-  https://ims-na1-stg1.adobelogin.com/ims/revoke \
-  -H 'Authorization: Basic {AUTHORIZATION}' \
-  -H 'Content-Type: application/x-www-form-urlencoded' \
-  -d 'token={TOKEN}'
-```
-
-#### Request for PUBLIC client
-
-```curl
-curl -X POST \
-  https://ims-na1-stg1.adobelogin.com/ims/revoke?client_id={CLIENT_ID} \
-  -H 'Content-Type: application/x-www-form-urlencoded' \
-  -d 'token={TOKEN}'
-```
-  
-#### Response
-
-A successful response returns HTTP Status 200 (OK) and no response body.
 
 ## UserInfo
 
@@ -71,7 +24,7 @@ The request includes an `Authorization` header with the value `Bearer {ACCESS_TO
 
 ```curl
 curl -X GET \
-  'https://ims-na1-stg1.adobelogin.com/ims/userinfo/v1?client_id={YOUR_CLIENT_ID}' \
+  'https://ims-na1.adobelogin.com/ims/userinfo/v1?client_id={YOUR_CLIENT_ID}' \
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 ```
 
@@ -102,6 +55,53 @@ curl -X GET \
 |`given_name`|`profile`|Given name of user.|
 |`family_name`|`profile`|Family name or last name of user.|
 |`email`|`email`|User email address.|
+
+## Token revocation
+
+To revoke access tokens, send a POST request to the `/revoke` endpoint:
+
+`https://ims-na1.adobelogin.com/ims/revoke`
+
+**Note:** Users can revoke access to your application themselves by visiting the [Connected Applications](https://accounts.adobe.com/security/connected-applications#) page. The next time the user launches your application, the authorization workflow will start from the beginning.
+
+#### Parameters
+
+Parameters can be sent in the body or as query parameters. Passing parameters in the body is recommended for sensitive data, as query parameters may be logged by app servers.
+
+|Parameter|Mandatory|Description|
+|---|---|---|
+|`client_id`|Only for PUBLIC clients| Your client id.|
+|`token`|Yes|Token you are invalidating. Can be an access token or a refresh token.
+
+#### Authorization by client type
+
+|Client Type|Authorization|
+|---|---|
+|Confidential|Basic Authorization header.<br/><br/>`Authorization: Basic Base64(clientId:clientSecret)`|
+|Public|Client Id passed as parameter.|
+
+#### Request for confidential client
+
+```curl
+curl -X POST \
+  https://ims-na1.adobelogin.com/ims/revoke \
+  -H 'Authorization: Basic {AUTHORIZATION}' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'token={TOKEN}'
+```
+
+#### Request for PUBLIC client
+
+```curl
+curl -X POST \
+  https://ims-na1.adobelogin.com/ims/revoke?client_id={CLIENT_ID} \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'token={TOKEN}'
+```
+  
+#### Response
+
+A successful response returns HTTP Status 200 (OK) and no response body.
 
 ## Logout
 
