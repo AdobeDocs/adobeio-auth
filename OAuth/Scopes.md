@@ -2,14 +2,22 @@
 
 OAuth scopes govern the access and privileges an Adobe user will grant authorization to a third-party application for. As an application developer, you will choose the set of scopes that a user will encounter in an authorization approval screen by specifying the scopes as part of the OAuth authorization request. 
 
-## Contents
-
+- [Identity scopes](#identity-scopes)
 - [Creative Cloud](#creative-cloud)
 - [Experience Cloud](#experience-cloud)
 - [Scope Definitions](#scope-definitions)
-    - [Identity scopes](#identity-scopes)
     - [openid](#openid)
     - [creative_sdk](#creative_sdk)
+
+## Identity scopes
+
+|Scope|Consent description|Details|
+|---|---|---|
+|`openid`|Can access user account and read a unique identifier|Mandatory scope to enable authorization flows.|
+|`email`|Can read user email address|Returns `email` and `email_verified` claims.|
+|`address`|Can read user postal address|Returns `address` claim. Currently this contains only the country code.|
+|`profile`|Can read basic user profile, including information like `name`|Returns `name`, `family_name`, `given_name`, `account_type` claims.|
+|`offline_access`|The app can access the data user has given permission to, even when user is not using the app|Allows the return of a refresh token.|
 
 ## Creative Cloud
 
@@ -33,16 +41,6 @@ Adobe Analytics | `openid,AdobeID,read_organizations,additional_info.projectedPr
 ## Scope Definitions
 
 The scope determines the type of access to protected resources for which an application can be granted authorization. Scopes are aggregates of specific attributes.  
-
-### Identity scopes
-
-|Scope|Consent description|Details|
-|---|---|---|
-|`openid`|Can access user account and read a unique identifier|Mandatory scope to enable authorization flows. See [`openid`](#openid) section for details.|
-|`email`|Can read user email address|Returns `email` and `email_verified` claims.|
-|`address`|Can read user postal address|Returns `address` claim. Currently this contains only the country code.|
-|`profile`|Can read basic user profile, including information like `name`|Returns `name`, `family_name`, `given_name`, `account_type` claims.|
-|`offline_access`|The app can access the data user has given permission to, even when user is not using the app|Allows the return of a refresh token.|
 
 ### openid
 
