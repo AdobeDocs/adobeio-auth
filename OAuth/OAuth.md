@@ -68,22 +68,21 @@ https://ims-na1.adobelogin.com/ims/authorize/v2?client_id={CLIENT_ID}
 
 #### Prompting the user for consent
 
-Once the request from the previous step is sent, Adobe will redirect the user to the Adobe ID sign-in page. After sign-in, the user will see a consent window showing the name of your application and the information that your application is requesting permission to access. The user can allow or deny access by selecting **Allow access** or **Cancel**, respectively.
-
-<kbd>![oauth-5](../Images/oauth-5.png)</kbd> <kbd>![oauth-6](../Images/oauth-6.png)</kbd>
+Once the request from the previous step is sent, Adobe will redirect the user to the Adobe ID sign-in page. After sign-in, the user will be shown a consent window that includes the name of your application and the information that your application is requesting permission to access. The user can then allow or deny access.
 
 #### Successful response
 
-After the user has authenticated and granted consent to your application, the user agent will be redirected to `{YOUR_REDIRECT_URI}` with the following parameters:
+After the user has authenticated and been granted consent to your application, the user agent will be redirected to `{YOUR_REDIRECT_URI}` with parameters determined by the `response_type` sent in the request.
 
-* **`token`:** `access_token={ACCESS_TOKEN}&state={STATE}&token_type=bearer&expires_in=86399`
-    * `token_type` will always be `bearer`, `expires_in` is the validity of the token in seconds.  
-* **`code`:** `code={AUTHORIZATION_CODE}&state={STATE}`
-* **`id_token`:** `id_token={ID_TOKEN}&state={STATE}`
-* **`id_token token`:** `id_token={ID_TOKEN}&access_token={ACCESS_TOKEN}&state={STATE}&token_type=bearer&expires_in=86399`
-* **`code id_token`:** `id_token={ID_TOKEN}&code={AUTHORIZATION_CODE}&state={STATE}`
+|Response Type (`response_type`)|Parameters|
+|---|---|
+|`token`| `access_token={ACCESS_TOKEN}&state={STATE}&token_type=bearer&expires_in=86399` <br/><br/><ul><li>`token_type` will always be `bearer`.</li><li>`expires_in` is the validity of the token in seconds.</li></ul>|
+|`code`| `code={AUTHORIZATION_CODE}&state={STATE}`|
+|`id_token`|`id_token={ID_TOKEN}&state={STATE}`|
+|`id_token token`|`id_token={ID_TOKEN}&access_token={ACCESS_TOKEN}&state={STATE}&token_type=bearer&expires_in=86399`|
+|`code id_token`|`id_token={ID_TOKEN}&code={AUTHORIZATION_CODE}&state={STATE}`|
 
-They will be in the `query` or the `fragment`, according to the `response_mode` parameter included in the request. If a `response_mode` is not specified, the default values are used as shown in the Authorization parameters table.
+The parameters will be in the `query` or the `fragment`, according to the `response_mode` parameter included in the request. If a `response_mode` is not specified, the default values are used as shown in the [Authorization parameters table](#authorization).
 
 ## Access tokens
 
@@ -120,7 +119,7 @@ Parameters can be sent in the body or as query parameters. Passing parameters in
 
 ```curl
 curl -X POST \
-  https://ims-na1-stg1.adobelogin.com/ims/token/v3 \
+  https://ims-na1.adobelogin.com/ims/token/v3 \
   -H 'Authorization: Basic {AUTHORIZATION}' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'code={AUTHORIZATION_CODE}&grant_type=authorization_code'
@@ -130,7 +129,7 @@ curl -X POST \
 
 ```curl
 curl -X POST \
-  https://ims-na1-stg1.adobelogin.com/ims/token/v3?client_id={CLIENT_ID} \
+  https://ims-na1.adobelogin.com/ims/token/v3?client_id={CLIENT_ID} \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'code={AUTHORIZATION_CODE}&grant_type=authorization_code&code_verifier={GENERATED_CODE_VERIFIER}'
 ```
@@ -185,7 +184,7 @@ This can be done by sending a POST request to the `/token` endpoint:
 
 ```curl
 curl -X POST \
-  https://ims-na1-stg1.adobelogin.com/ims/token/v3 \
+  https://ims-na1.adobelogin.com/ims/token/v3 \
   -H 'Authorization: Basic {AUTHORIZATION}' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'grant_type=refresh_token&refresh_token={REFRESH_TOKEN}'
@@ -195,7 +194,7 @@ curl -X POST \
 
 ```curl
 curl -X POST \
-  https://ims-na1-stg1.adobelogin.com/ims/token/v3?client_id={CLIENT_ID} \
+  https://ims-na1.adobelogin.com/ims/token/v3?client_id={CLIENT_ID} \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'grant_type=refresh_token&refresh_token={REFRESH_TOKEN}'
 ```
