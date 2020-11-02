@@ -16,7 +16,7 @@ To return information about a specific user, send a GET request to the `/userinf
 
 |Parameter|Mandatory|Description|
 |---|---|---|
-|`client_id`|Yes|Your client ID.|
+|`client_id`|No|Your client ID.|
 
 #### Request
 
@@ -24,7 +24,7 @@ The request includes an `Authorization` header with the value `Bearer {ACCESS_TO
 
 ```curl
 curl -X GET \
-  'https://ims-na1.adobelogin.com/ims/userinfo/v1?client_id={YOUR_CLIENT_ID}' \
+  'https://ims-na1.adobelogin.com/ims/userinfo/v2?client_id={YOUR_CLIENT_ID}' \
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 ```
 
@@ -34,7 +34,7 @@ curl -X GET \
 {
   "sub": "B0DC108C5CD449CA0A494133@c62f24cc5b5b7e0e0a494004",
   "account_type": "ent",
-  "email_verified": "true",
+  "email_verified": true,
   "address": {
     "country": "US"
   },
@@ -49,7 +49,7 @@ curl -X GET \
 |---|---|---|
 |`sub`|`openid`|Unique user ID.|
 |`account_type`|`profile`|Can be one of:<br/><ul><li>**`ind`:** User is an individual account.</li><li>**`ent`:** User is part of an organization.</li></ul>|
-|`email_verified`|`email`|Specifies if the user has verified their email.|
+|`email_verified`|`email`|A boolean value which specifies if the user has verified their email.|
 |`address`|`address`|Address of user. Only the two-digit country code is returned.|
 |`name`|`profile`|Full name of user.|
 |`given_name`|`profile`|Given name of user.|
