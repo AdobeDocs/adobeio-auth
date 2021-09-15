@@ -1,6 +1,6 @@
 # OAuth 2.0 Authentication and Authorization
 
-Adobe Cloud Platform APIs use the OAuth 2.0 protocol for authentication and authorization. Using Adobe OAuth 2.0, you can generate an access token using the [OAuth Integration](../AuthenticationOverview/OAuthIntegration.md) created in [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui) which is used to make API calls from your web server or browser-based apps.
+Adobe Cloud Platform APIs use the OAuth 2.0 protocol for authentication and authorization. Using Adobe OAuth 2.0, you can generate an access token using the [OAuth Integration](../AuthenticationOverview/OAuthIntegration.md) created in [Adobe Developer Console](https://www.adobe.io/console) which is used to make API calls from your web server or browser-based apps.
 
 ## Authentication Workflow
 
@@ -30,7 +30,7 @@ Include the following parameters:
 
 Parameter | Description
 ---- | ----
-`client_id` |	The Client ID obtained from the [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui/).
+`client_id` |	The Client ID obtained from the [Adobe Developer Console](https://www.adobe.io/console).
 `redirect_uri` | Optional. The URI to which the user agent is redirected once the authorization completes. Note that this URI must be HTTPS. The pattern is validated against the list of valid redirect URIs configured for your client. If the redirect URI is not provided with the request, it will consider the Default Redirect URI in Adobe Developer Console.
 `scope`	| The scope of the access request, expressed as a list of comma-delimited, case-sensitive strings. See the [Scope Reference](Scopes.md) for more information.
 `response_type` |	The default response type for the Authorization code flow is `code`. 
