@@ -15,24 +15,18 @@ After setting up the sample, you will have a Python app that:
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
-1. [GitHub](#github)
-1. [Technology Used](#technologyused)
-1. [Prerequisites](#prerequisites)
-1. [Configuration](#configuration)
-    1. [Create an OpenSSL cert](#createanopensslcert)
-    1. [Install Python libraries](#installpythonlibraries)
-    1. [Enter your Flask secret and  Adobe API credentials](#enteryourflasksecretandadobeapicredentials)
-1. [Usage](#usage)
-1. [Other Resources](#otherresources)
+- [OAuth 2.0 Example: Python](#oauth-20-example-python)
+  - [Contents](#contents)
+  - [Technology Used](#technology-used)
+  - [Prerequisites](#prerequisites)
+  - [Configuration](#configuration)
+    - [Create an OpenSSL cert](#create-an-openssl-cert)
+    - [Install Python libraries](#install-python-libraries)
+    - [Enter your Flask secret and  Adobe API credentials](#enter-your-flask-secret-and--adobe-api-credentials)
+  - [Usage](#usage)
+  - [Other Resources](#other-resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## GitHub
-
-You can find a companion repo for this developer guide [on GitHub](https://github.com/adobeio/adobeio-documentation/tree/master/auth/OAuth2.0Endpoints/samples/adobe-auth-python).
-
-Be sure to follow all instructions in the `readme`.
-
 
 ## Technology Used
 
@@ -42,9 +36,9 @@ Be sure to follow all instructions in the `readme`.
 
 ## Prerequisites
 
-This guide will assume that you have read the [Adobe OAuth 2.0 Guide for Web](../../web-oauth2.0-guide.md).
+This guide will assume that you have read the [Adobe OAuth 2.0 Guide for Web](../../../Backup/OAuth2.0Endpoints/web-oauth2.0-guide.md).
 
-You must also have [a registered app on the Adobe Developer Console](../../web-oauth2.0-guide.md#register-your-application-and-enable-apis) with the following settings:
+You must also have [a registered app on the Adobe Developer Console](../../../Backup/OAuth2.0Endpoints/web-oauth2.0-guide.md#register-your-application-and-enable-apis) with the following settings:
 
 1. `Platform`: web
 1. `Default redirect URI`: `https://localhost:8000`
@@ -89,7 +83,7 @@ class Config(object):
     ADOBE_API_SECRET = 'YOUR_ADOBE_SECRET'
 ```
 
-You can get your Adobe API Key and Secret from your registered app page on the [Adobe Developer Console](../../web-oauth2.0-guide.md#register-your-application-and-enable-apis).
+You can get your Adobe API Key and Secret from your registered app page on the [Adobe Developer Console](../../../Backup/OAuth2.0Endpoints/web-oauth2.0-guide.md#register-your-application-and-enable-apis).
 
 
 ## Usage
@@ -105,4 +99,4 @@ To access the app, go to `https://localhost:8000`. Click through any cert warnin
 
 ## Other Resources
 
-- [Adobe OAuth 2.0 Guide for Web](../../web-oauth2.0-guide.md)
+- [Adobe OAuth 2.0 Guide for Web](../../../Backup/OAuth2.0Endpoints/web-oauth2.0-guide.md)
